@@ -1,8 +1,12 @@
 # Digimon Digital Card Battle Guide
 
-A project that extracts the card collection using a game data which is digimon digital card battle from a Japanese (this app language too) website then show card distribution of types, stats, (and infer some insights or trends) then simple battle simulator, create training and test dataset, and ai predict winner from new matchups.
+A Game Guide for Digimon Digital Card Battle, from the japanese website, https://www.y-gamelab.com/, that shows card and deck collection, card distribution, and play with the deck guesser.
 
-# Full Stack FastAPI Template
+## Draft
+
+Draft Ideas, Thoughts, Plan, Process etc.: [draft.md](./draft.md).
+
+## Full Stack FastAPI Template
 
 <a href="https://github.com/fastapi/full-stack-fastapi-template/actions?query=workflow%3ATest" target="_blank"><img src="https://github.com/fastapi/full-stack-fastapi-template/workflows/Test/badge.svg" alt="Test"></a>
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/full-stack-fastapi-template" target="_blank"><img src="https://coverage-badge.samuelcolvin.workers.dev/fastapi/full-stack-fastapi-template.svg" alt="Coverage"></a>
