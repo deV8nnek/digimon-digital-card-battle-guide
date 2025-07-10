@@ -105,9 +105,53 @@ Though coupled with different requirements/functions, the design is like a dashb
 
 Wireframe
 In Progress using Figma
+Final Draft
+Cleaner, polished design
+~~Apply web design thinking box like inspector~~
+Since feels a waste to not use figma more when using it just like a paint
+
+Q: Margin, Padding
+Auto Layout Frame
+Padding: Group 1 element, horizontal and vertical padding
+Margin: Group 2 Group 1, gap, horizontal and vertal padding
+Q: Group vs Frame
+Groups can nestle layers only
+Switching to Frame with more capabilities
+Q: Auto Layout flows right endlessly
+Wrap
+Q: scrolling not overlay when running
+Clip content
+
+Keeping retro design
+Layout Guide and Auto-Layout
+
+2nd Draft
+Q: Figma basics or beginner
+understanding low-level wireframe
+mostly use rectangle or text
+don't focus too much on the details, do minimal alignment, sizing, basic colors, etc.
+using pen tools for drawing imperfect icons
+organizing layer names if necessary, group if duplicate or not children
+Q: border-left
+~~drop shadow - in shadow - x 1 y 0~~
+use line
+Q: card increment number in list
+not variables
+google sheet sync plugin
+Q: reuse element
+use component
+adjust original like sizing, alignment, constraints
+
+1st Draft
+Feels like misusing components 
+groups vs components?
+recreating cards, easy way?
+should i design like in web like an inspector, boxes
+what is the unified design for image, text, buttons, etc.
+layers organized but best naming convention?
 
 Prototype
-As much as I want to design in more detail, I want to start the development, will play with Figma to make these response web design in the end
+As much as I want to design in more detail, I want to start the development, will play with Figma to make a response web design in the end maybe
 
 ## Maintenance
 
