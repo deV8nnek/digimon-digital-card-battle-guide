@@ -179,7 +179,8 @@ should i design like in web like an inspector, boxes<br>
 what is the unified design for image, text, buttons, etc.<br>
 layers organized but best naming convention?
 
-Prototype
+###Prototype
+
 As much as I want to design in more detail, I want to start the development, will play with Figma to make a response web design in the end maybe
 
 ## Maintenance
