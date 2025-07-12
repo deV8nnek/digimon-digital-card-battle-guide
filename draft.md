@@ -103,51 +103,80 @@ Offtopic reading about the AI will replace us, AI is already better and will get
 
 Though coupled with different requirements/functions, the design is like a dashboard where everything is connected.
 
-Wireframe
-In Progress using Figma
+### Wireframe
+
 Final Draft
-Cleaner, polished design
-~~Apply web design thinking box like inspector~~
+![Final Draft](/img/[Final%20Draft]%20Dashboard%202.png)
+
+Cleaner, polished design<br>
+~~Apply web design thinking box like inspector~~<br>
 Since feels a waste to not use figma more when using it just like a paint
 
-Q: Margin, Padding
-Auto Layout Frame
-Padding: Group 1 element, horizontal and vertical padding
-Margin: Group 2 Group 1, gap, horizontal and vertal padding
-Q: Group vs Frame
-Groups can nestle layers only
-Switching to Frame with more capabilities
-Q: Auto Layout flows right endlessly
-Wrap
-Q: scrolling not overlay when running
-Clip content
+Q: Margin, Padding<br>
+Auto Layout Frame<br>
+Padding: Group 1 element, horizontal and vertical padding<br>
+Margin: Group 2 Group 1, gap, horizontal and vertal padding<br>
+Q: Group vs Frame<br>
+Groups can nestle layers only<br>
+Switching to Frame with more capabilities<br>
+Q: Auto Layout flows right endlessly<br>
+Wrap<br>
+Q: scrolling not overlay when running<br>
+Clip content<br>
+Q: layout row to column if scaled small
 
-Keeping retro design
-Layout Guide and Auto-Layout
+Keeping retro design<br>
+Layout Guide and Auto-Layout<br>
+Grid layout<br>
+Protoyping<br>
+~~Variant~~~~ component property~~empty text space<br>
+OK Card Info<br>
+Placeholder Chart, not yet sure what visualization or plot type to use<br>
+the idea where (a) subset from all data, and (b) all data by a category, ... which is difficult to design<br>
+component property, variants, learn component sets<br>
+prototype nightmare~~, deleting multiple exit points xD~~<br>
+handling all interactivity slows figma
+
+Q: prototype is slow<br>
+focus on ideal path first
+
+deleted template<br>
+retain already created, separate ideal path from others, use back for some<br>
+instant animation, uncreated path clickabe but placeholder close overlay<br>
+use back properly<br>
+OK Chart
+
+variant animate<br>
+overlay<br>
+OK Predict Fusion, enough is enough<br>
+add disclaimer ai/ml result could be wrong
 
 2nd Draft
-Q: Figma basics or beginner
-understanding low-level wireframe
-mostly use rectangle or text
-don't focus too much on the details, do minimal alignment, sizing, basic colors, etc.
-using pen tools for drawing imperfect icons
-organizing layer names if necessary, group if duplicate or not children
-Q: border-left
-~~drop shadow - in shadow - x 1 y 0~~
-use line
-Q: card increment number in list
-not variables
-google sheet sync plugin
-Q: reuse element
-use component
+![2nd Draft](/img/[Draft%202]%20Wireframe.png)
+
+Q: Figma basics or beginner<br>
+understanding low-level wireframe<br>
+mostly use rectangle or text<br>
+don't focus too much on the details, do minimal alignment, sizing, basic colors, etc.<br>
+using pen tools for drawing imperfect icons<br>
+organizing layer names if necessary, group if duplicate or not children<br>
+Q: border-left<br>
+~~drop shadow - in shadow - x 1 y 0~~<br>
+use line<br>
+Q: card increment number in list<br>
+not variables<br>
+google sheet sync plugin<br>
+Q: reuse element<br>
+use component<br>
 adjust original like sizing, alignment, constraints
 
 1st Draft
-Feels like misusing components 
-groups vs components?
-recreating cards, easy way?
-should i design like in web like an inspector, boxes
-what is the unified design for image, text, buttons, etc.
+![1st Draft](/img/[Draft%201]%20Wireframe%20-%20Dashboard.png)
+Feels like misusing components<br>
+groups vs components?<br>
+recreating cards, easy way?<br>
+should i design like in web like an inspector, boxes<br>
+what is the unified design for image, text, buttons, etc.<br>
 layers organized but best naming convention?
 
 Prototype
@@ -155,4 +184,5 @@ As much as I want to design in more detail, I want to start the development, wil
 
 ## Maintenance
 
-- English version
+- search
+- english
