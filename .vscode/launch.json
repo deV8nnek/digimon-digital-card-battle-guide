@@ -29,9 +29,9 @@
             "envFile": "${workspaceFolder}/.env",
         },
         {
+            "name": "Debug Frontend",
             "type": "chrome",
             "request": "launch",
-            "name": "Debug Frontend",
             "url": "http://localhost:5173",
             "webRoot": "${workspaceFolder}/frontend"
         },
