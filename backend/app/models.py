@@ -35,7 +35,7 @@ class CardBase(SQLModel):
                     return cls.A
 
     number: int | None = Field(default=None, ge=0, le=301, primary_key=True)
-    name: str = Field(max_length=10)
+    name: str
     type: CardType
     lv: CardLv | None = None
     hp: int | None = Field(default=None, ge=0)
@@ -44,11 +44,9 @@ class CardBase(SQLModel):
     circle: int | None = Field(default=None, ge=0)
     triangle: int | None = Field(default=None, ge=0)
     x: int | None = Field(default=None, ge=0)
-    special_effect: str | None = Field(default=None, max_length=93)
-    effect: str = Field(max_length=376)
-    img: str = Field(
-        default='<img src="~/img/card/card_{0}.png" alt="{0}">', max_length=59
-    )
+    special_effect: str | None = None
+    effect: str
+    img: str = Field(default='<img src="{0}/{1}.png" alt="{2}"/>')
 
 
 class Card(CardBase, table=True):

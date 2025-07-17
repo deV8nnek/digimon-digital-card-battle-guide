@@ -3,16 +3,22 @@ import random
 import scrapy
 from scrapy.pipelines.images import ImagesPipeline
 
+from app.scrapymon.scrapymon.items import CardItem
+
 
 class CardPipeline:
     # def open_spider(self, spider):
     #     self.session = Session(engine)
 
     def process_item(self, item, spider):
-        item.img = item.model_fields["img"].default.format(item.name)
-        # obj = Card(**item.__dict__)
+        item = item.model_dump()
+        # obj = Card(**item)
         # self.session.add(obj)
         # self.session.commit()
+        item.update({"type": item["type"].name})
+        if item["lv"]:
+            item.update({"lv": item["lv"].name})
+        item = CardItem.model_construct(**item)
         return item
 
     # def close_spider(self, spider):
@@ -20,7 +26,7 @@ class CardPipeline:
 
 
 class CardImagesPipeline(ImagesPipeline):
-    def randomHeader(self):
+    def random_header(self):
         user_agent_list = [
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15",
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36",
@@ -42,7 +48,7 @@ class CardImagesPipeline(ImagesPipeline):
         return scrapy.Request(
             url=item.img,
             callback=self.file_path,
-            headers=self.randomHeader(),
+            headers=self.random_header(),
             dont_filter=True,
         )
 
