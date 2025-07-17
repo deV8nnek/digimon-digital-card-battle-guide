@@ -2,10 +2,21 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
+    "version": "1.0.0",
     "configurations": [
+         {
+           "name": "Debug Scrapy",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "scrapy",
+            "cwd": "${workspaceFolder}/backend/app/scrapymon",
+            "args": [
+                "runspider",
+                "scrapymon/spiders/card_spider.py"
+            ],
+        },
         {
-            "name": "Debug FastAPI Project backend: Python Debugger",
+            "name": "Debug Backend",
             "type": "debugpy",
             "request": "launch",
             "module": "uvicorn",
@@ -20,7 +31,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Debug Frontend: Launch Chrome against http://localhost:5173",
+            "name": "Debug Frontend",
             "url": "http://localhost:5173",
             "webRoot": "${workspaceFolder}/frontend"
         },
