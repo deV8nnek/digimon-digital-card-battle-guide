@@ -109,7 +109,7 @@ Though coupled with different requirements/functions, the design is like a dashb
 ### Wireframe & Prototype
 
 Final Draft
-![Final Draft](/img/[Final%20Draft]%20Dashboard%202.png)
+![Final Draft](/img/figma-draft-final-dashboard-2.png)
 
 Cleaner, polished design<br>
 ~~Apply web design thinking box like inspector~~<br>
@@ -155,7 +155,7 @@ OK Predict Fusion, enough is enough<br>
 add disclaimer ai/ml result could be wrong
 
 2nd Draft
-![2nd Draft](/img/[Draft%202]%20Wireframe.png)
+![2nd Draft](/img/figma-draft-2-wireframe.png)
 
 Q: Figma basics or beginner<br>
 understanding low-level wireframe<br>
@@ -174,7 +174,7 @@ use component<br>
 adjust original like sizing, alignment, constraints
 
 1st Draft
-![1st Draft](/img/[Draft%201]%20Wireframe%20-%20Dashboard.png)
+![1st Draft](/img/figma-draft-1-wireframe-dashboard.png)
 Feels like misusing components<br>
 groups vs components?<br>
 recreating cards, easy way?<br>
@@ -207,7 +207,7 @@ so to answer, wrap the xpath by () within the quotes then access normally by ind
 
 not normalizing any further since the card size is fixed, small, simple and use one table for both digimon and option cards for performance<br>
 where it can be further omptimized by caching<br>
-no need index	- small read only fixed, materialized views - simple, denormalization - as said above, vertical scaling - small scale, replicatiom sharding - no users xD<br>
+no need index - small read only fixed, materialized views - simple, denormalization - as said above, vertical scaling - small scale, replicatiom sharding - no users xD<br>
 fusion prediction will probably just in file
 
 <del>OK scrapy<br>
@@ -224,9 +224,11 @@ just notice the bookmark from stackoverflow can't upvote<br>
 more environment setup<br>
 <del>OK debug</del>
 
-
+30% code and debug code 70% debug scrapy and setup
 OK web scraping
 
+![web scraping](/img/web-scraping.png)
+![web scraping db](/img/web-scraping-db.png)
 
 ### Data Analytics
 
