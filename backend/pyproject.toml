@@ -22,7 +22,7 @@ dependencies = [
     "sentry-sdk[fastapi]<2.0.0,>=1.40.6",
     "pyjwt<3.0.0,>=2.8.0",
     "scrapy>=2.13.0",
-    "twisted==21.7.0", #new versions, 22.10.0 issue with scrapy
+    "twisted==25.5.0", #new versions, 22.10.0 issue with scrapy
     "pillow>=8.0.0" #scrapy image pipeline
     #"attrs>=18.1.0" #scrapy item adapter
     #"itemadapter>=0.11.0" #support for pipeline already included in pydantic
