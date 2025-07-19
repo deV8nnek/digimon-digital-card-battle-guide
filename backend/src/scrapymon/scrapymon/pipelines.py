@@ -3,7 +3,7 @@ import random
 import scrapy
 from scrapy.pipelines.images import ImagesPipeline
 
-from app.scrapymon.scrapymon.items import CardItem
+from src.scrapymon.scrapymon.items import CardItem
 
 
 class CardPipeline:

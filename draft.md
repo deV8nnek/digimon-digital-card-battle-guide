@@ -224,13 +224,70 @@ just notice the bookmark from stackoverflow can't upvote<br>
 more environment setup<br>
 <del>OK debug</del>
 
-30% code and debug code 70% debug scrapy and setup
+30% code and debug code 70% debug scrapy and setup<br>
 OK web scraping
+
+git reflog, rebase
+git amend
 
 ![web scraping](/img/web-scraping.png)
 ![web scraping db](/img/web-scraping-db.png)
 
 ### Data Analytics
+
+backend logic not yet fastapi web backend
+backtracking run the web scraping module not found issue
+~~pyproject.toml > setup.py~~
+run bash script to change cwd instead of in program
+
+researching about project structure<br>
+trying to understand why this template uses this project structure<br>
+```text
+backend
+|-.venv //OK for self explanatory
+|- app //or src
+  |- alembic //OK
+  |- api
+    |-routes
+      deps.py //referenced by routes
+      main.py //fast api route
+  |- core
+  |- email-templates //ignored
+  |- tests //OK
+  ... //ignored
+  main.py //fast api, api.routes.main
+  crud.py //or repository or dao, db folder
+  models.py //but more models, by model will be more manageable, by route but not by model? SQLMoedel docs did group to one
+  utils.py //ok but prefer having common folder
+|- scripts //OK like to run from backend 
+top level config and others...
+```
+
+Q: project structure examples for each software architectural patterns, no need to explain
+modifying ai response
+fastapi bigger applications file structure
+```text
+backend/src
+| main.py
+├── config/
+├── common/
+|     | dependencies.py 
+├── resources/
+|     ├── data
+|     ├── img
+├── database/           # repo, dao, crud
+├── domain/             # Entities, Value Objects or models
+├── profile/            # like admin
+├── router/
+├── service/            # Application Services, Use  Cases, business logic
+
+backend/test/
+```
+
+Importing * From a Package
+
+Excel - SQL - PowerBI, d3js - Python
+dbeaver
 
 ### AI/Machine Learning
 

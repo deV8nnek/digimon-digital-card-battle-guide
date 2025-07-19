@@ -5,7 +5,7 @@ from pathlib import Path
 import scrapy
 import scrapy.exceptions
 
-from app.scrapymon.scrapymon.items import CardItem
+from src.scrapymon.scrapymon.items import CardItem
 
 
 class CardSpider(scrapy.Spider):
