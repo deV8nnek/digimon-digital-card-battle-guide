@@ -19,11 +19,17 @@ From `./backend/` you can install all the dependencies with:
 $ uv sync
 ```
 
-A .venv will be created, for Windows, the binary path may be in `.venv/Scripts`. 
 Then you can activate the virtual environment with:
 
 ```console
 $ source .venv/bin/activate
+```
+
+or
+
+For Windows,
+```console
+$ source .venv/Scripts/activate
 ```
 
 Make sure your editor is using the correct Python virtual environment, with the interpreter at `backend/.venv/bin/python`.
@@ -42,15 +48,22 @@ As during local development your app directory is mounted as a volume inside the
 
 Make sure you create a "revision" of your models and that you "upgrade" your database with that revision every time you change them. As this is what will update the tables in your database. Otherwise, your application will have errors.
 
-* Start an interactive session in the backend container:
+If you don't want to start with the default models and want to remove them / modify them, from the beginning, without having any previous revision, you can remove the revision files (`.py` Python files) under `alembic/versions`. And then create a first migration as described above.
 
-```console
-$ docker compose exec backend bash
+* If you don't want to use migrations at all, uncomment the lines in the file at `core/db.py` that end in:
+
+```python
+SQLModel.metadata.create_all(engine)
 ```
 
-* Alembic is already configured to import your SQLModel models from `./backend/app/models.py`.
+and comment the line in the file `scripts/prestart.sh` that contains:
+
+```console
+$ alembic upgrade head
+```
 
 * After changing a model (for example, adding a column), inside the container, create a revision, e.g.:
+* Add import to new model in `alembic/envy.py`.
 
 ```console
 $ alembic revision --autogenerate -m "Add column last_name to User model"
@@ -64,19 +77,11 @@ $ alembic revision --autogenerate -m "Add column last_name to User model"
 $ alembic upgrade head
 ```
 
-If you don't want to use migrations at all, uncomment the lines in the file at `./backend/app/core/db.py` that end in:
-
-```python
-SQLModel.metadata.create_all(engine)
-```
-
-and comment the line in the file `scripts/prestart.sh` that contains:
+* Start an interactive session in the backend container:
 
 ```console
-$ alembic upgrade head
+$ docker compose exec backend bash
 ```
-
-If you don't want to start with the default models and want to remove them / modify them, from the beginning, without having any previous revision, you can remove the revision files (`.py` Python files) under `./backend/app/alembic/versions/`. And then create a first migration as described above.
 
 ## Docker Compose Override
 

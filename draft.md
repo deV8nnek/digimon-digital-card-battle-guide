@@ -224,13 +224,98 @@ just notice the bookmark from stackoverflow can't upvote<br>
 more environment setup<br>
 <del>OK debug</del>
 
-30% code and debug code 70% debug scrapy and setup
+30% code and debug code 70% debug scrapy and setup<br>
 OK web scraping
+
+git reflog, rebase
+git amend
 
 ![web scraping](/img/web-scraping.png)
 ![web scraping db](/img/web-scraping-db.png)
 
 ### Data Analytics
+
+backend logic not yet fastapi web backend
+backtracking run the web scraping module not found issue
+~~pyproject.toml > setup.py~~
+run bash script to change cwd instead of in program
+
+researching about project structure<br>
+trying to understand why this template uses this project structure<br>
+```text
+backend
+|-.venv //OK for self explanatory
+|- app //or src
+  |- alembic //OK
+  |- api
+    |-routes
+      deps.py //referenced by routes
+      main.py //fast api route
+  |- core
+  |- email-templates //ignored
+  |- tests //OK
+  ... //ignored
+  main.py //fast api, api.routes.main
+  crud.py //or repository or dao, db folder
+  models.py //but more models, by model will be more manageable, by route but not by model? SQLMoedel docs did group to one
+  utils.py //ok but prefer having common folder
+|- scripts //OK like to run from backend 
+top level config and others...
+```
+
+Q: project structure examples for each software architectural patterns, no need to explain
+modifying ai response
+fastapi bigger applications file structure
+```text
+backend/src
+| main.py
+├── config/
+├── common/
+|     | dependencies.py 
+├── resources/
+|     ├── data
+|     ├── img
+├── database/           # repo, dao, crud
+├── domain/             # Entities, Value Objects or models
+├── profile/            # like admin
+├── router/
+├── service/            # Application Services, Use  Cases, business logic
+
+backend/test/
+```
+
+it's annoying to type `<br>` often
+
+```text
+Importing * From a Package
+
+Just noting,
+Excel & PowerQuery- SQL - PowerBI, Tableau, d3js - Python
+dbeaver
+
+Though I want to explore more about the data, other tools
+Initially, I already have the idea on what to use as visualization
+Exploring further is nice to have but my goal is to use python, pandas, numpy for data analysis and as early as possible
+
+Complexity isn't the goal
+301 cards is the current data, ml will have more than that as there are many combinations for card fusion 
+
+Pretty much the data is already cleaned as scraped
+Though the advanced styling was a mistake, creating own problems
+at least there is something to clean, but will still clean regardless since it's a standard before working on the data
+including handling missing data, removing duplicates, finding outliers just to show the process
+
+so what I wanted to write in advance in this section is more into the analysis aspect
+
+how strong is a digimon
+for now, since the dataset is just card so
+there could be top 10 overall, in their type, in their lv
+but initially,  
+
+if the dataset is battle data, how often a digimon is used, to what enemies, in what combos, even certain effects which are not numerical are op, but there could be different factors not just stats
+
+
+```
 
 ### AI/Machine Learning
 
