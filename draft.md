@@ -284,10 +284,38 @@ backend/src
 backend/test/
 ```
 
+it's annoying to type `<br>` often
+
+```text
 Importing * From a Package
 
-Excel - SQL - PowerBI, d3js - Python
+Just noting,
+Excel & PowerQuery- SQL - PowerBI, Tableau, d3js - Python
 dbeaver
+
+Though I want to explore more about the data, other tools
+Initially, I already have the idea on what to use as visualization
+Exploring further is nice to have but my goal is to use python, pandas, numpy for data analysis and as early as possible
+
+Complexity isn't the goal
+301 cards is the current data, ml will have more than that as there are many combinations for card fusion 
+
+Pretty much the data is already cleaned as scraped
+Though the advanced styling was a mistake, creating own problems
+at least there is something to clean, but will still clean regardless since it's a standard before working on the data
+including handling missing data, removing duplicates, finding outliers just to show the process
+
+so what I wanted to write in advance in this section is more into the analysis aspect
+
+how strong is a digimon
+for now, since the dataset is just card so
+there could be top 10 overall, in their type, in their lv
+but initially,  
+
+if the dataset is battle data, how often a digimon is used, to what enemies, in what combos, even certain effects which are not numerical are op, but there could be different factors not just stats
+
+
+```
 
 ### AI/Machine Learning
 
