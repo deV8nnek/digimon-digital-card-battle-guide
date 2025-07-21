@@ -27,6 +27,8 @@ Offtopic reading about the AI will replace us, AI is already better and will get
   - Learn new tools and technologies
   - Study Japanese
   - Relate to an AI/ML, data analytics, web scraping, and game
+  
+  - To add, as early as possible
 
 - Feasibility
 
@@ -293,6 +295,8 @@ Just noting,
 Excel & PowerQuery- SQL - PowerBI, Tableau, d3js - Python
 dbeaver
 
+git reset, merge, pull request
+
 Though I want to explore more about the data, other tools
 Initially, I already have the idea on what to use as visualization
 Exploring further is nice to have but my goal is to use python, pandas, numpy for data analysis and as early as possible
@@ -308,14 +312,37 @@ including handling missing data, removing duplicates, finding outliers just to s
 so what I wanted to write in advance in this section is more into the analysis aspect
 
 how strong is a digimon
-for now, since the dataset is just card so
-there could be top 10 overall, in their type, in their lv
-but initially,  
+there could be top 10 ranking overall, statswise, in their type, or in their lv
+if the dataset is battle data, how often a digimon is used, to what enemies, in what combos, even certain effects which are not numerical are overpowered, but there could be different factors not just stats
+for now, since the dataset is just card
+initially, a radar/radial chart for the numerical stats for a digimon across types (lv can be added or more analysis in the future)
+as per design, the digimon can be compared side by side
+nothing fancy, even a table is enough
+imagine players seeing a bell curve for standard deviation or variance (but just for exploration in the future)
 
-if the dataset is battle data, how often a digimon is used, to what enemies, in what combos, even certain effects which are not numerical are op, but there could be different factors not just stats
+not just card information,
+data question (for analyzing, for game nerds could be, patterns, data to data)
+how are digimon stats distributed
+how are digimon effects distributed
+how are digimon used
+how are option used
+how are card combos used 
+how digimon win or lose
+why this digimon
+idk why i change what to how and why, something unkown/vague or understanding the data makes some sense if not a player
 
-
+game-related data question (for a guide, what provides value or useful info)
+how strong is a digimon
+how to counter this digimon
+how to build a deck
+what are the best digimon
+what digimon type is the best
+what option is the best
+what card combo is popular
+who to pick as a partner digimon
 ```
+
+`![changethis](/img/changethis.png)`
 
 ### AI/Machine Learning
 

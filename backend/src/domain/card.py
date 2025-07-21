@@ -34,7 +34,7 @@ class CardBase(SQLModel):
                 case "A":
                     return cls.A
 
-    number: int | None = Field(default=None, ge=0, le=301, primary_key=True)
+    number: int = Field(ge=0, le=301, primary_key=True)
     name: str
     type: CardType
     lv: CardLv | None = None
