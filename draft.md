@@ -345,6 +345,7 @@ who to pick as a partner digimon
 ```
 
 ![data-analytics](/img/data-analytics.png)
+![data-analytics-stat-chart](/img/data-analytics-stat-chart.png)
 
 ### AI/Machine Learning
 
