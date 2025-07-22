@@ -1,7 +1,11 @@
-# import matplotlib.pyplot as plt
+from pathlib import Path
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from japanize_matplotlib import fonts
 from sqlmodel import Session, select
+
 from src.config.db import engine
 from src.domain.card import Card
 
@@ -13,8 +17,8 @@ def read_card():
         return card_dataset
 
 
-def clean(df):
-    df = pd.DataFrame(read_card())
+def clean_card(data):
+    df = pd.DataFrame(data)
     df.columns = [el[0] for el in df.loc[0]]
     for column in df.columns:
         df[column] = [el[1] for el in df[column]]
@@ -27,33 +31,89 @@ def clean(df):
     for column in df.columns:
         if column == "type":  # since of fillna
             df[column] = [el.value for el in df[column]]
-            ctype = pd.CategoricalDtype(categories=[t.value for t in Card.CardType])
+            ctype = pd.CategoricalDtype(
+                categories=[t.value for t in Card.CardType], ordered=True
+            )
             df[column] = df[column].astype(ctype)
         elif column not in ["name"]:  # since drop will infer type
             df[column] = df[column].astype(int, errors="ignore")
     return df
 
 
-# def show_digimon_stats():
-df = pd.DataFrame(clean(read_card()))
-card1 = df.copy().sample(n=1)
-# card_2 = df.copy().sample(n=1)
-filter = df.copy()
+def gen_chart_data(cards: pd.DataFrame, card: pd.DataFrame, filter):
+    agg = ["min", "mean", "max"]
+    for a, max in zip(agg, [650, 1273, 2750]):
+        df = cards[cards["type"].isin(filter)]
+        df = df.pivot_table(
+            values=["hp", "circle", "pow", "dp", "x", "triangle"],
+            index=[
+                "type",
+            ],
+            aggfunc=[
+                a,
+            ],
+            observed=False,
+            sort=False,
+        )
+        df.columns = df.columns.droplevel(0)
+        df.index = df.index.set_names(None)
+        df = df.sort_values(by="hp", ascending=False)
+        if int(card.iloc[0]["hp"]) <= max:
+            agg = a
+            break
+    cards = df
+    name = card["name"].tolist()[0]
+    card = card[[column for column in cards.columns]]
+    cards.loc[name] = card.iloc[0].to_list()
+    cards = cards.astype(int)
+    return (cards, agg)
 
-filter = filter.pivot_table(
-    values=["hp", "circle", "pow", "x", "dp", "triangle"],
-    index=[
-        "type",
-    ],
-    aggfunc=[
-        "max",
-    ],
-)
 
-name = card1["name"].tolist()[0]
-card1 = card1[[column for column in filter.columns.get_level_values(1)]]
-filter.columns = filter.columns.droplevel(0)
-filter.index = filter.index.set_names(None)
-filter = filter.sort_values(by="hp", ascending=False)
-filter.loc[name] = card1.iloc[0].to_list()
-filter = filter.astype(int)
+def gen_chart(chart_data):
+    chd, agg = chart_data
+    yt = 750 if (agg == "min") else 1500 if (agg == "mean") else 3000
+    yt = np.arange(0, yt + 1, yt / 5).astype(int)
+    labels = chd.columns.tolist()
+    theta = [n / float(len(labels)) * 2 * np.pi for n in range(len(labels))]
+    theta.append(theta[0])  # close line
+
+    fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+    ax.set_theta_zero_location("N")
+    ax.set_axisbelow(False)
+    ax.set_rlabel_position(90)
+    ax.set_xticks(theta[:-1], labels)
+    ax.set_yticks(yt[1:], yt[1:])
+    ax.set_title("スタッツ")
+    for index, row in chd.iterrows():
+        row = row.tolist()
+        row.append(row[0])  # close line
+        color = Card.CardType.OPTION.color()
+        if index in [member.value for member in Card.CardType]:
+            color = Card.CardType(index).color()
+            a = "(min)" if (agg == "min") else "(mean)" if (agg == "mean") else "(max)"
+            index = f"{index} {a}"
+        ax.plot(theta, row, color=color, label=index)
+        ax.fill(theta, row, color=color, alpha=0.4)
+    ax.legend(ncol=1, facecolor="ivory", loc="lower center")
+    return fig
+
+
+cards = Path("data/processed/card.csv")
+if not cards.exists():
+    cards.parent.mkdir(parents=True, exist_ok=True)
+    cards = clean_card(read_card())
+    cards.to_csv("data/processed/cards.csv", index=False)
+# card1 = cards.copy().sample(n=1)
+filter = [member.value for member in Card.CardType][:-1]
+
+card1 = cards[cards["name"] == "アカトリモン"]
+chart = gen_chart(gen_chart_data(cards.copy(), card1.copy(), filter))
+chart.savefig(f'img/{str(card1.iloc[0]["name"])}.svg', dpi=300, transparent=True)
+
+card1 = cards[cards["name"] == "シーラモン"]
+chart = gen_chart(gen_chart_data(cards.copy(), card1.copy(), filter[:3]))
+chart.savefig(f'img/{str(card1.iloc[0]["name"])}.svg', dpi=300, transparent=True)
+
+card1 = cards[cards["name"] == "ヴェノムヴァンデモン"]
+chart = gen_chart(gen_chart_data(cards.copy(), card1.copy(), [filter[3]]))
+chart.savefig(f'img/{str(card1.iloc[0]["name"])}.svg', dpi=300, transparent=True)

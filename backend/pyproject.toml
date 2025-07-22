@@ -27,6 +27,7 @@ dependencies = [
     "numpy",
     "pandas",
     "matplotlib",
+    "japanize_matplotlib",
 ]
 
 [tool.uv]
@@ -68,7 +69,9 @@ ignore = [
     "B008",  # do not perform function calls in argument defaults
     "W191",  # indentation contains tabs
     "B904",  # Allow raising exceptions without from e, for HTTPException
-    "C416",  # Allow using `from __future__ import annotations` in files with type annotations
+    "C416",  # Unnecessary `list` comprehension (rewrite using `list()`)
+    "C408",  # Unnecessary `dict` call (rewrite as a literal)
+    "B905",  # `zip()` without an explicit `strict=` parameter
 ]
 
 [tool.ruff.lint.pyupgrade]

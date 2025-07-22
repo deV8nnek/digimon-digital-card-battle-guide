@@ -66,6 +66,8 @@ Offtopic reading about the AI will replace us, AI is already better and will get
     - [card collection images](https://gamefaqs.gamespot.com/ps/526754-digimon-digital-card-battle/faqs/78563/100-card-collection-extra-notes)
     - [card fusion training data](https://gamefaqs.gamespot.com/ps/526754-digimon-digital-card-battle/faqs/24611)
 
+Forgot to write why I choose FastAPI, React, etc.
+
 ## Analysis
 
 - Requirements Gathering
@@ -342,7 +344,7 @@ what card combo is popular
 who to pick as a partner digimon
 ```
 
-`![changethis](/img/changethis.png)`
+![data-analytics](/img/data-analytics.png)
 
 ### AI/Machine Learning
 

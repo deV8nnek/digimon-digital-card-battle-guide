@@ -18,6 +18,20 @@ class CardBase(SQLModel):
                 case "オプション":
                     return cls.OPTION
 
+        def color(self):
+            match self.value:
+                case self.FIRE.value:
+                    return "orangered"
+                case self.ICE.value:
+                    return "cornflowerblue"
+                case self.NATURE.value:
+                    return "lightgreen"
+                case self.DARKNESS.value:
+                    return "black"
+                case self.RARE.value:
+                    return "gold"
+            return "brown"
+
     class CardLv(Enum):
         R = "Ⅲ"
         C = "Ⅳ"
