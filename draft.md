@@ -344,8 +344,10 @@ what card combo is popular
 who to pick as a partner digimon
 ```
 
-![data-analytics](/img/data-analytics.png)
 ![data-analytics-stat-chart](/img/data-analytics-stat-chart.png)
+![data-analytics-describe](/img/data-analytics-describe.png)
+![data-analytics](/img/data-analytics.png)
+
 
 ### AI/Machine Learning
 

@@ -21,8 +21,6 @@ $ uv sync
 
 Then you can activate the virtual environment with:
 
-* Shortcut from top level project no need cd, in bash terminal, press arrow key right
-
 ```console
 $ source .venv/bin/activate
 ```

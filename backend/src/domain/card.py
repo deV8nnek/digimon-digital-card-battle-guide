@@ -62,6 +62,17 @@ class CardBase(SQLModel):
     effect: str
     img: str = Field(default='<img src="{0}/{1}.png" alt="{2}"/>')
 
+    @staticmethod
+    def button(s: str) -> str:
+        match s.lower():
+            case "circle":
+                return "〇"
+            case "triangle":
+                return "△"
+            case "x":
+                return "X"
+        return ""
+
 
 class Card(CardBase, table=True):
     pass

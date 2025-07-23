@@ -73,7 +73,10 @@ def gen_chart(chart_data):
     chd, agg = chart_data
     yt = 750 if (agg == "min") else 1500 if (agg == "mean") else 3000
     yt = np.arange(0, yt + 1, yt / 5).astype(int)
-    labels = chd.columns.tolist()
+    labels = [
+        column if column not in ["circle", "triangle", "x"] else Card.button(column)
+        for column in chd.columns.tolist()
+    ]
     theta = [n / float(len(labels)) * 2 * np.pi for n in range(len(labels))]
     theta.append(theta[0])  # close line
 
@@ -109,6 +112,7 @@ filter = [member.value for member in Card.CardType][:-1]
 card1 = cards[cards["name"] == "アカトリモン"]
 chart = gen_chart(gen_chart_data(cards.copy(), card1.copy(), filter))
 chart.savefig(f'img/{str(card1.iloc[0]["name"])}.svg', dpi=300, transparent=True)
+chart.savefig(f'img/{str(card1.iloc[0]["name"])}.png', dpi=300, transparent=False)
 
 card1 = cards[cards["name"] == "シーラモン"]
 chart = gen_chart(gen_chart_data(cards.copy(), card1.copy(), filter[:3]))
