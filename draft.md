@@ -323,7 +323,18 @@ nothing fancy, even a table is enough
 imagine players seeing a bell curve for standard deviation or variance (but just for exploration in the future)
 
 not just card information,
-data question (for analyzing, for game nerds could be, patterns, data to data)
+data question
+how stats affect win rate
+how effect affect win rate
+how combos affect win rate
+why certain digimon are likely used than others
+why certain option are likely used than others
+why this card
+why thi digimon
+why this option 
+how are digimon stats distributed by type, class
+how are digimon effects distributed by type class
+~~data question (for analyzing, for game nerds could be, patterns, data to data)
 how are digimon stats distributed
 how are digimon effects distributed
 how are digimon used
@@ -331,7 +342,7 @@ how are option used
 how are card combos used 
 how digimon win or lose
 why this digimon
-idk why i change what to how and why, something unkown/vague or understanding the data makes some sense if not a player
+idk why i change what to how and why, something unkown/vague or understanding the data makes some sense if not a player~~
 
 game-related data question (for a guide, what provides value or useful info)
 how strong is a digimon
