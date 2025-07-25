@@ -1,0 +1,302 @@
+number,name,name_en,type,lv
+0,インペリアルドラモン,Imperialdramon,FIRE,U
+99,プロットモン,Salamon,NATURE,R
+98,パルモン,Palmon,NATURE,R
+97,テントモン,Tentomon,NATURE,R
+96,モリシェルモン,MoriShellmon,NATURE,C
+95,ジャングルモジャモン,J-Mojyamon,NATURE,C
+94,ヤンマモン,Yanmamon,NATURE,C
+93,コカトリモン,Kokatorimon,NATURE,C
+92,ベジーモン,Vegiemon,NATURE,C
+91,ドリモゲモン,Drimogemon,NATURE,C
+90,クワガーモン,Kuwagamon,NATURE,C
+89,イガモン,Ninjamon,NATURE,C
+88,ユニモン,Unimon,NATURE,C
+87,エアドラモン,Airdramon,NATURE,C
+86,カブテリモン,Kabuterimon,NATURE,C
+85,レオモン,Leomon,NATURE,C
+84,トゲモン,Togemon,NATURE,C
+83,テイルモンＲ,R-Gatomon,NATURE,C
+82,エンジェモン,Angemon,NATURE,C
+81,ブイドラモン,Veedramon,NATURE,U
+80,ピッコロモン,Piximon,NATURE,U
+79,アトラーカブテリモン,MegaKabuterimon,NATURE,U
+78,リリモン,Lillymon,NATURE,U
+77,エンジェウーモン,Angewomon,NATURE,U
+76,シルフィーモン,Sylphymon,NATURE,U
+75,ホーリーエンジェモン,MagnaAngemon,NATURE,U
+74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U
+73,ロゼモン,Rosemon,NATURE,U
+72,エアロＶドラモン,AeroVeedramon,NATURE,U
+71,ホーリードラモン,Magnadramon,NATURE,U
+70,セラフィモン,Seraphimon,NATURE,U
+69,ヴァルキリモン,Valkyrimon,NATURE,U
+68,スノーゴブリモン,SnowGoburimon,ICE,R
+67,ユキアグモン,SnowAgumon,ICE,R
+66,オタマモン,Otamamon,ICE,R
+65,ギザモン,Gizamon,ICE,R
+64,ペンモン,Penguinmon,ICE,R
+63,ベタモン,Betamon,ICE,R
+62,ガブモン,Gabumon,ICE,R
+61,ゴマモン,Gomamon,ICE,R
+60,アイスモン,Icemon,ICE,C
+59,ヒョーガモン,Hyogamon,ICE,C
+58,アイスデビモン,IceDevimon,ICE,C
+57,ソーサリモン,Sorcerimon,ICE,C
+56,シェルモン,Shellmon,ICE,C
+55,モジャモン,Mojyamon,ICE,C
+54,シーラモン,Coelamon,ICE,C
+53,ゲコモン,Gekomon,ICE,C
+52,ユキダルモン,Frigimon,ICE,C
+51,ゲソモン,Gesomon,ICE,C
+50,シードラモン,Seadramon,ICE,C
+49,ホエーモン,Whamon,ICE,C
+48,ルカモン,Dolphmon,ICE,C
+47,イッカクモン,Ikkakumon,ICE,C
+46,ガルルモン,Garurumon,ICE,C
+45,ブルーメラモン,BlueMeramon,ICE,U
+44,ブラキモン,Brachiomon,ICE,U
+43,ワルシードラモン,WaruSeadramon,ICE,U
+42,メガシードラモン,MegaSeadramon,ICE,U
+41,パンジャモン,Panjyamon,ICE,U
+40,ズドモン,Zudomon,ICE,U
+39,ワーガルルモン,WereGarurumon,ICE,U
+38,マリンエンジェモン,MarineAngemon,ICE,U
+37,メタルガルルモン,MetalGarurumon,ICE,U
+36,メタルシードラモン,MetalSeadramon,ICE,U
+35,オメガモンⅡ,Omnimon II,ICE,U
+34,ヴァイクモン,Vikemon,ICE,U
+33,ゴブリモン,Goburimon,FIRE,R
+32,オタマモンＤ,D-Otamamon,FIRE,R
+31,キャンドモン,Candlemon,FIRE,R
+30,ムーチョモン,Muchomon,FIRE,R
+29,ピヨモン,Biyomon,FIRE,R
+28,ソーラーモン,Solarmon,FIRE,R
+27,アグモン,Agumon,FIRE,R
+26,フレアリザモン,Flarerizamon,FIRE,C
+25,ボンバーナニモン,BomberNanimon,FIRE,C
+24,アカトリモン,Akatorimon,FIRE,C
+23,ピッドモン,Piddomon,FIRE,C
+22,レッドベジーモン,RedVegiemon,FIRE,C
+21,タンクモン,Tankmon,FIRE,C
+20,バードラモン,Birdramon,FIRE,C
+19,ケンタルモン,Centarumon,FIRE,C
+18,メラモン,Meramon,FIRE,C
+17,モノクロモン,Monochromon,FIRE,C
+16,ティラノモン,Tyrannomon,FIRE,C
+15,ハヌモン,Apemon,FIRE,C
+14,グレイモン,Greymon,FIRE,C
+13,アクィラモン,Aquilamon,FIRE,C
+12,エクスブイモン,ExVeemon,FIRE,C
+11,インセキモン,Meteormon,FIRE,U
+10,ヴァーミリモン,Vermilimon,FIRE,U
+9,メタルグレイモン,MetalGreymon,FIRE,U
+8,ティラノ師匠,MasterTyranomon,FIRE,U
+7,ガルダモン,Garudamon,FIRE,U
+6,真メタルグレイモン,RealMetalGreymon,FIRE,U
+5,ギガドラモン,Gigadramon,FIRE,U
+4,パイルドラモン,Paildramon,FIRE,U
+3,ホウオウモン,Phoenixmon,FIRE,U
+2,ウォーグレイモン,WarGreymon,FIRE,U
+1,オメガモンⅠ,Omnimon I,FIRE,U
+100,エレキモン,Elecmon,NATURE,R
+199,闇貴族のマント,Dark Lord's Cape,OPTION,
+198,超攻撃チップ,Mega Attack Chip,OPTION,
+197,超回復フロッピー,Mega Rec. Floppy,OPTION,
+196,輝くたてがみ,Shining Mane,OPTION,
+195,メタルバナナ,Metallic Banana,OPTION,
+194,ギガハンド,Giga Hand,OPTION,
+193,ホイッスル,Whistle,OPTION,
+192,デビルチップ,Devil's Chip,OPTION,
+191,金のバナナ,Golden Banana,OPTION,
+177,クアトルモン,Quetzalmon,ICE,A
+186,シェイドラモン,Shadramon,DARKNESS,A
+187,ワームモン,Wormmon,DARKNESS,R
+178,ティロモン,Tylomon,ICE,A
+181,ネフェルティモン,Nefertimon,NATURE,A
+184,テイルモン,Gatomon,NATURE,R
+174,バロモン,Baronmon,FIRE,A
+180,ペガスモン,Pegasusmon,NATURE,A
+183,パタモン,Patamon,NATURE,R
+176,サブマリモン,Submarimon,ICE,A
+189,ディグモン,Digmon,RARE,A
+190,アルマジモン,Armadillomon,RARE,R
+188,シュリモン,Shurimon,RARE,A
+179,ホルスモン,Halsemon,NATURE,A
+182,ホークモン,Hawkmon,NATURE,R
+173,マグナモン,Magnamon,FIRE,A
+185,ライドラモン,Raidramon,DARKNESS,A
+172,フレイドラモン,Flamedramon,FIRE,A
+175,ブイモン,Veemon,FIRE,R
+171,モドキベタモン,ModokiBetamon,RARE,R
+170,サイケモン,Psychemon,RARE,R
+169,エレキモンVi,Vi-Elecmon,RARE,R
+168,クリアアグモン,ClearAgumon,RARE,R
+167,トイアグモン,ToyAgumon,RARE,R
+166,ハグルモン,Hagurumon,RARE,R
+165,トイアグモンＬ,L-ToyAgumon,RARE,R
+164,サンドヤンマモン,SandYanmamon,RARE,C
+163,ツチダルモン,MudFrigimon,RARE,C
+162,シマユニモン,ShimaUnimon,RARE,C
+161,ニセドリモゲモン,NiseDrimogemon,RARE,C
+160,ゲレモン,Geremon,RARE,C
+159,ゴーレモン,Rockmon,RARE,C
+158,スカモン,Sukamon,RARE,C
+157,ヌメモン,Numemon,RARE,C
+156,ナニモン,Nanimon,RARE,C
+155,カラツキヌメモン,ShellNumemon,RARE,C
+154,プラチナスカモン,PlatinumSukamon,RARE,C
+153,サンダーボールモン,Thundermon,RARE,C
+152,スターモン,Starmon,RARE,C
+151,アンキロモン,Ankylomon,RARE,C
+150,エテモン,Etemon,RARE,U
+149,マメモン,Mamemon,RARE,U
+148,メタルマメモン,MetalMamemon,RARE,U
+147,もんざえモン,Monzaemon,RARE,U
+146,ギロモン,Giromon,RARE,U
+145,ベーダモン,Vademon,RARE,U
+144,デジタマモン,Digitamamon,RARE,U
+143,ジジモン,Jijimon,RARE,U
+142,シャッコウモン,Shakkoumon,RARE,U
+141,メタルエテモン,MetalEtemon,RARE,U
+140,スーパースターモン,SuperStarmon,RARE,U
+139,ピノッキモン,Puppetmon,RARE,U
+138,シャーマモン,Sharmamon,DARKNESS,R
+137,アルラウモン,Aruraumon,DARKNESS,R
+136,ドクネモン,Dokunemmon,DARKNESS,R
+135,ツカイモン,Tsukaimon,DARKNESS,R
+134,コクワモン,Kokuwamon,DARKNESS,R
+133,ブラックテイルモン,BKGatomon,DARKNESS,R
+132,ピコデビモン,DemiDevimon,DARKNESS,R
+131,ザッソーモン,Zassomon,DARKNESS,C
+130,ダークリザモン,Darkrizamon,DARKNESS,C
+129,セーバードラモン,Saberdramon,DARKNESS,C
+128,フーガモン,Fugamon,DARKNESS,C
+127,ソウルモン,Soulmon,DARKNESS,C
+126,グルルモン,Gururumon,DARKNESS,C
+125,テッカモン,Tekkamon,DARKNESS,C
+124,ガードロモン,Guardromon,DARKNESS,C
+123,バケモン,Bakemon,DARKNESS,C
+122,オーガモン,Ogremon,DARKNESS,C
+121,タスクモン,Tuskmon,DARKNESS,C
+120,デビモン,Devimon,DARKNESS,C
+119,デビドラモン,Devidramon,DARKNESS,C
+118,ウィザーモン,Wizardmon,DARKNESS,C
+117,スティングモン,Stingmon,DARKNESS,C
+116,アンドロモン,Andromon,DARKNESS,U
+115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U
+114,ファントモン,Phantomon,DARKNESS,U
+113,スカルグレイモン,SkullGreymon,DARKNESS,U
+112,メガドラモン,Megadramon,DARKNESS,U
+111,ヴァンデモン,Myotismon,DARKNESS,U
+110,レディデビモン,LadyDevimon,DARKNESS,U
+109,インフェルモン,Infermon,DARKNESS,U
+108,ムゲンドラモン,Machinedramon,DARKNESS,U
+107,ピエモン,Piedmon,DARKNESS,U
+106,ヴェノムヴァンデモン,VenomMyotismon,DARKNESS,U
+105,ディアボロモン,Diaboromon,DARKNESS,U
+104,グランクワガーモン,GranKuwagamon,DARKNESS,U
+103,アポカリモン,Apokarimon,DARKNESS,U
+102,クネモン,Kunemon,NATURE,R
+101,ゴツモン,Gotsumon,NATURE,R
+200,にせセブンズ,Fake Sevens,OPTION,
+299,スピード進化,Speed Digivolve,OPTION,
+298,アーマー解除,De-Armor Digivolve,OPTION,
+297,ワープ進化,Warp Digivolve,OPTION,
+296,突然変異,Mutant Digivolve,OPTION,
+295,特殊進化,Special Digivolve,OPTION,
+294,アーマー突破,ArmorCrush Digivolve,OPTION,
+293,ダウンローダー,Download Digivolve,OPTION,
+292,ロゼモンの誘惑,Rosemon's Lure,OPTION,
+291,リバースセブンズ,Reverse Sevens,OPTION,
+290,スピードセブンズ,Speed Sevens,OPTION,
+289,ミスティセブンズ,Mystic Sevens,OPTION,
+288,グランドセブンズ,Grand Sevens,OPTION,
+287,ダークセブンズ,Dark Sevens,OPTION,
+286,ホーリーセブンズ,Holy Sevens,OPTION,
+285,ワイルドセブンズ,Wild Sevens,OPTION,
+284,デジターコイズ,Digi-Turquoise,OPTION,
+283,デジトパーズ,Digi-Topaz,OPTION,
+282,デジオパール,Digi-Opal,OPTION,
+281,デジサファイア,Digi-Sapphire,OPTION,
+280,デジサードニクス,Digi-Sardynx,OPTION,
+279,デジルビー,Digi-Ruby,OPTION,
+278,デジパール,Digi-Pearl,OPTION,
+277,デジエメラルド,Digi-Emerald,OPTION,
+276,デジダイヤモンド,Digi-Diamond,OPTION,
+275,デジアクアマリン,Digi-Aquamarine,OPTION,
+274,デジアメジスト,Digi-Amethyst,OPTION,
+273,デジガーネット,Digi-Garnet,OPTION,
+272,"防御プラグイン<img src=""~/img/icon/x.png"" alt=""x""/>",Defense Disk X,OPTION,
+271,"防御プラグイン<img src=""~/img/icon/triangle.png"" alt=""triangle""/>",Defense Disk Δ,OPTION,
+270,"防御プラグイン<img src=""~/img/icon/circle.png"" alt=""circle""/>",Defense Disk O,OPTION,
+269,"攻撃プラグイン<img src=""~/img/icon/x.png"" alt=""x""/>",Attack Disk X,OPTION,
+268,"攻撃プラグイン<img src=""~/img/icon/triangle.png"" alt=""triangle""/>",Attack Disk Δ,OPTION,
+267,"攻撃プラグイン<img src=""~/img/icon/circle.png"" alt=""circle""/>",Attack Disk O,OPTION,
+266,回復フロッピー,Recovery Floppy,OPTION,
+265,高速プラグイン,High Speed Disk,OPTION,
+264,攻撃チップ,Attack Chip,OPTION,
+263,混乱電波,Disrupt Ray,OPTION,
+262,ぬいぐるみ,Stuffed Animal,OPTION,
+261,黒い歯車,Black Gear,OPTION,
+260,大地のお守り,Earth Charm,OPTION,
+259,氷水晶,Ice Crystal,OPTION,
+258,炎のかけら,Fire Spot,OPTION,
+257,パートナーサーチャー,Partner Finder,OPTION,
+256,データコピー,Data Copy,OPTION,
+255,デジモン墓場,Digimon Grave,OPTION,
+254,ハッキング,Hacking,OPTION,
+253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
+252,スカの呪い,Suka's Curse,OPTION,
+251,クロスキラー,Cross Hitter,OPTION,
+250,トライキラー,Triangle Hitter,OPTION,
+249,サークルキラー,Circle Hitter,OPTION,
+248,トレーマニュアル,Training Manual,OPTION,
+247,デジモンアナライザー,Digimon Analyzer,OPTION,
+246,中回復フロッピー,Med. Rec. Floppy,OPTION,
+245,小さな槍,Short Lance,OPTION,
+244,極上肉,Premium Steak,OPTION,
+243,運だめしキノコ,Lucky Mushroom,OPTION,
+242,デラックスキノコ,Deluxe Mushroom,OPTION,
+241,液晶化,Liquid Crystal,OPTION,
+240,サイバーパーツ,Cyber Parts,OPTION,
+239,奇跡のルビー,Miracle Ruby,OPTION,
+238,謎のタマゴ,Mystery Egg,OPTION,
+237,愛のばんそうこう,Patch of Love,OPTION,
+236,サンゴのお守り,Coral Charm,OPTION,
+235,銀玉,Silver Ball,OPTION,
+234,アーマークラッシュ,Armor Clash,OPTION,
+233,レベルブースター,Level Booster,OPTION,
+232,レベルマネージャー,Level Manager,OPTION,
+231,レベルバランサー,Level Balancer,OPTION,
+230,メガハンド,Mega Hand,OPTION,
+229,メタルアーマー,Metal Armor,OPTION,
+228,メタルパーツ,Metal Parts,OPTION,
+227,チェンソー,Chain Saw,OPTION,
+226,ビームガン,Beam Gun,OPTION,
+225,ゴミの山,Heap of Junk,OPTION,
+224,"超防御プラグイン<img src=""~/img/icon/x.png"" alt=""x""/>",Mega Def. Disk X,OPTION,
+223,"超防御プラグイン<img src=""~/img/icon/triangle.png"" alt=""triangle""/>",Mega Def. Disk Δ,OPTION,
+222,"超防御プラグイン<img src=""~/img/icon/circle.png"" alt=""circle""/>",Mega Def. Disk O,OPTION,
+221,大回復フロッピー,Sup. Rec. Floppy,OPTION,
+220,暗黒の祭だん,Rare Altar,OPTION,
+219,暗黒の祭だん,Darkness Altar,OPTION,
+218,自然の祭だん,Nature Altar,OPTION,
+217,氷水の祭だん,Ice Altar,OPTION,
+216,火炎の祭だん,Fire Altar,OPTION,
+215,コロシアム,Coliseum,OPTION,
+214,不幸のプログラム,Evil Program,OPTION,
+213,アンインストール,UnInstall,OPTION,
+212,裏次元,Another Dimension,OPTION,
+211,ピンクデジヴァイス,Pink Digivice,OPTION,
+210,イエローデジヴァイス,Yellow Digivice,OPTION,
+209,ブラックデジヴァイス,Black Digivice,OPTION,
+208,グリーンデジヴァイス,Green Digivice,OPTION,
+207,ブルーデジヴァイス,Blue Digivice,OPTION,
+206,レッドデジヴァイス,Red Digivice,OPTION,
+205,死を呼ぶ骨,Dark Bone,OPTION,
+204,ビートルダイヤ,Beetle Diamond,OPTION,
+203,トノサマのおふれ,Shogun's Order,OPTION,
+202,ミサイルポッド,Missile Pod,OPTION,
+201,ネットワーム,Net Worm,OPTION,
+300,退化,Digi-devolve,OPTION,

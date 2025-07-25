@@ -359,8 +359,48 @@ who to pick as a partner digimon
 ![data-analytics-describe](/img/data-analytics-describe.png)
 ![data-analytics](/img/data-analytics.png)
 
-
 ### AI/Machine Learning
+
+```text
+predict card fusion
+what: card A + card B = card C
+where: https://gamefaqs.gamespot.com/ps/526754-digimon-digital-card-battle/faqs/24611
+how: train and test
+
+train
+feed the model
+test 
+feed some training for the test
+correct the model
+repeat
+any lower than that is just code how
+note, accuracy at least 70%
+it is quite simplistic or classical
+trial and error, learn as it goes
+navigating through a bunch of concepts will take a long time
+defining or completely understanding every ML concept, or going to deep learning is not the goal
+
+before forgetting again
+pytorch or tensorflow
+stackoverflow survey 2024 show pytorch and tensorflow equally desired but pytorch was more desired
+and basic sample code comparison so pytorch for now
+
+also
+Q: what programming language and libraries are you developed from
+ChatGPT: 
+...
+PyTorch – The primary deep learning framework used for training and running large models like GPT.
+TensorFlow – Sometimes used in other parts of the pipeline or research, though PyTorch is dominant for GPT models.
+...
+Gemini: 
+... 
+TensorFlow: This is Google's flagship open-source machine learning framework, and it's undoubtedly a core component. Gemini is built upon and likely utilizes advanced features of TensorFlow, including its capabilities for distributed training and deployment on custom hardware.
+...
+
+card A + card B
+card: number, name, type, lv
+
+```
 
 ## Maintenance
 

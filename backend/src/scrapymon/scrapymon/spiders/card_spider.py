@@ -28,12 +28,12 @@ class CardSpider(scrapy.Spider):
         custom_settings.update(
             {
                 "FEEDS": {
-                    "scrapymon/data/card.csv": {
+                    "scrapymon/data/processed/card.csv": {
                         "format": "csv",
                         "overwrite": False,
                         "item_export_kwargs": {
                             "export_empty_fields": True,
-                            "include_headers_line": False,
+                            "include_headers_line": True,
                         },
                     }
                 }

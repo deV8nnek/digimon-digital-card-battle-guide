@@ -1,0 +1,302 @@
+name_en,number,effect,special_effect
+Imperialdramon,0,Add number of DP Cards in DP Slot x100 to own Attack Power.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Omnimon I,1,Change own Specialty to Fire. Boost own Attack Power +100.,"<img src=""~/img/icon/x.png"" alt=""x""/> Counter"
+WarGreymon,2,Add number of Cards in Hand x100 to own Attack Power.,Ice Foe X3
+Phoenixmon,3,Digimon KO'd in battle revives with 500 HP. Battle is still lost.,Eat-Up HP
+Paildramon,4,"If own Specialty is Fire, boost own Attack Power +300.","<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Gigadramon,5,None,"None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+RealMetalGreymon,6,Boost own Attack Power +300.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Garudamon,7,"If own Attack is , attack first.","1st Attack <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+MasterTyranomon,8,"If own Specialty is Fire, own Attack Power is doubled.","Ice Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+MetalGreymon,9,"If own Level is U, boost own Attack Power +500.","<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Vermilimon,10,None,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> Counter"
+Meteormon,11,Lower opponent's Attack Power to 0.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+ExVeemon,12,"If own Level is A, boost own Attack Power +300.","<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Aquilamon,13,"If 's attack is , attack first.","1st Attack <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Greymon,14,"If own Level is C, boost own Attack Power +300.","<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Apemon,15,Change own Specialty to Fire. Boost own Attack Power +200.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Tyrannomon,16,None,"Nature Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Monochromon,17,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Meramon,18,"If opponent's Specialty is Ice, own Attack Power is tripled.",Ice Foe X3
+Centarumon,19,Use and Boost own Attack Power +400.,Ice Foe X3
+Birdramon,20,Attack first.,1st Attack
+Tankmon,21,Own HP become 10. Boost own Attack Power +500.,1st Attack
+RedVegiemon,22,"Discard all own DP Cards in DP Slot, boost own Attack Power +300.","None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Piddomon,23,Own Attack Power becomes same as own HP.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Akatorimon,24,Boost own Attack Power +200.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+BomberNanimon,25,"If both Levels are C, boost own Attack Power +400.","Crash <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Flarerizamon,26,Change own Specialty to Fire.,"None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Agumon,27,Boost own Attack Power +300.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Solarmon,28,None,Crash
+Biyomon,29,Boost own Attack Power +200.,1st Attack
+Muchomon,30,Boost own Attack Power +300.,"<img src=""~/img/icon/x.png"" alt=""x""/> Counter"
+Candlemon,31,Boost own Attack Power +200.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+D-Otamamon,32,"If opponent's Specialty is Ice, own Attack Power is doubled.",Ice Foe X3
+Goburimon,33,None,None
+Vikemon,34,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Omnimon II,35,Change own Specialty to Ice. Recover own HP by +100.,"<img src=""~/img/icon/x.png"" alt=""x""/> Counter"
+MetalSeadramon,36,"If own Specialty is Ice, opponent's Support Effect is voided.",Fire Foe X3
+MetalGarurumon,37,"If own Cards in Hand 3 or more, opponent's Attack Power becomes 0.",Fire Foe X3
+MarineAngemon,38,Recover own HP by +200.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+WereGarurumon,39,Add number of DP Cards in DP Slot x100 to own HP.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> Counter"
+Zudomon,40,"If own Specialty is Ice, opponent's Attack Power is halved.","<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Panjyamon,41,Counterattack. Attack second.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> Counter"
+MegaSeadramon,42,Counterattack. Attack second.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+WaruSeadramon,43,Opponent's Support Effect is voided.,"Jamming <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Brachiomon,44,Lower opponent's Attack Power to 0.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+BlueMeramon,45,Lower opponent's Attack Power to 0.,"<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Garurumon,46,Opponent uses .,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Ikkakumon,47,"If opponent's Specialty is Fire, own Attack Power is tripled.","Fire Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Dolphmon,48,"If 's Attack is not , recover own HP by +300.","<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Whamon,49,Own HP become 700.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> to 0"
+Seadramon,50,Opponent's Attack Power is halved.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Gesomon,51,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Frigimon,52,Recover own HP by +200.,"Fire Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Gekomon,53,Change opponent's Specialty to Ice.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Coelamon,54,Lower opponent's Attack Power to 0.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Mojyamon,55,Recover own HP by +200.,"None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Shellmon,56,"If opponent used , change it to .","<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Sorcerimon,57,Change own Specialty to Ice.,"Jamming <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+IceDevimon,58,"If opponent's Specialty is Fire, own Attack Power is tripled.","Fire Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Hyogamon,59,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Icemon,60,None,"<img src=""~/img/icon/x.png"" alt=""x""/> Counter"
+Gomamon,61,Lower opponent's Attack Power to 0.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> to 0"
+Gabumon,62,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Betamon,63,"If own HP are less than 200, reduce opponent's Attack Power to 0.","<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Penguinmon,64,"If opponent's Specialty is Fire, reduce opponent's Attack Power to 0.","<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Gizamon,65,"If opponent's Specialty is Fire, own Attack Power is doubled.","Fire Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Otamamon,66,Reduce opponent's Attack Power to 0.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+SnowAgumon,67,Reduce opponent's Attack Power to 0.,"<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+SnowGoburimon,68,None,None
+Valkyrimon,69,Opponent uses .,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Seraphimon,70,"If opponent's Specialty is Darkness, own Attack Power is +200 & HP +200.","Darkness Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Magnadramon,71,Counterattack. Attack second.,"<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+AeroVeedramon,72,"If 's Level is U, own Attack Power is doubled.","1st Attack <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Rosemon,73,"If opponent's HP are 1000+, own attack becomes ""Eat-up HP"".",Eat-up HP
+HerculesKabuterimon,74,None,1st Attack
+MagnaAngemon,75,"If opponent's Specialty is Darkness, boost own Attack Power +500.","Darkness Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Sylphymon,76,"If Specialty is not Nature, attack second.","<img src=""~/img/icon/triangle.png"" alt=""triangle""/> to 0"
+Angewomon,77,"If opponent's Specialty is Darkness, recover own HP by +500.",Darkness Foe X3
+Lillymon,78,Recover own HP by +200.,Eat-up HP
+MegaKabuterimon,79,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Piximon,80,Opponent's Support Effect is voided. Own Attack Power is halved.,"None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Veedramon,81,"If 's Level is U, own Attack Power is doubled.",1st Attack
+Angemon,82,"If opponent's Specialty is Darkness, own Attack Power is tripled.",Darkness Foe X3
+R-Gatomon,83,"If own HP are less than 500, boost own Attack Power +300.","<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Togemon,84,Boost own Attack Power +100.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> to 0"
+Leomon,85,"If own Level is lower, boost own Attack Power +500.","None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Kabuterimon,86,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Airdramon,87,Recover own HP by +100. Boost own Attack Power by +100.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Unimon,88,"If opponent's Specialty is Darkness, lower opponent's Attack Power to 0.","<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Ninjamon,89,Attack first.,"1st Attack <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Kuwagamon,90,None,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> Counter"
+Drimogemon,91,Boost own Attack Power +200.,None
+Vegiemon,92,Change opponent's Specialty to Nature.,Jamming
+Kokatorimon,93,Lower opponent's Attack Power to 0. Opponent's HP are doubled.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Yanmamon,94,None,"1st Attack <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+J-Mojyamon,95,"If own Level is R, boost own Attack Power +300.","None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+MoriShellmon,96,"If opponent's Specialty is Darkness, lower opponent's Attack Power -200.","<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Tentomon,97,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Palmon,98,None,"Eat-up HP <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Salamon,99,Change own Specialty to Nature. Draw 1 Card.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> Counter"
+Elecmon,100,"If opponent's Specialty is Ice, boost own Attack Power +300.","Ice Foe x3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Gotsumon,101,"If own HP are more than opponent's HP, own Attack Power is doubled.","<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Kunemon,102,Lower both Attack Powers -200.,"Jamming <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Apokarimon,103,Own HP are halved. Change own Specialty to Darkness.,Crash
+GranKuwagamon,104,Discard 7 Cards from own Online Deck. Opponent's HP are halved.,None
+Diaboromon,105,Own HP become 10. Change opponent's Specialty to Darkness.,Crash
+VenomMyotismon,106,None,Nature Foe X3
+Piedmon,107,Both players discard all Cards in Hands.,Jamming
+Machinedramon,108,None,Crash
+Infermon,109,Discard 5 Cards from own Online Deck. Boost own Attack Power +400.,Jamming
+LadyDevimon,110,Both players boost Attack Power +200.,Eat-up HP
+Myotismon,111,Digimon KO'd in battle revives with 500 HP. Battle is still lost.,Eat-up HP
+Megadramon,112,Both players' HP are halved.,1st Attack
+SkullGreymon,113,"If opponent's Specialty is Nature, opponent discards all Cards.",Nature Foe X3
+Phantomon,114,"Discard 7 Cards from own Online Deck, own Attack is ""Eat-up HP"".",Eat-up HP
+WaruMonzaemon,115,Own HP become 10. Own Attack Power is doubled.,Jamming
+Andromon,116,Own HP are halved. Boost own Attack Power +400.,None
+Stingmon,117,Discard 1 Card from own DP Slot. Boost own Attack Power +200.,Eat-up HP
+Wizardmon,118,"Discard all Cards in own Hand, then draw 2 Cards.",Jamming
+Devidramon,119,Own Attack becomes .,None
+Devimon,120,"If opponent's Specialty is Nature, own Attack Power is tripled.",Nature Foe X3
+Tuskmon,121,Own Attack becomes .,"None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Ogremon,122,Discard Cards in own DP Slot and multiply Attack Power by number of discards.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> Counter"
+Bakemon,123,Change own Specialty to Darkness.,Eat-up HP
+Guardromon,124,Own HP are halved. Boost own Attack Power +300.,Crash
+Tekkamon,125,Both players boost Attack Power +300.,"Crash <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Gururumon,126,Both players use .,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Soulmon,127,Discard 1 Card in DP Slot. Change opponent's Specialty to Darkness.,Eat-up HP
+Fugamon,128,Own Attack becomes .,None
+Saberdramon,129,Both players use .,"1st Attack <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Darkrizamon,130,Both players use .,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Zassomon,131,Opponent's Attack Power becomes 300.,None
+DemiDevimon,132,"If opponent's Specialty is Nature, own Attack Power is doubled.",Nature Foe X3
+BKGatomon,133,"If opponent's Level is A, opponent's HP are halved.","<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Kokuwamon,134,Reduce own Attack Power by -100. Recover own HP by +200.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> to 0"
+Tsukaimon,135,Boost own Attack Power +200. and Attack Power are 0.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Dokunemmon,136,"If opponent's Specialty is Rare, opponent's HP become 100.","Rare Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Aruraumon,137,"Own Attack becomes ""Eat-up HP"". Own Attack Power is halved.",Eat-up HP
+Sharmamon,138,Opponent's HP are halved. Opponent's Attack Power is doubled.,Jamming
+Puppetmon,139,Discard 1 of opponent's Cards in DP Slot. Draw 1 Card.,Jamming
+SuperStarmon,140,"If opponent's Specialty is Rare, lower opponent's Attack Power to 0.",Rare Foe X3
+MetalEtemon,141,Counterattack. Attack second.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Shakkoumon,142,Recover own HP by +100. Boost own Attack Power by +100.,"Jamming <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Jijimon,143,"If opponent's Specialty is Darkness, lower opponent's Attack Power to 0.","<img src=""~/img/icon/triangle.png"" alt=""triangle""/> to 0"
+Digitamamon,144,Swap own Specialty with opponent's Specialty.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Vademon,145,Opponent's Specialty becomes same as own Specialty.,Jamming
+Giromon,146,Opponent uses .,Crash
+Monzaemon,147,Recover own HP by +200. Boost own Attack Power by +100.,Darkness Foe X3
+MetalMamemon,148,None,1st Attack
+Mamemon,149,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Etemon,150,Lower opponent's Attack Power to 0.,"Jamming <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Ankylomon,151,"If opponent has 2 Cards in DP Slot, his Attack Power is 0.","<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Starmon,152,"If opponent's Specialty is Darkness, opponent's Support Effect is voided.","<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Thundermon,153,"If opponent used , discard all Cards in opponent's Hand.","<img src=""~/img/icon/x.png"" alt=""x""/> Counter"
+PlatinumSukamon,154,Move the top Card from Offline Pile to Online Deck.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+ShellNumemon,155,Discard opponent's top DP Card shown in DP Slot.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Nanimon,156,Return all Cards in own Hand to Online Deck and Shuffle.,"<img src=""~/img/icon/x.png"" alt=""x""/> Counter"
+Numemon,157,Discard opponent's 2 top DP Cards in his DP Slot.,"<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Sukamon,158,Discard 1 Card from opponent's Hand at random.,"<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Rockmon,159,Discard 3 Cards from opponent's Online Deck.,Rare Foe X3
+Geremon,160,Discard all Cards in DP Slot. Foe discards same number of DP Cards.,None
+NiseDrimogemon,161,Opponent uses .,"Rare Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+ShimaUnimon,162,None,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+MudFrigimon,163,None,None
+SandYanmamon,164,Opponent uses . Lower opponent's Attack Power -100.,1st Attack
+L-ToyAgumon,165,"If 1 or less Cards left in own Hand, opponent's Attack Power goes to 0.",None
+Hagurumon,166,"Discard all Cards in DP Slot. Recover HP, number of discards x100.",Crash
+ToyAgumon,167,Discard 1 Card at random from own Hand. HP of both Players are 200.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> Counter"
+ClearAgumon,168,Opponent's Support Effect is voided.,"Jamming <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Vi-Elecmon,169,None,"Rare Foe X3 <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Psychemon,170,Own HP become same as opponent's.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+ModokiBetamon,171,Opponent's HP become same as own. Own Attack Power becomes 0.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Flamedramon,172,Boost own Attack Power +100. Draw 1 Card.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Magnamon,173,Boost own Attack Power +100. Draw 1 Card.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Baronmon,174,"If foe's Specialty is Darkness, own Attack Power is Doubled. Draw 1 Card.","<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Veemon,175,Boost own Attack Power +100. Draw 1 Card.,"None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Submarimon,176,Discard 2 Cards from opponent's Online Deck. Draw 1 Card.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Quetzalmon,177,Lower Opponent's Attack Power -100. Draw 1 Card.,"<img src=""~/img/icon/x.png"" alt=""x""/> Counter"
+Tylomon,178,Change own Specialty to Nature. Draw 1 Card.,Fire Foe X3
+Halsemon,179,Draw 3 Cards.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Pegasusmon,180,"If foe's Specialty is Nature, own Attack Power is doubled. Draw 1 Card.","1st Attack <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Nefertimon,181,Change own Specialty to Nature. Draw 1 Card.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Hawkmon,182,Draw 3 Cards.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Patamon,183,"If foe's Specialty is Darkness, own Attack Power is doubled. Draw 1 Card.","<img src=""~/img/icon/circle.png"" alt=""circle""/> Counter"
+Gatomon,184,Change own Specialty to Nature. Draw 1 Card.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> Counter"
+Raidramon,185,Boost own Attack Power +100. Draw 1 Card.,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/> to 0"
+Shadramon,186,Lower Opponent's Attack Power -100. Draw 1 Card.,"Jamming <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Wormmon,187,Lower Opponent's Attack Power -100. Draw 1 Card.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Shurimon,188,Draw 3 Cards.,"<img src=""~/img/icon/x.png"" alt=""x""/> to 0"
+Digmon,189,Discard 2 Cards from opponent's Online Deck. Draw 1 Card.,"None <img class=""imgnofloat"" src=""/a/faqs/63/78563-429.png"" width=""32"" height=""32"">"
+Armadillomon,190,Discard 2 Cards from opponent's Online Deck. Draw 1 Card.,"<img src=""~/img/icon/circle.png"" alt=""circle""/> to 0"
+Golden Banana,191,,
+Devil's Chip,192,,
+Whistle,193,,
+Giga Hand,194,,
+Metallic Banana,195,,
+Shining Mane,196,,
+Mega Rec. Floppy,197,,
+Mega Attack Chip,198,,
+Dark Lord's Cape,199,,
+Fake Sevens,200,,
+Net Worm,201,,
+Missile Pod,202,,
+Shogun's Order,203,,
+Beetle Diamond,204,,
+Dark Bone,205,,
+Red Digivice,206,,
+Blue Digivice,207,,
+Green Digivice,208,,
+Black Digivice,209,,
+Yellow Digivice,210,,
+Pink Digivice,211,,
+Another Dimension,212,,
+UnInstall,213,,
+Evil Program,214,,
+Coliseum,215,,
+Fire Altar,216,,
+Ice Altar,217,,
+Nature Altar,218,,
+Darkness Altar,219,,
+Rare Altar,220,,
+Sup. Rec. Floppy,221,,
+Mega Def. Disk O,222,,
+Mega Def. Disk Δ,223,,
+Mega Def. Disk X,224,,
+Heap of Junk,225,,
+Beam Gun,226,,
+Chain Saw,227,,
+Metal Parts,228,,
+Metal Armor,229,,
+Mega Hand,230,,
+Level Balancer,231,,
+Level Manager,232,,
+Level Booster,233,,
+Armor Clash,234,,
+Silver Ball,235,,
+Coral Charm,236,,
+Patch of Love,237,,
+Mystery Egg,238,,
+Miracle Ruby,239,,
+Cyber Parts,240,,
+Liquid Crystal,241,,
+Deluxe Mushroom,242,,
+Lucky Mushroom,243,,
+Premium Steak,244,,
+Short Lance,245,,
+Med. Rec. Floppy,246,,
+Digimon Analyzer,247,,
+Training Manual,248,,
+Circle Hitter,249,,
+Triangle Hitter,250,,
+Cross Hitter,251,,
+Suka's Curse,252,,
+Cherrymon's Mist,253,,
+Hacking,254,,
+Digimon Grave,255,,
+Data Copy,256,,
+Partner Finder,257,,
+Fire Spot,258,,
+Ice Crystal,259,,
+Earth Charm,260,,
+Black Gear,261,,
+Stuffed Animal,262,,
+Disrupt Ray,263,,
+Attack Chip,264,,
+High Speed Disk,265,,
+Recovery Floppy,266,,
+Attack Disk O,267,,
+Attack Disk Δ,268,,
+Attack Disk X,269,,
+Defense Disk O,270,,
+Defense Disk Δ,271,,
+Defense Disk X,272,,
+Digi-Garnet,273,,
+Digi-Amethyst,274,,
+Digi-Aquamarine,275,,
+Digi-Diamond,276,,
+Digi-Emerald,277,,
+Digi-Pearl,278,,
+Digi-Ruby,279,,
+Digi-Sardynx,280,,
+Digi-Sapphire,281,,
+Digi-Opal,282,,
+Digi-Topaz,283,,
+Digi-Turquoise,284,,
+Wild Sevens,285,,
+Holy Sevens,286,,
+Dark Sevens,287,,
+Grand Sevens,288,,
+Mystic Sevens,289,,
+Speed Sevens,290,,
+Reverse Sevens,291,,
+Rosemon's Lure,292,,
+Download Digivolve,293,,
+ArmorCrush Digivolve,294,,
+Special Digivolve,295,,
+Mutant Digivolve,296,,
+Warp Digivolve,297,,
+De-Armor Digivolve,298,,
+Speed Digivolve,299,,
+Digi-devolve,300,,

@@ -1,3 +1,4 @@
+import re
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -18,6 +19,9 @@ def read_card():
 
 
 def clean_card(data):
+    r_icon = re.compile(
+        r"(〇)|(circle)|(△)|(triangle)|(✖)|(X|(fire)|(ice)|(nature)|(darkness)|(rare)"
+    )
     df = pd.DataFrame(data)
     df.columns = [el[0] for el in df.loc[0]]
     for column in df.columns:
@@ -35,7 +39,11 @@ def clean_card(data):
                 categories=[t.value for t in Card.CardType], ordered=True
             )
             df[column] = df[column].astype(ctype)
-        elif column not in ["name"]:  # since drop will infer type
+        elif column == "name":
+            # TODO clean name
+
+            pass
+        else:  # since drop will infer type
             df[column] = df[column].astype(int, errors="ignore")
     return df
 

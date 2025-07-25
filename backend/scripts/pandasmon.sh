@@ -1,4 +1,4 @@
 #! /usr/bin/env bash
 
 cd src/pandasmon
-scrapy python main.py
+python $1.py

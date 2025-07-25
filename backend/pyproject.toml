@@ -28,6 +28,7 @@ dependencies = [
     "pandas",
     "matplotlib",
     "japanize_matplotlib",
+    "torch",
 ]
 
 [tool.uv]

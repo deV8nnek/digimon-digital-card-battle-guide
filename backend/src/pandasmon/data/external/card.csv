@@ -1,3 +1,4 @@
+number,name,type,lv,hp,dp,pow,circle,triangle,x,special_effect,effect,img
 0,インペリアルドラモン,FIRE,U,1900,60,10,980,670,0,"<img src=""~/img/icon/circle.png"" alt=""circle""/>カウンター",自分の攻撃力に、自分の場のＰＯＷカード枚数×100を足す,"<img src=""~/img/card/card_0_インペリアルドラモン.png"" alt=""インペリアルドラモン""/>"
 99,プロットモン,NATURE,R,600,0,30,300,230,0,"<img src=""~/img/icon/triangle.png"" alt=""triangle""/>カウンター",自分の属性は,"<img src=""~/img/card/card_99_プロットモン.png"" alt=""プロットモン""/>"
 98,パルモン,NATURE,R,500,0,30,370,240,160,すいとる,なし,"<img src=""~/img/card/card_98_パルモン.png"" alt=""パルモン""/>"
