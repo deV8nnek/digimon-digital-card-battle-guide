@@ -14,3 +14,9 @@ Generate card name reference
 ```bash
 bash scripts/scrapymon.sh card_spider_en
 ```
+
+Generate card fusion
+
+```bash
+bash scripts/scrapymon.sh card_fusion_spider
+```

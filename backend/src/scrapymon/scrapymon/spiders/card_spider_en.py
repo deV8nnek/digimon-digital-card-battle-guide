@@ -1,11 +1,7 @@
 import random
 import re
-from pathlib import Path
 
 import scrapy
-import scrapy.exceptions
-
-from src.scrapymon.scrapymon.items import CardItem
 
 
 class CardSpider(scrapy.Spider):
@@ -15,7 +11,8 @@ class CardSpider(scrapy.Spider):
         "https://gamefaqs.gamespot.com/ps/526754-digimon-digital-card-battle/faqs/78563/100-card-collection-extra-notes",
     ]
     r_icon = re.compile(
-        r"(〇)|(<img.*\/a\/faqs\/63\/78563-427\.png.*>)|(△)|(<img.*\/a\/faqs\/63\/78563-425\.png.*>)|(✖)|(<img.*\/a\/faqs\/63\/78563-428\.png.*>)|(fire)|(ice)|(nature)|(darkness)|(rare)"
+        r"(〇)|(<img.*\/a\/faqs\/63\/78563-427\.png.*>)|(△)|(<img.*\/a\/faqs\/63\/78563-425\.png.*>)|(✖)|(<img.*\/a\/faqs\/63\/78563-428\.png.*>)|(fire)|(ice)|(nature)|(darkness)|(rare)",
+        re.IGNORECASE,
     )
     r_num = re.compile(r"\d+")
 
@@ -79,11 +76,16 @@ class CardSpider(scrapy.Spider):
         )
 
     def parse(self, response):
+        outlier = ["MasterTyranomon"]
+        fix = ["MasterTyrannomon"]
         for table in enumerate(response.xpath("//table")[-301:]):
             table = table[1]
             item = {}
             text = table.xpath(".//text()")[:3].getall()
             item.update({"number": int(text[2])})
+            for i in range(len(outlier)):
+                if text[0] == outlier[i]:
+                    text[0] = fix[i]
             item.update({"name_en": text[0]})
             text = " ".join(table.xpath(".//tr[7]/td/node()").getall())
             text = re.sub(r" +", " ", text).strip()

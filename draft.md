@@ -397,8 +397,8 @@ Gemini:
 TensorFlow: This is Google's flagship open-source machine learning framework, and it's undoubtedly a core component. Gemini is built upon and likely utilizes advanced features of TensorFlow, including its capabilities for distributed training and deployment on custom hardware.
 ...
 
-card A + card B
-card: number, name, type, lv
+card A + card B 
+card: number~~, name~~, type, lv //variables to make Card C
 
 ```
 
@@ -407,5 +407,5 @@ card: number, name, type, lv
 - search
 - composite, result value for fusion
 - english
-~~- dynamic web scraper~~
-- refine web scaper
+- ~~dynamic web scraper~~ refine ~~web scaper~~ scrapymon
+- refine pandasmon
