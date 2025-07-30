@@ -143,18 +143,27 @@ class CardSpider(scrapy.Spider):
                         if name_en == df[i]:
                             df = df[i - 2 : i + 3]
                             break
+                df = [df[0]] + df[3:]
+                df[1] = Card.CardType(df[1]).to_int()
+                if df[1] == Card.CardType("OPTION").to_int():
+                    df[2] = 0
+                else:
+                    df[2] = Card.CardLv(df[2]).to_int()
                 items.extend(df)
             if len(items) > 15:
                 print(debug, items)
             temp.append(items)
             debug += 1
+        column = card_ref.columns.tolist()
+        column = [column[0]] + column[3:]
+        column = [
+            f"{prefix}_{col}"
+            for prefix in ["card1", "card2", "result"]
+            for col in column
+        ]
         items = pd.DataFrame(
             temp,
-            columns=[
-                f"{prefix}_{col}"
-                for prefix in ["card1", "card2", "result"]
-                for col in card_ref.columns.tolist()
-            ],
+            columns=column,
         )
         temp = Path("scrapymon/data/processed/card_fusion.csv")
         temp.parent.mkdir(parents=True, exist_ok=True)

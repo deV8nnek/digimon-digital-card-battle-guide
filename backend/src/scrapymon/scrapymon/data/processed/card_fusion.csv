@@ -1,684 +1,684 @@
-card1_number,card1_name,card1_name_en,card1_type,card1_lv,card2_number,card2_name,card2_name_en,card2_type,card2_lv,result_number,result_name,result_name_en,result_type,result_lv
-143,ジジモン,Jijimon,RARE,U,113,スカルグレイモン,SkullGreymon,DARKNESS,U,6,真メタルグレイモン,RealMetalGreymon,FIRE,U
-110,レディデビモン,LadyDevimon,DARKNESS,U,145,ベーダモン,Vademon,RARE,U,6,真メタルグレイモン,RealMetalGreymon,FIRE,U
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,35,オメガモンⅡ,Omnimon II,ICE,U,2,ウォーグレイモン,WarGreymon,FIRE,U
-142,シャッコウモン,Shakkoumon,RARE,U,115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U,2,ウォーグレイモン,WarGreymon,FIRE,U
-37,メタルガルルモン,MetalGarurumon,ICE,U,107,ピエモン,Piedmon,DARKNESS,U,2,ウォーグレイモン,WarGreymon,FIRE,U
-44,ブラキモン,Brachiomon,ICE,U,110,レディデビモン,LadyDevimon,DARKNESS,U,7,ガルダモン,Garudamon,FIRE,U
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,149,マメモン,Mamemon,RARE,U,7,ガルダモン,Garudamon,FIRE,U
-104,グランクワガーモン,GranKuwagamon,DARKNESS,U,47,イッカクモン,Ikkakumon,ICE,C,7,ガルダモン,Garudamon,FIRE,U
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,49,ホエーモン,Whamon,ICE,C,9,メタルグレイモン,MetalGreymon,FIRE,U
-103,アポカリモン,Apokarimon,DARKNESS,U,156,ナニモン,Nanimon,RARE,C,9,メタルグレイモン,MetalGreymon,FIRE,U
-140,スーパースターモン,SuperStarmon,RARE,U,123,バケモン,Bakemon,DARKNESS,C,9,メタルグレイモン,MetalGreymon,FIRE,U
-35,オメガモンⅡ,Omnimon II,ICE,U,111,ヴァンデモン,Myotismon,DARKNESS,U,3,ホウオウモン,Phoenixmon,FIRE,U
-109,インフェルモン,Infermon,DARKNESS,U,141,メタルエテモン,MetalEtemon,RARE,U,3,ホウオウモン,Phoenixmon,FIRE,U
-145,ベーダモン,Vademon,RARE,U,106,ヴェノムヴァンデモン,VenomMyotismon,DARKNESS,U,5,ギガドラモン,Gigadramon,FIRE,U
-146,ギロモン,Giromon,RARE,U,109,インフェルモン,Infermon,DARKNESS,U,5,ギガドラモン,Gigadramon,FIRE,U
-110,レディデビモン,LadyDevimon,DARKNESS,U,37,メタルガルルモン,MetalGarurumon,ICE,U,4,パイルドラモン,Paildramon,FIRE,U
-104,グランクワガーモン,GranKuwagamon,DARKNESS,U,146,ギロモン,Giromon,RARE,U,4,パイルドラモン,Paildramon,FIRE,U
-34,ヴァイクモン,Vikemon,ICE,U,120,デビモン,Devimon,DARKNESS,C,8,ティラノ師匠,MasterTyrannomon,FIRE,U
-107,ピエモン,Piedmon,DARKNESS,U,49,ホエーモン,Whamon,ICE,C,8,ティラノ師匠,MasterTyrannomon,FIRE,U
-107,ピエモン,Piedmon,DARKNESS,U,157,ヌメモン,Numemon,RARE,C,10,ヴァーミリモン,Vermilimon,FIRE,U
-136,ドクネモン,Dokunemmon,DARKNESS,R,37,メタルガルルモン,MetalGarurumon,ICE,U,17,モノクロモン,Monochromon,FIRE,C
-105,ディアボロモン,Diaboromon,DARKNESS,U,171,モドキベタモン,ModokiBetamon,RARE,R,17,モノクロモン,Monochromon,FIRE,C
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,167,トイアグモン,ToyAgumon,RARE,R,16,ティラノモン,Tyrannomon,FIRE,C
-34,ヴァイクモン,Vikemon,ICE,U,135,ツカイモン,Tsukaimon,DARKNESS,R,16,ティラノモン,Tyrannomon,FIRE,C
-130,ダークリザモン,Darkrizamon,DARKNESS,C,34,ヴァイクモン,Vikemon,ICE,U,13,アクィラモン,Aquilamon,FIRE,C
-160,ゲレモン,Geremon,RARE,C,110,レディデビモン,LadyDevimon,DARKNESS,U,13,アクィラモン,Aquilamon,FIRE,C
-103,アポカリモン,Apokarimon,DARKNESS,U,60,アイスモン,Icemon,ICE,C,13,アクィラモン,Aquilamon,FIRE,C
-142,シャッコウモン,Shakkoumon,RARE,U,132,ピコデビモン,DemiDevimon,DARKNESS,R,15,ハヌモン,Apemon,FIRE,C
-109,インフェルモン,Infermon,DARKNESS,U,61,ゴマモン,Gomamon,ICE,R,15,ハヌモン,Apemon,FIRE,C
-161,ニセドリモゲモン,NiseDrimogemon,RARE,C,105,ディアボロモン,Diaboromon,DARKNESS,U,12,エクスブイモン,ExVeemon,FIRE,C
-117,スティングモン,Stingmon,DARKNESS,C,151,アンキロモン,Ankylomon,RARE,C,12,エクスブイモン,ExVeemon,FIRE,C
-40,ズドモン,Zudomon,ICE,U,125,テッカモン,Tekkamon,DARKNESS,C,12,エクスブイモン,ExVeemon,FIRE,C
-55,モジャモン,Mojyamon,ICE,C,132,ピコデビモン,DemiDevimon,DARKNESS,R,24,アカトリモン,Akatorimon,FIRE,C
-128,フーガモン,Fugamon,DARKNESS,C,163,ツチダルモン,MudFrigimon,RARE,C,24,アカトリモン,Akatorimon,FIRE,C
-137,アルラウモン,Aruraumon,DARKNESS,R,51,ゲソモン,Gesomon,ICE,C,25,ボンバーナニモン,BomberNanimon,FIRE,C
-128,フーガモン,Fugamon,DARKNESS,C,62,ガブモン,Gabumon,ICE,R,25,ボンバーナニモン,BomberNanimon,FIRE,C
-43,ワルシードラモン,WaruSeadramon,ICE,U,133,ブラックテイルモン,BKGatomon,DARKNESS,R,19,ケンタルモン,Centarumon,FIRE,C
-67,ユキアグモン,SnowAgumon,ICE,R,111,ヴァンデモン,Myotismon,DARKNESS,U,19,ケンタルモン,Centarumon,FIRE,C
-143,ジジモン,Jijimon,RARE,U,20,バードラモン,Birdramon,FIRE,C,47,イッカクモン,Ikkakumon,ICE,C
-63,ベタモン,Betamon,ICE,R,122,オーガモン,Ogremon,DARKNESS,C,23,ピッドモン,Piddomon,FIRE,C
-112,メガドラモン,Megadramon,DARKNESS,U,166,ハグルモン,Hagurumon,RARE,R,18,メラモン,Meramon,FIRE,C
-64,ペンモン,Penguinmon,ICE,R,119,デビドラモン,Devidramon,DARKNESS,C,21,タンクモン,Tankmon,FIRE,C
-125,テッカモン,Tekkamon,DARKNESS,C,159,ゴーレモン,Rockmon,RARE,C,20,バードラモン,Birdramon,FIRE,C
-130,ダークリザモン,Darkrizamon,DARKNESS,C,165,トイアグモンＬ,L-ToyAgumon,RARE,R,26,フレアリザモン,Flarerizamon,FIRE,C
-139,ピノッキモン,Puppetmon,RARE,U,132,ピコデビモン,DemiDevimon,DARKNESS,R,14,グレイモン,Greymon,FIRE,C
-171,モドキベタモン,ModokiBetamon,RARE,R,135,ツカイモン,Tsukaimon,DARKNESS,R,32,オタマモンＤ,D-Otamamon,FIRE,R
-66,オタマモン,Otamamon,ICE,R,132,ピコデビモン,DemiDevimon,DARKNESS,R,29,ピヨモン,Biyomon,FIRE,R
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,65,ギザモン,Gizamon,ICE,R,30,ムーチョモン,Muchomon,FIRE,R
-65,ギザモン,Gizamon,ICE,R,134,コクワモン,Kokuwamon,DARKNESS,R,30,ムーチョモン,Muchomon,FIRE,R
-134,コクワモン,Kokuwamon,DARKNESS,R,165,トイアグモンＬ,L-ToyAgumon,RARE,R,28,ソーラーモン,Solarmon,FIRE,R
-130,ダークリザモン,Darkrizamon,DARKNESS,C,65,ギザモン,Gizamon,ICE,R,28,ソーラーモン,Solarmon,FIRE,R
-62,ガブモン,Gabumon,ICE,R,132,ピコデビモン,DemiDevimon,DARKNESS,R,27,アグモン,Agumon,FIRE,R
-170,サイケモン,Psychemon,RARE,R,138,シャーマモン,Sharmamon,DARKNESS,R,33,ゴブリモン,Goburimon,FIRE,R
-138,シャーマモン,Sharmamon,DARKNESS,R,63,ベタモン,Betamon,ICE,R,31,キャンドモン,Candlemon,FIRE,R
-71,ホーリードラモン,Magnadramon,NATURE,U,106,ヴェノムヴァンデモン,VenomMyotismon,DARKNESS,U,37,メタルガルルモン,MetalGarurumon,ICE,U
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,69,ヴァルキリモン,Valkyrimon,NATURE,U,37,メタルガルルモン,MetalGarurumon,ICE,U
-70,セラフィモン,Seraphimon,NATURE,U,113,スカルグレイモン,SkullGreymon,DARKNESS,U,39,ワーガルルモン,WereGarurumon,ICE,U
-73,ロゼモン,Rosemon,NATURE,U,110,レディデビモン,LadyDevimon,DARKNESS,U,39,ワーガルルモン,WereGarurumon,ICE,U
-7,ガルダモン,Garudamon,FIRE,U,139,ピノッキモン,Puppetmon,RARE,U,39,ワーガルルモン,WereGarurumon,ICE,U
-145,ベーダモン,Vademon,RARE,U,1,オメガモンⅠ,Omnimon I,FIRE,U,39,ワーガルルモン,WereGarurumon,ICE,U
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,119,デビドラモン,Devidramon,DARKNESS,C,43,ワルシードラモン,WaruSeadramon,ICE,U
-4,パイルドラモン,Paildramon,FIRE,U,152,スターモン,Starmon,RARE,C,43,ワルシードラモン,WaruSeadramon,ICE,U
-15,ハヌモン,Apemon,FIRE,C,139,ピノッキモン,Puppetmon,RARE,U,43,ワルシードラモン,WaruSeadramon,ICE,U
-7,ガルダモン,Garudamon,FIRE,U,141,メタルエテモン,MetalEtemon,RARE,U,40,ズドモン,Zudomon,ICE,U
-71,ホーリードラモン,Magnadramon,NATURE,U,114,ファントモン,Phantomon,DARKNESS,U,40,ズドモン,Zudomon,ICE,U
-110,レディデビモン,LadyDevimon,DARKNESS,U,76,シルフィーモン,Sylphymon,NATURE,U,40,ズドモン,Zudomon,ICE,U
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,73,ロゼモン,Rosemon,NATURE,U,38,マリンエンジェモン,MarineAngemon,ICE,U
-73,ロゼモン,Rosemon,NATURE,U,109,インフェルモン,Infermon,DARKNESS,U,38,マリンエンジェモン,MarineAngemon,ICE,U
-140,スーパースターモン,SuperStarmon,RARE,U,14,グレイモン,Greymon,FIRE,C,42,メガシードラモン,MegaSeadramon,ICE,U
-10,ヴァーミリモン,Vermilimon,FIRE,U,143,ジジモン,Jijimon,RARE,U,42,メガシードラモン,MegaSeadramon,ICE,U
-73,ロゼモン,Rosemon,NATURE,U,114,ファントモン,Phantomon,DARKNESS,U,41,パンジャモン,Panjyamon,ICE,U
-6,真メタルグレイモン,RealMetalGreymon,FIRE,U,153,サンダーボールモン,Thundermon,RARE,C,45,ブルーメラモン,BlueMeramon,ICE,U
-96,モリシェルモン,MoriShellmon,NATURE,C,104,グランクワガーモン,GranKuwagamon,DARKNESS,U,48,ルカモン,Dolphmon,ICE,C
-103,アポカリモン,Apokarimon,DARKNESS,U,96,モリシェルモン,MoriShellmon,NATURE,C,48,ルカモン,Dolphmon,ICE,C
-70,セラフィモン,Seraphimon,NATURE,U,131,ザッソーモン,Zassomon,DARKNESS,C,48,ルカモン,Dolphmon,ICE,C
-83,テイルモンＲ,R-Gatomon,NATURE,C,118,ウィザーモン,Wizardmon,DARKNESS,C,48,ルカモン,Dolphmon,ICE,C
-70,セラフィモン,Seraphimon,NATURE,U,137,アルラウモン,Aruraumon,DARKNESS,R,52,ユキダルモン,Frigimon,ICE,C
-139,ピノッキモン,Puppetmon,RARE,U,32,オタマモンＤ,D-Otamamon,FIRE,R,52,ユキダルモン,Frigimon,ICE,C
-105,ディアボロモン,Diaboromon,DARKNESS,U,102,クネモン,Kunemon,NATURE,R,52,ユキダルモン,Frigimon,ICE,C
-145,ベーダモン,Vademon,RARE,U,27,アグモン,Agumon,FIRE,R,52,ユキダルモン,Frigimon,ICE,C
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,97,テントモン,Tentomon,NATURE,R,50,シードラモン,Seadramon,ICE,C
-160,ゲレモン,Geremon,RARE,C,9,メタルグレイモン,MetalGreymon,FIRE,U,50,シードラモン,Seadramon,ICE,C
-104,グランクワガーモン,GranKuwagamon,DARKNESS,U,99,プロットモン,Salamon,NATURE,R,50,シードラモン,Seadramon,ICE,C
-72,エアロＶドラモン,AeroVeedramon,NATURE,U,125,テッカモン,Tekkamon,DARKNESS,C,46,ガルルモン,Garurumon,ICE,C
-126,グルルモン,Gururumon,DARKNESS,C,71,ホーリードラモン,Magnadramon,NATURE,U,46,ガルルモン,Garurumon,ICE,C
-1,オメガモンⅠ,Omnimon I,FIRE,U,160,ゲレモン,Geremon,RARE,C,46,ガルルモン,Garurumon,ICE,C
-130,ダークリザモン,Darkrizamon,DARKNESS,C,88,ユニモン,Unimon,NATURE,C,56,シェルモン,Shellmon,ICE,C
-128,フーガモン,Fugamon,DARKNESS,C,89,イガモン,Ninjamon,NATURE,C,56,シェルモン,Shellmon,ICE,C
-86,カブテリモン,Kabuterimon,NATURE,C,118,ウィザーモン,Wizardmon,DARKNESS,C,49,ホエーモン,Whamon,ICE,C
-107,ピエモン,Piedmon,DARKNESS,U,97,テントモン,Tentomon,NATURE,R,49,ホエーモン,Whamon,ICE,C
-142,シャッコウモン,Shakkoumon,RARE,U,33,ゴブリモン,Goburimon,FIRE,R,53,ゲコモン,Gekomon,ICE,C
-28,ソーラーモン,Solarmon,FIRE,R,145,ベーダモン,Vademon,RARE,U,53,ゲコモン,Gekomon,ICE,C
-2,ウォーグレイモン,WarGreymon,FIRE,U,168,クリアアグモン,ClearAgumon,RARE,R,51,ゲソモン,Gesomon,ICE,C
-28,ソーラーモン,Solarmon,FIRE,R,160,ゲレモン,Geremon,RARE,C,60,アイスモン,Icemon,ICE,C
-130,ダークリザモン,Darkrizamon,DARKNESS,C,94,ヤンマモン,Yanmamon,NATURE,C,59,ヒョーガモン,Hyogamon,ICE,C
-139,ピノッキモン,Puppetmon,RARE,U,23,ピッドモン,Piddomon,FIRE,C,47,イッカクモン,Ikkakumon,ICE,C
-163,ツチダルモン,MudFrigimon,RARE,C,31,キャンドモン,Candlemon,FIRE,R,63,ベタモン,Betamon,ICE,R
-28,ソーラーモン,Solarmon,FIRE,R,165,トイアグモンＬ,L-ToyAgumon,RARE,R,63,ベタモン,Betamon,ICE,R
-167,トイアグモン,ToyAgumon,RARE,R,27,アグモン,Agumon,FIRE,R,63,ベタモン,Betamon,ICE,R
-170,サイケモン,Psychemon,RARE,R,33,ゴブリモン,Goburimon,FIRE,R,68,スノーゴブリモン,SnowGoburimon,ICE,R
-99,プロットモン,Salamon,NATURE,R,133,ブラックテイルモン,BKGatomon,DARKNESS,R,64,ペンモン,Penguinmon,ICE,R
-135,ツカイモン,Tsukaimon,DARKNESS,R,99,プロットモン,Salamon,NATURE,R,65,ギザモン,Gizamon,ICE,R
-31,キャンドモン,Candlemon,FIRE,R,170,サイケモン,Psychemon,RARE,R,67,ユキアグモン,SnowAgumon,ICE,R
-96,モリシェルモン,MoriShellmon,NATURE,C,132,ピコデビモン,DemiDevimon,DARKNESS,R,61,ゴマモン,Gomamon,ICE,R
-6,真メタルグレイモン,RealMetalGreymon,FIRE,U,40,ズドモン,Zudomon,ICE,U,74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U
-0,インペリアルドラモン,Imperialdramon,FIRE,U,34,ヴァイクモン,Vikemon,ICE,U,74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U
-1,オメガモンⅠ,Omnimon I,FIRE,U,35,オメガモンⅡ,Omnimon II,ICE,U,74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U
-10,ヴァーミリモン,Vermilimon,FIRE,U,34,ヴァイクモン,Vikemon,ICE,U,74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U
-145,ベーダモン,Vademon,RARE,U,35,オメガモンⅡ,Omnimon II,ICE,U,74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U
-44,ブラキモン,Brachiomon,ICE,U,147,もんざえモン,Monzaemon,RARE,U,78,リリモン,Lillymon,NATURE,U
-52,ユキダルモン,Frigimon,ICE,C,1,オメガモンⅠ,Omnimon I,FIRE,U,78,リリモン,Lillymon,NATURE,U
-18,メラモン,Meramon,FIRE,C,34,ヴァイクモン,Vikemon,ICE,U,78,リリモン,Lillymon,NATURE,U
-40,ズドモン,Zudomon,ICE,U,152,スターモン,Starmon,RARE,C,78,リリモン,Lillymon,NATURE,U
-6,真メタルグレイモン,RealMetalGreymon,FIRE,U,41,パンジャモン,Panjyamon,ICE,U,75,ホーリーエンジェモン,MagnaAngemon,NATURE,U
-5,ギガドラモン,Gigadramon,FIRE,U,41,パンジャモン,Panjyamon,ICE,U,75,ホーリーエンジェモン,MagnaAngemon,NATURE,U
-34,ヴァイクモン,Vikemon,ICE,U,12,エクスブイモン,ExVeemon,FIRE,C,75,ホーリーエンジェモン,MagnaAngemon,NATURE,U
-6,真メタルグレイモン,RealMetalGreymon,FIRE,U,45,ブルーメラモン,BlueMeramon,ICE,U,77,エンジェウーモン,Angewomon,NATURE,U
-140,スーパースターモン,SuperStarmon,RARE,U,50,シードラモン,Seadramon,ICE,C,77,エンジェウーモン,Angewomon,NATURE,U
-50,シードラモン,Seadramon,ICE,C,2,ウォーグレイモン,WarGreymon,FIRE,U,77,エンジェウーモン,Angewomon,NATURE,U
-18,メラモン,Meramon,FIRE,C,39,ワーガルルモン,WereGarurumon,ICE,U,80,ピッコロモン,Piximon,NATURE,U
-44,ブラキモン,Brachiomon,ICE,U,14,グレイモン,Greymon,FIRE,C,80,ピッコロモン,Piximon,NATURE,U
-34,ヴァイクモン,Vikemon,ICE,U,159,ゴーレモン,Rockmon,RARE,C,80,ピッコロモン,Piximon,NATURE,U
-49,ホエーモン,Whamon,ICE,C,144,デジタマモン,Digitamamon,RARE,U,79,アトラーカブテリモン,MegaKabuterimon,NATURE,U
-161,ニセドリモゲモン,NiseDrimogemon,RARE,C,39,ワーガルルモン,WereGarurumon,ICE,U,83,テイルモンＲ,R-Gatomon,NATURE,C
-54,シーラモン,Coelamon,ICE,C,148,メタルマメモン,MetalMamemon,RARE,U,83,テイルモンＲ,R-Gatomon,NATURE,C
-40,ズドモン,Zudomon,ICE,U,23,ピッドモン,Piddomon,FIRE,C,83,テイルモンＲ,R-Gatomon,NATURE,C
-34,ヴァイクモン,Vikemon,ICE,U,27,アグモン,Agumon,FIRE,R,83,テイルモンＲ,R-Gatomon,NATURE,C
-1,オメガモンⅠ,Omnimon I,FIRE,U,68,スノーゴブリモン,SnowGoburimon,ICE,R,86,カブテリモン,Kabuterimon,NATURE,C
-34,ヴァイクモン,Vikemon,ICE,U,170,サイケモン,Psychemon,RARE,R,86,カブテリモン,Kabuterimon,NATURE,C
-18,メラモン,Meramon,FIRE,C,51,ゲソモン,Gesomon,ICE,C,86,カブテリモン,Kabuterimon,NATURE,C
-33,ゴブリモン,Goburimon,FIRE,R,40,ズドモン,Zudomon,ICE,U,88,ユニモン,Unimon,NATURE,C
-61,ゴマモン,Gomamon,ICE,R,12,エクスブイモン,ExVeemon,FIRE,C,88,ユニモン,Unimon,NATURE,C
-18,メラモン,Meramon,FIRE,C,56,シェルモン,Shellmon,ICE,C,88,ユニモン,Unimon,NATURE,C
-56,シェルモン,Shellmon,ICE,C,10,ヴァーミリモン,Vermilimon,FIRE,U,84,トゲモン,Togemon,NATURE,C
-142,シャッコウモン,Shakkoumon,RARE,U,61,ゴマモン,Gomamon,ICE,R,84,トゲモン,Togemon,NATURE,C
-139,ピノッキモン,Puppetmon,RARE,U,63,ベタモン,Betamon,ICE,R,84,トゲモン,Togemon,NATURE,C
-56,シェルモン,Shellmon,ICE,C,4,パイルドラモン,Paildramon,FIRE,U,81,ブイドラモン,Veedramon,NATURE,U
-152,スターモン,Starmon,RARE,C,46,ガルルモン,Garurumon,ICE,C,81,ブイドラモン,Veedramon,NATURE,U
-56,シェルモン,Shellmon,ICE,C,20,バードラモン,Birdramon,FIRE,C,89,イガモン,Ninjamon,NATURE,C
-159,ゴーレモン,Rockmon,RARE,C,54,シーラモン,Coelamon,ICE,C,89,イガモン,Ninjamon,NATURE,C
-43,ワルシードラモン,WaruSeadramon,ICE,U,171,モドキベタモン,ModokiBetamon,RARE,R,90,クワガーモン,Kuwagamon,NATURE,C
-169,エレキモンVi,Vi-Elecmon,RARE,R,46,ガルルモン,Garurumon,ICE,C,90,クワガーモン,Kuwagamon,NATURE,C
-1,オメガモンⅠ,Omnimon I,FIRE,U,60,アイスモン,Icemon,ICE,C,82,エンジェモン,Angemon,NATURE,C
-30,ムーチョモン,Muchomon,FIRE,R,48,ルカモン,Dolphmon,ICE,C,91,ドリモゲモン,Drimogemon,NATURE,C
-18,メラモン,Meramon,FIRE,C,64,ペンモン,Penguinmon,ICE,R,92,ベジーモン,Vegiemon,NATURE,C
-18,メラモン,Meramon,FIRE,C,68,スノーゴブリモン,SnowGoburimon,ICE,R,94,ヤンマモン,Yanmamon,NATURE,C
-56,シェルモン,Shellmon,ICE,C,30,ムーチョモン,Muchomon,FIRE,R,95,ジャングルモジャモン,J-Mojyamon,NATURE,C
-56,シェルモン,Shellmon,ICE,C,12,エクスブイモン,ExVeemon,FIRE,C,85,レオモン,Leomon,NATURE,C
-56,シェルモン,Shellmon,ICE,C,33,ゴブリモン,Goburimon,FIRE,R,96,モリシェルモン,MoriShellmon,NATURE,C
-43,ワルシードラモン,WaruSeadramon,ICE,U,27,アグモン,Agumon,FIRE,R,87,エアドラモン,Airdramon,NATURE,C
-31,キャンドモン,Candlemon,FIRE,R,67,ユキアグモン,SnowAgumon,ICE,R,101,ゴツモン,Gotsumon,NATURE,R
-30,ムーチョモン,Muchomon,FIRE,R,67,ユキアグモン,SnowAgumon,ICE,R,101,ゴツモン,Gotsumon,NATURE,R
-166,ハグルモン,Hagurumon,RARE,R,66,オタマモン,Otamamon,ICE,R,99,プロットモン,Salamon,NATURE,R
-61,ゴマモン,Gomamon,ICE,R,33,ゴブリモン,Goburimon,FIRE,R,99,プロットモン,Salamon,NATURE,R
-31,キャンドモン,Candlemon,FIRE,R,62,ガブモン,Gabumon,ICE,R,98,パルモン,Palmon,NATURE,R
-30,ムーチョモン,Muchomon,FIRE,R,65,ギザモン,Gizamon,ICE,R,100,エレキモン,Elecmon,NATURE,R
-28,ソーラーモン,Solarmon,FIRE,R,61,ゴマモン,Gomamon,ICE,R,97,テントモン,Tentomon,NATURE,R
-170,サイケモン,Psychemon,RARE,R,68,スノーゴブリモン,SnowGoburimon,ICE,R,102,クネモン,Kunemon,NATURE,R
-0,インペリアルドラモン,Imperialdramon,FIRE,U,75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,108,ムゲンドラモン,Machinedramon,DARKNESS,U
-144,デジタマモン,Digitamamon,RARE,U,71,ホーリードラモン,Magnadramon,NATURE,U,108,ムゲンドラモン,Machinedramon,DARKNESS,U
-140,スーパースターモン,SuperStarmon,RARE,U,76,シルフィーモン,Sylphymon,NATURE,U,108,ムゲンドラモン,Machinedramon,DARKNESS,U
-0,インペリアルドラモン,Imperialdramon,FIRE,U,70,セラフィモン,Seraphimon,NATURE,U,107,ピエモン,Piedmon,DARKNESS,U
-2,ウォーグレイモン,WarGreymon,FIRE,U,72,エアロＶドラモン,AeroVeedramon,NATURE,U,107,ピエモン,Piedmon,DARKNESS,U
-139,ピノッキモン,Puppetmon,RARE,U,72,エアロＶドラモン,AeroVeedramon,NATURE,U,107,ピエモン,Piedmon,DARKNESS,U
-4,パイルドラモン,Paildramon,FIRE,U,69,ヴァルキリモン,Valkyrimon,NATURE,U,107,ピエモン,Piedmon,DARKNESS,U
-72,エアロＶドラモン,AeroVeedramon,NATURE,U,18,メラモン,Meramon,FIRE,C,115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U
-90,クワガーモン,Kuwagamon,NATURE,C,1,オメガモンⅠ,Omnimon I,FIRE,U,115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U
-70,セラフィモン,Seraphimon,NATURE,U,20,バードラモン,Birdramon,FIRE,C,115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U
-80,ピッコロモン,Piximon,NATURE,U,12,エクスブイモン,ExVeemon,FIRE,C,115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,5,ギガドラモン,Gigadramon,FIRE,U,110,レディデビモン,LadyDevimon,DARKNESS,U
-70,セラフィモン,Seraphimon,NATURE,U,10,ヴァーミリモン,Vermilimon,FIRE,U,110,レディデビモン,LadyDevimon,DARKNESS,U
-145,ベーダモン,Vademon,RARE,U,73,ロゼモン,Rosemon,NATURE,U,110,レディデビモン,LadyDevimon,DARKNESS,U
-4,パイルドラモン,Paildramon,FIRE,U,76,シルフィーモン,Sylphymon,NATURE,U,109,インフェルモン,Infermon,DARKNESS,U
-76,シルフィーモン,Sylphymon,NATURE,U,142,シャッコウモン,Shakkoumon,RARE,U,109,インフェルモン,Infermon,DARKNESS,U
-144,デジタマモン,Digitamamon,RARE,U,73,ロゼモン,Rosemon,NATURE,U,109,インフェルモン,Infermon,DARKNESS,U
-5,ギガドラモン,Gigadramon,FIRE,U,77,エンジェウーモン,Angewomon,NATURE,U,111,ヴァンデモン,Myotismon,DARKNESS,U
-70,セラフィモン,Seraphimon,NATURE,U,149,マメモン,Mamemon,RARE,U,111,ヴァンデモン,Myotismon,DARKNESS,U
-76,シルフィーモン,Sylphymon,NATURE,U,146,ギロモン,Giromon,RARE,U,111,ヴァンデモン,Myotismon,DARKNESS,U
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,13,アクィラモン,Aquilamon,FIRE,C,114,ファントモン,Phantomon,DARKNESS,U
-12,エクスブイモン,ExVeemon,FIRE,C,77,エンジェウーモン,Angewomon,NATURE,U,114,ファントモン,Phantomon,DARKNESS,U
-8,ティラノ師匠,MasterTyrannomon,FIRE,U,77,エンジェウーモン,Angewomon,NATURE,U,112,メガドラモン,Megadramon,DARKNESS,U
-10,ヴァーミリモン,Vermilimon,FIRE,U,76,シルフィーモン,Sylphymon,NATURE,U,112,メガドラモン,Megadramon,DARKNESS,U
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,156,ナニモン,Nanimon,RARE,C,116,アンドロモン,Andromon,DARKNESS,U
-139,ピノッキモン,Puppetmon,RARE,U,92,ベジーモン,Vegiemon,NATURE,C,116,アンドロモン,Andromon,DARKNESS,U
-70,セラフィモン,Seraphimon,NATURE,U,154,プラチナスカモン,PlatinumSukamon,RARE,C,113,スカルグレイモン,SkullGreymon,DARKNESS,U
-32,オタマモンＤ,D-Otamamon,FIRE,R,74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U,123,バケモン,Bakemon,DARKNESS,C
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,169,エレキモンVi,Vi-Elecmon,RARE,R,123,バケモン,Bakemon,DARKNESS,C
-72,エアロＶドラモン,AeroVeedramon,NATURE,U,168,クリアアグモン,ClearAgumon,RARE,R,122,オーガモン,Ogremon,DARKNESS,C
-70,セラフィモン,Seraphimon,NATURE,U,171,モドキベタモン,ModokiBetamon,RARE,R,122,オーガモン,Ogremon,DARKNESS,C
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,166,ハグルモン,Hagurumon,RARE,R,122,オーガモン,Ogremon,DARKNESS,C
-17,モノクロモン,Monochromon,FIRE,C,20,バードラモン,Birdramon,FIRE,C,122,オーガモン,Ogremon,DARKNESS,C
-148,メタルマメモン,MetalMamemon,RARE,U,86,カブテリモン,Kabuterimon,NATURE,C,117,スティングモン,Stingmon,DARKNESS,C
-146,ギロモン,Giromon,RARE,U,88,ユニモン,Unimon,NATURE,C,117,スティングモン,Stingmon,DARKNESS,C
-142,シャッコウモン,Shakkoumon,RARE,U,97,テントモン,Tentomon,NATURE,R,120,デビモン,Devimon,DARKNESS,C
-11,インセキモン,Meteormon,FIRE,U,92,ベジーモン,Vegiemon,NATURE,C,120,デビモン,Devimon,DARKNESS,C
-69,ヴァルキリモン,Valkyrimon,NATURE,U,168,クリアアグモン,ClearAgumon,RARE,R,121,タスクモン,Tuskmon,DARKNESS,C
-70,セラフィモン,Seraphimon,NATURE,U,30,ムーチョモン,Muchomon,FIRE,R,121,タスクモン,Tuskmon,DARKNESS,C
-96,モリシェルモン,MoriShellmon,NATURE,C,140,スーパースターモン,SuperStarmon,RARE,U,118,ウィザーモン,Wizardmon,DARKNESS,C
-10,ヴァーミリモン,Vermilimon,FIRE,U,87,エアドラモン,Airdramon,NATURE,C,118,ウィザーモン,Wizardmon,DARKNESS,C
-165,トイアグモンＬ,L-ToyAgumon,RARE,R,81,ブイドラモン,Veedramon,NATURE,U,124,ガードロモン,Guardromon,DARKNESS,C
-29,ピヨモン,Biyomon,FIRE,R,86,カブテリモン,Kabuterimon,NATURE,C,127,ソウルモン,Soulmon,DARKNESS,C
-97,テントモン,Tentomon,NATURE,R,158,スカモン,Sukamon,RARE,C,128,フーガモン,Fugamon,DARKNESS,C
-30,ムーチョモン,Muchomon,FIRE,R,89,イガモン,Ninjamon,NATURE,C,130,ダークリザモン,Darkrizamon,DARKNESS,C
-28,ソーラーモン,Solarmon,FIRE,R,82,エンジェモン,Angemon,NATURE,C,125,テッカモン,Tekkamon,DARKNESS,C
-96,モリシェルモン,MoriShellmon,NATURE,C,166,ハグルモン,Hagurumon,RARE,R,132,ピコデビモン,DemiDevimon,DARKNESS,R
-170,サイケモン,Psychemon,RARE,R,92,ベジーモン,Vegiemon,NATURE,C,132,ピコデビモン,DemiDevimon,DARKNESS,R
-33,ゴブリモン,Goburimon,FIRE,R,97,テントモン,Tentomon,NATURE,R,135,ツカイモン,Tsukaimon,DARKNESS,R
-30,ムーチョモン,Muchomon,FIRE,R,99,プロットモン,Salamon,NATURE,R,135,ツカイモン,Tsukaimon,DARKNESS,R
-100,エレキモン,Elecmon,NATURE,R,170,サイケモン,Psychemon,RARE,R,137,アルラウモン,Aruraumon,DARKNESS,R
-30,ムーチョモン,Muchomon,FIRE,R,102,クネモン,Kunemon,NATURE,R,137,アルラウモン,Aruraumon,DARKNESS,R
-31,キャンドモン,Candlemon,FIRE,R,96,モリシェルモン,MoriShellmon,NATURE,C,133,ブラックテイルモン,BKGatomon,DARKNESS,R
-168,クリアアグモン,ClearAgumon,RARE,R,97,テントモン,Tentomon,NATURE,R,134,コクワモン,Kokuwamon,DARKNESS,R
-32,オタマモンＤ,D-Otamamon,FIRE,R,102,クネモン,Kunemon,NATURE,R,138,シャーマモン,Sharmamon,DARKNESS,R
-28,ソーラーモン,Solarmon,FIRE,R,102,クネモン,Kunemon,NATURE,R,136,ドクネモン,Dokunemmon,DARKNESS,R
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,17,モノクロモン,Monochromon,FIRE,C,148,メタルマメモン,MetalMamemon,RARE,U
-36,メタルシードラモン,MetalSeadramon,ICE,U,90,クワガーモン,Kuwagamon,NATURE,C,148,メタルマメモン,MetalMamemon,RARE,U
-44,ブラキモン,Brachiomon,ICE,U,81,ブイドラモン,Veedramon,NATURE,U,148,メタルマメモン,MetalMamemon,RARE,U
-112,メガドラモン,Megadramon,DARKNESS,U,14,グレイモン,Greymon,FIRE,C,148,メタルマメモン,MetalMamemon,RARE,U
-0,インペリアルドラモン,Imperialdramon,FIRE,U,139,ピノッキモン,Puppetmon,RARE,U,142,シャッコウモン,Shakkoumon,RARE,U
-1,オメガモンⅠ,Omnimon I,FIRE,U,106,ヴェノムヴァンデモン,VenomMyotismon,DARKNESS,U,142,シャッコウモン,Shakkoumon,RARE,U
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,1,オメガモンⅠ,Omnimon I,FIRE,U,142,シャッコウモン,Shakkoumon,RARE,U
-107,ピエモン,Piedmon,DARKNESS,U,7,ガルダモン,Garudamon,FIRE,U,142,シャッコウモン,Shakkoumon,RARE,U
-73,ロゼモン,Rosemon,NATURE,U,35,オメガモンⅡ,Omnimon II,ICE,U,142,シャッコウモン,Shakkoumon,RARE,U
-110,レディデビモン,LadyDevimon,DARKNESS,U,9,メタルグレイモン,MetalGreymon,FIRE,U,145,ベーダモン,Vademon,RARE,U
-44,ブラキモン,Brachiomon,ICE,U,75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,145,ベーダモン,Vademon,RARE,U
-34,ヴァイクモン,Vikemon,ICE,U,83,テイルモンＲ,R-Gatomon,NATURE,C,145,ベーダモン,Vademon,RARE,U
-106,ヴェノムヴァンデモン,VenomMyotismon,DARKNESS,U,7,ガルダモン,Garudamon,FIRE,U,143,ジジモン,Jijimon,RARE,U
-70,セラフィモン,Seraphimon,NATURE,U,44,ブラキモン,Brachiomon,ICE,U,143,ジジモン,Jijimon,RARE,U
-35,オメガモンⅡ,Omnimon II,ICE,U,80,ピッコロモン,Piximon,NATURE,U,143,ジジモン,Jijimon,RARE,U
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,52,ユキダルモン,Frigimon,ICE,C,149,マメモン,Mamemon,RARE,U
-70,セラフィモン,Seraphimon,NATURE,U,56,シェルモン,Shellmon,ICE,C,149,マメモン,Mamemon,RARE,U
-82,エンジェモン,Angemon,NATURE,C,45,ブルーメラモン,BlueMeramon,ICE,U,149,マメモン,Mamemon,RARE,U
-9,メタルグレイモン,MetalGreymon,FIRE,U,113,スカルグレイモン,SkullGreymon,DARKNESS,U,146,ギロモン,Giromon,RARE,U
-10,ヴァーミリモン,Vermilimon,FIRE,U,113,スカルグレイモン,SkullGreymon,DARKNESS,U,146,ギロモン,Giromon,RARE,U
-73,ロゼモン,Rosemon,NATURE,U,48,ルカモン,Dolphmon,ICE,C,146,ギロモン,Giromon,RARE,U
-44,ブラキモン,Brachiomon,ICE,U,85,レオモン,Leomon,NATURE,C,150,エテモン,Etemon,RARE,U
-41,パンジャモン,Panjyamon,ICE,U,76,シルフィーモン,Sylphymon,NATURE,U,144,デジタマモン,Digitamamon,RARE,U
-87,エアドラモン,Airdramon,NATURE,C,35,オメガモンⅡ,Omnimon II,ICE,U,147,もんざえモン,Monzaemon,RARE,U
-70,セラフィモン,Seraphimon,NATURE,U,68,スノーゴブリモン,SnowGoburimon,ICE,R,155,カラツキヌメモン,ShellNumemon,RARE,C
-2,ウォーグレイモン,WarGreymon,FIRE,U,138,シャーマモン,Sharmamon,DARKNESS,R,155,カラツキヌメモン,ShellNumemon,RARE,C
-105,ディアボロモン,Diaboromon,DARKNESS,U,33,ゴブリモン,Goburimon,FIRE,R,155,カラツキヌメモン,ShellNumemon,RARE,C
-122,オーガモン,Ogremon,DARKNESS,C,17,モノクロモン,Monochromon,FIRE,C,155,カラツキヌメモン,ShellNumemon,RARE,C
-69,ヴァルキリモン,Valkyrimon,NATURE,U,60,アイスモン,Icemon,ICE,C,151,アンキロモン,Ankylomon,RARE,C
-104,グランクワガーモン,GranKuwagamon,DARKNESS,U,29,ピヨモン,Biyomon,FIRE,R,153,サンダーボールモン,Thundermon,RARE,C
-40,ズドモン,Zudomon,ICE,U,95,ジャングルモジャモン,J-Mojyamon,NATURE,C,153,サンダーボールモン,Thundermon,RARE,C
-43,ワルシードラモン,WaruSeadramon,ICE,U,100,エレキモン,Elecmon,NATURE,R,158,スカモン,Sukamon,RARE,C
-23,ピッドモン,Piddomon,FIRE,C,122,オーガモン,Ogremon,DARKNESS,C,158,スカモン,Sukamon,RARE,C
-123,バケモン,Bakemon,DARKNESS,C,28,ソーラーモン,Solarmon,FIRE,R,161,ニセドリモゲモン,NiseDrimogemon,RARE,C
-118,ウィザーモン,Wizardmon,DARKNESS,C,23,ピッドモン,Piddomon,FIRE,C,156,ナニモン,Nanimon,RARE,C
-128,フーガモン,Fugamon,DARKNESS,C,28,ソーラーモン,Solarmon,FIRE,R,164,サンドヤンマモン,SandYanmamon,RARE,C
-62,ガブモン,Gabumon,ICE,R,88,ユニモン,Unimon,NATURE,C,160,ゲレモン,Geremon,RARE,C
-34,ヴァイクモン,Vikemon,ICE,U,101,ゴツモン,Gotsumon,NATURE,R,154,プラチナスカモン,PlatinumSukamon,RARE,C
-72,エアロＶドラモン,AeroVeedramon,NATURE,U,59,ヒョーガモン,Hyogamon,ICE,C,152,スターモン,Starmon,RARE,C
-130,ダークリザモン,Darkrizamon,DARKNESS,C,33,ゴブリモン,Goburimon,FIRE,R,167,トイアグモン,ToyAgumon,RARE,R
-102,クネモン,Kunemon,NATURE,R,59,ヒョーガモン,Hyogamon,ICE,C,167,トイアグモン,ToyAgumon,RARE,R
-98,パルモン,Palmon,NATURE,R,63,ベタモン,Betamon,ICE,R,167,トイアグモン,ToyAgumon,RARE,R
-98,パルモン,Palmon,NATURE,R,68,スノーゴブリモン,SnowGoburimon,ICE,R,169,エレキモンVi,Vi-Elecmon,RARE,R
-31,キャンドモン,Candlemon,FIRE,R,135,ツカイモン,Tsukaimon,DARKNESS,R,169,エレキモンVi,Vi-Elecmon,RARE,R
-65,ギザモン,Gizamon,ICE,R,101,ゴツモン,Gotsumon,NATURE,R,169,エレキモンVi,Vi-Elecmon,RARE,R
-30,ムーチョモン,Muchomon,FIRE,R,135,ツカイモン,Tsukaimon,DARKNESS,R,169,エレキモンVi,Vi-Elecmon,RARE,R
-136,ドクネモン,Dokunemmon,DARKNESS,R,28,ソーラーモン,Solarmon,FIRE,R,168,クリアアグモン,ClearAgumon,RARE,R
-30,ムーチョモン,Muchomon,FIRE,R,133,ブラックテイルモン,BKGatomon,DARKNESS,R,168,クリアアグモン,ClearAgumon,RARE,R
-29,ピヨモン,Biyomon,FIRE,R,135,ツカイモン,Tsukaimon,DARKNESS,R,168,クリアアグモン,ClearAgumon,RARE,R
-96,モリシェルモン,MoriShellmon,NATURE,C,63,ベタモン,Betamon,ICE,R,165,トイアグモンＬ,L-ToyAgumon,RARE,R
-101,ゴツモン,Gotsumon,NATURE,R,58,アイスデビモン,IceDevimon,ICE,C,165,トイアグモンＬ,L-ToyAgumon,RARE,R
-28,ソーラーモン,Solarmon,FIRE,R,132,ピコデビモン,DemiDevimon,DARKNESS,R,166,ハグルモン,Hagurumon,RARE,R
-12,エクスブイモン,ExVeemon,FIRE,C,192,デビルチップ,Devil's Chip,OPTION,,6,真メタルグレイモン,RealMetalGreymon,FIRE,U
-7,ガルダモン,Garudamon,FIRE,U,202,ミサイルポッド,Missile Pod,OPTION,,6,真メタルグレイモン,RealMetalGreymon,FIRE,U
-3,ホウオウモン,Phoenixmon,FIRE,U,195,メタルバナナ,Metallic Banana,OPTION,,4,パイルドラモン,Paildramon,FIRE,U
-7,ガルダモン,Garudamon,FIRE,U,280,デジサードニクス,Digi-Sardynx,OPTION,,4,パイルドラモン,Paildramon,FIRE,U
-0,インペリアルドラモン,Imperialdramon,FIRE,U,205,死を呼ぶ骨,Dark Bone,OPTION,,5,ギガドラモン,Gigadramon,FIRE,U
-7,ガルダモン,Garudamon,FIRE,U,196,輝くたてがみ,Shining Mane,OPTION,,5,ギガドラモン,Gigadramon,FIRE,U
-12,エクスブイモン,ExVeemon,FIRE,C,204,ビートルダイヤ,Beetle Diamond,OPTION,,10,ヴァーミリモン,Vermilimon,FIRE,U
-7,ガルダモン,Garudamon,FIRE,U,211,ピンクデジヴァイス,Pink Digivice,OPTION,,9,メタルグレイモン,MetalGreymon,FIRE,U
-3,ホウオウモン,Phoenixmon,FIRE,U,194,ギガハンド,Giga Hand,OPTION,,2,ウォーグレイモン,WarGreymon,FIRE,U
-3,ホウオウモン,Phoenixmon,FIRE,U,230,メガハンド,Mega Hand,OPTION,,11,インセキモン,Meteormon,FIRE,U
-0,インペリアルドラモン,Imperialdramon,FIRE,U,245,小さな槍,Short Lance,OPTION,,13,アクィラモン,Aquilamon,FIRE,C
-7,ガルダモン,Garudamon,FIRE,U,226,ビームガン,Beam Gun,OPTION,,13,アクィラモン,Aquilamon,FIRE,C
-12,エクスブイモン,ExVeemon,FIRE,C,213,アンインストール,UnInstall,OPTION,,13,アクィラモン,Aquilamon,FIRE,C
-3,ホウオウモン,Phoenixmon,FIRE,U,251,クロスキラー,Cross Hitter,OPTION,,15,ハヌモン,Apemon,FIRE,C
-12,エクスブイモン,ExVeemon,FIRE,C,259,氷水晶,Ice Crystal,OPTION,,21,タンクモン,Tankmon,FIRE,C
-7,ガルダモン,Garudamon,FIRE,U,240,サイバーパーツ,Cyber Parts,OPTION,,16,ティラノモン,Tyrannomon,FIRE,C
-33,ゴブリモン,Goburimon,FIRE,R,280,デジサードニクス,Digi-Sardynx,OPTION,,17,モノクロモン,Monochromon,FIRE,C
-33,ゴブリモン,Goburimon,FIRE,R,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,,18,メラモン,Meramon,FIRE,C
-33,ゴブリモン,Goburimon,FIRE,R,227,チェンソー,Chain Saw,OPTION,,26,フレアリザモン,Flarerizamon,FIRE,C
-33,ゴブリモン,Goburimon,FIRE,R,267,攻撃プラグイン〇,Attack Disk 〇,OPTION,,32,オタマモンＤ,D-Otamamon,FIRE,R
-33,ゴブリモン,Goburimon,FIRE,R,244,極上肉,Premium Steak,OPTION,,29,ピヨモン,Biyomon,FIRE,R
-33,ゴブリモン,Goburimon,FIRE,R,237,愛のばんそうこう,Patch of Love,OPTION,,28,ソーラーモン,Solarmon,FIRE,R
-38,マリンエンジェモン,MarineAngemon,ICE,U,192,デビルチップ,Devil's Chip,OPTION,,37,メタルガルルモン,MetalGarurumon,ICE,U
-38,マリンエンジェモン,MarineAngemon,ICE,U,213,アンインストール,UnInstall,OPTION,,43,ワルシードラモン,WaruSeadramon,ICE,U
-38,マリンエンジェモン,MarineAngemon,ICE,U,205,死を呼ぶ骨,Dark Bone,OPTION,,41,パンジャモン,Panjyamon,ICE,U
-40,ズドモン,Zudomon,ICE,U,200,にせセブンズ,Fake Sevens,OPTION,,41,パンジャモン,Panjyamon,ICE,U
-40,ズドモン,Zudomon,ICE,U,195,メタルバナナ,Metallic Banana,OPTION,,39,ワーガルルモン,WereGarurumon,ICE,U
-34,ヴァイクモン,Vikemon,ICE,U,202,ミサイルポッド,Missile Pod,OPTION,,39,ワーガルルモン,WereGarurumon,ICE,U
-38,マリンエンジェモン,MarineAngemon,ICE,U,201,ネットワーム,Net Worm,OPTION,,40,ズドモン,Zudomon,ICE,U
-40,ズドモン,Zudomon,ICE,U,191,金のバナナ,Golden Banana,OPTION,,38,マリンエンジェモン,MarineAngemon,ICE,U
-68,スノーゴブリモン,SnowGoburimon,ICE,R,215,コロシアム,Coliseum,OPTION,,58,アイスデビモン,IceDevimon,ICE,C
-63,ベタモン,Betamon,ICE,R,225,ゴミの山,Heap of Junk,OPTION,,58,アイスデビモン,IceDevimon,ICE,C
-60,アイスモン,Icemon,ICE,C,235,銀玉,Silver Ball,OPTION,,58,アイスデビモン,IceDevimon,ICE,C
-58,アイスデビモン,IceDevimon,ICE,C,248,トレーマニュアル,Training Manual,OPTION,,60,アイスモン,Icemon,ICE,C
-63,ベタモン,Betamon,ICE,R,235,銀玉,Silver Ball,OPTION,,60,アイスモン,Icemon,ICE,C
-63,ベタモン,Betamon,ICE,R,207,ブルーデジヴァイス,Blue Digivice,OPTION,,55,モジャモン,Mojyamon,ICE,C
-60,アイスモン,Icemon,ICE,C,217,氷水の祭だん,Ice Altar,OPTION,,55,モジャモン,Mojyamon,ICE,C
-68,スノーゴブリモン,SnowGoburimon,ICE,R,193,ホイッスル,Whistle,OPTION,,52,ユキダルモン,Frigimon,ICE,C
-40,ズドモン,Zudomon,ICE,U,252,スカの呪い,Suka's Curse,OPTION,,52,ユキダルモン,Frigimon,ICE,C
-60,アイスモン,Icemon,ICE,C,208,グリーンデジヴァイス,Green Digivice,OPTION,,53,ゲコモン,Gekomon,ICE,C
-40,ズドモン,Zudomon,ICE,U,261,黒い歯車,Black Gear,OPTION,,53,ゲコモン,Gekomon,ICE,C
-58,アイスデビモン,IceDevimon,ICE,C,191,金のバナナ,Golden Banana,OPTION,,47,イッカクモン,Ikkakumon,ICE,C
-58,アイスデビモン,IceDevimon,ICE,C,226,ビームガン,Beam Gun,OPTION,,56,シェルモン,Shellmon,ICE,C
-58,アイスデビモン,IceDevimon,ICE,C,236,サンゴのお守り,Coral Charm,OPTION,,59,ヒョーガモン,Hyogamon,ICE,C
-34,ヴァイクモン,Vikemon,ICE,U,247,デジモンアナライザー,Digimon Analyzer,OPTION,,49,ホエーモン,Whamon,ICE,C
-60,アイスモン,Icemon,ICE,C,226,ビームガン,Beam Gun,OPTION,,57,ソーサリモン,Sorcerimon,ICE,C
-40,ズドモン,Zudomon,ICE,U,245,小さな槍,Short Lance,OPTION,,50,シードラモン,Seadramon,ICE,C
-68,スノーゴブリモン,SnowGoburimon,ICE,R,266,回復フロッピー,Recovery Floppy,OPTION,,67,ユキアグモン,SnowAgumon,ICE,R
-63,ベタモン,Betamon,ICE,R,272,防御プラグインX,Defense Disk X,OPTION,,67,ユキアグモン,SnowAgumon,ICE,R
-63,ベタモン,Betamon,ICE,R,249,サークルキラー,Circle Hitter,OPTION,,64,ペンモン,Penguinmon,ICE,R
-68,スノーゴブリモン,SnowGoburimon,ICE,R,228,メタルパーツ,Metal Parts,OPTION,,61,ゴマモン,Gomamon,ICE,R
-63,ベタモン,Betamon,ICE,R,260,大地のお守り,Earth Charm,OPTION,,65,ギザモン,Gizamon,ICE,R
-76,シルフィーモン,Sylphymon,NATURE,U,192,デビルチップ,Devil's Chip,OPTION,,74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U
-73,ロゼモン,Rosemon,NATURE,U,193,ホイッスル,Whistle,OPTION,,74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U
-70,セラフィモン,Seraphimon,NATURE,U,225,ゴミの山,Heap of Junk,OPTION,,78,リリモン,Lillymon,NATURE,U
-76,シルフィーモン,Sylphymon,NATURE,U,214,不幸のプログラム,Evil Program,OPTION,,78,リリモン,Lillymon,NATURE,U
-73,ロゼモン,Rosemon,NATURE,U,220,暗黒の祭だん,Rare Altar,OPTION,,78,リリモン,Lillymon,NATURE,U
-73,ロゼモン,Rosemon,NATURE,U,204,ビートルダイヤ,Beetle Diamond,OPTION,,75,ホーリーエンジェモン,MagnaAngemon,NATURE,U
-76,シルフィーモン,Sylphymon,NATURE,U,203,トノサマのおふれ,Shogun's Order,OPTION,,77,エンジェウーモン,Angewomon,NATURE,U
-76,シルフィーモン,Sylphymon,NATURE,U,225,ゴミの山,Heap of Junk,OPTION,,80,ピッコロモン,Piximon,NATURE,U
-92,ベジーモン,Vegiemon,NATURE,C,249,サークルキラー,Circle Hitter,OPTION,,93,コカトリモン,Kokatorimon,NATURE,C
-98,パルモン,Palmon,NATURE,R,226,ビームガン,Beam Gun,OPTION,,93,コカトリモン,Kokatorimon,NATURE,C
-98,パルモン,Palmon,NATURE,R,242,デラックスキノコ,Deluxe Mushroom,OPTION,,96,モリシェルモン,MoriShellmon,NATURE,C
-102,クネモン,Kunemon,NATURE,R,231,レベルバランサー,Level Balancer,OPTION,,96,モリシェルモン,MoriShellmon,NATURE,C
-73,ロゼモン,Rosemon,NATURE,U,233,レベルブースター,Level Booster,OPTION,,81,ブイドラモン,Veedramon,NATURE,U
-92,ベジーモン,Vegiemon,NATURE,C,196,輝くたてがみ,Shining Mane,OPTION,,81,ブイドラモン,Veedramon,NATURE,U
-76,シルフィーモン,Sylphymon,NATURE,U,230,メガハンド,Mega Hand,OPTION,,81,ブイドラモン,Veedramon,NATURE,U
-98,パルモン,Palmon,NATURE,R,232,レベルマネージャー,Level Manager,OPTION,,94,ヤンマモン,Yanmamon,NATURE,C
-102,クネモン,Kunemon,NATURE,R,225,ゴミの山,Heap of Junk,OPTION,,94,ヤンマモン,Yanmamon,NATURE,C
-70,セラフィモン,Seraphimon,NATURE,U,241,液晶化,Liquid Crystal,OPTION,,82,エンジェモン,Angemon,NATURE,C
-76,シルフィーモン,Sylphymon,NATURE,U,235,銀玉,Silver Ball,OPTION,,82,エンジェモン,Angemon,NATURE,C
-92,ベジーモン,Vegiemon,NATURE,C,227,チェンソー,Chain Saw,OPTION,,89,イガモン,Ninjamon,NATURE,C
-92,ベジーモン,Vegiemon,NATURE,C,200,にせセブンズ,Fake Sevens,OPTION,,83,テイルモンＲ,R-Gatomon,NATURE,C
-102,クネモン,Kunemon,NATURE,R,210,イエローデジヴァイス,Yellow Digivice,OPTION,,91,ドリモゲモン,Drimogemon,NATURE,C
-98,パルモン,Palmon,NATURE,R,194,ギガハンド,Giga Hand,OPTION,,85,レオモン,Leomon,NATURE,C
-98,パルモン,Palmon,NATURE,R,202,ミサイルポッド,Missile Pod,OPTION,,87,エアドラモン,Airdramon,NATURE,C
-98,パルモン,Palmon,NATURE,R,214,不幸のプログラム,Evil Program,OPTION,,90,クワガーモン,Kuwagamon,NATURE,C
-102,クネモン,Kunemon,NATURE,R,298,アーマー解除,De-Armor Digivolve,OPTION,,100,エレキモン,Elecmon,NATURE,R
-104,グランクワガーモン,GranKuwagamon,DARKNESS,U,230,メガハンド,Mega Hand,OPTION,,115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U
-107,ピエモン,Piedmon,DARKNESS,U,227,チェンソー,Chain Saw,OPTION,,115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U
-104,グランクワガーモン,GranKuwagamon,DARKNESS,U,234,アーマークラッシュ,Armor Clash,OPTION,,116,アンドロモン,Andromon,DARKNESS,U
-103,アポカリモン,Apokarimon,DARKNESS,U,232,レベルマネージャー,Level Manager,OPTION,,116,アンドロモン,Andromon,DARKNESS,U
-103,アポカリモン,Apokarimon,DARKNESS,U,209,ブラックデジヴァイス,Black Digivice,OPTION,,111,ヴァンデモン,Myotismon,DARKNESS,U
-107,ピエモン,Piedmon,DARKNESS,U,208,グリーンデジヴァイス,Green Digivice,OPTION,,111,ヴァンデモン,Myotismon,DARKNESS,U
-105,ディアボロモン,Diaboromon,DARKNESS,U,213,アンインストール,UnInstall,OPTION,,112,メガドラモン,Megadramon,DARKNESS,U
-107,ピエモン,Piedmon,DARKNESS,U,215,コロシアム,Coliseum,OPTION,,112,メガドラモン,Megadramon,DARKNESS,U
-105,ディアボロモン,Diaboromon,DARKNESS,U,204,ビートルダイヤ,Beetle Diamond,OPTION,,110,レディデビモン,LadyDevimon,DARKNESS,U
-103,アポカリモン,Apokarimon,DARKNESS,U,220,暗黒の祭だん,Rare Altar,OPTION,,113,スカルグレイモン,SkullGreymon,DARKNESS,U
-103,アポカリモン,Apokarimon,DARKNESS,U,194,ギガハンド,Giga Hand,OPTION,,107,ピエモン,Piedmon,DARKNESS,U
-107,ピエモン,Piedmon,DARKNESS,U,194,ギガハンド,Giga Hand,OPTION,,108,ムゲンドラモン,Machinedramon,DARKNESS,U
-107,ピエモン,Piedmon,DARKNESS,U,201,ネットワーム,Net Worm,OPTION,,109,インフェルモン,Infermon,DARKNESS,U
-138,シャーマモン,Sharmamon,DARKNESS,R,198,超攻撃チップ,Mega Attack Chip,OPTION,,124,ガードロモン,Guardromon,DARKNESS,C
-138,シャーマモン,Sharmamon,DARKNESS,R,195,メタルバナナ,Metallic Banana,OPTION,,123,バケモン,Bakemon,DARKNESS,C
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,200,にせセブンズ,Fake Sevens,OPTION,,123,バケモン,Bakemon,DARKNESS,C
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,209,ブラックデジヴァイス,Black Digivice,OPTION,,125,テッカモン,Tekkamon,DARKNESS,C
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,229,メタルアーマー,Metal Armor,OPTION,,129,セーバードラモン,Saberdramon,DARKNESS,C
-138,シャーマモン,Sharmamon,DARKNESS,R,207,ブルーデジヴァイス,Blue Digivice,OPTION,,127,ソウルモン,Soulmon,DARKNESS,C
-138,シャーマモン,Sharmamon,DARKNESS,R,193,ホイッスル,Whistle,OPTION,,122,オーガモン,Ogremon,DARKNESS,C
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,192,デビルチップ,Devil's Chip,OPTION,,120,デビモン,Devimon,DARKNESS,C
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,236,サンゴのお守り,Coral Charm,OPTION,,131,ザッソーモン,Zassomon,DARKNESS,C
-107,ピエモン,Piedmon,DARKNESS,U,238,謎のタマゴ,Mystery Egg,OPTION,,117,スティングモン,Stingmon,DARKNESS,C
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,244,極上肉,Premium Steak,OPTION,,132,ピコデビモン,DemiDevimon,DARKNESS,R
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,251,クロスキラー,Cross Hitter,OPTION,,134,コクワモン,Kokuwamon,DARKNESS,R
-143,ジジモン,Jijimon,RARE,U,197,超回復フロッピー,Mega Rec. Floppy,OPTION,,142,シャッコウモン,Shakkoumon,RARE,U
-139,ピノッキモン,Puppetmon,RARE,U,193,ホイッスル,Whistle,OPTION,,142,シャッコウモン,Shakkoumon,RARE,U
-139,ピノッキモン,Puppetmon,RARE,U,212,裏次元,Another Dimension,OPTION,,145,ベーダモン,Vademon,RARE,U
-139,ピノッキモン,Puppetmon,RARE,U,230,メガハンド,Mega Hand,OPTION,,148,メタルマメモン,MetalMamemon,RARE,U
-143,ジジモン,Jijimon,RARE,U,197,超回復フロッピー,Mega Rec. Floppy,OPTION,,144,デジタマモン,Digitamamon,RARE,U
-160,ゲレモン,Geremon,RARE,C,222,超防御プラグイン〇,Mega Def. Disk 〇,OPTION,,157,ヌメモン,Numemon,RARE,C
-139,ピノッキモン,Puppetmon,RARE,U,247,デジモンアナライザー,Digimon Analyzer,OPTION,,152,スターモン,Starmon,RARE,C
-143,ジジモン,Jijimon,RARE,U,234,アーマークラッシュ,Armor Clash,OPTION,,151,アンキロモン,Ankylomon,RARE,C
-171,モドキベタモン,ModokiBetamon,RARE,R,247,デジモンアナライザー,Digimon Analyzer,OPTION,,168,クリアアグモン,ClearAgumon,RARE,R
-171,モドキベタモン,ModokiBetamon,RARE,R,244,極上肉,Premium Steak,OPTION,,167,トイアグモン,ToyAgumon,RARE,R
-171,モドキベタモン,ModokiBetamon,RARE,R,252,スカの呪い,Suka's Curse,OPTION,,169,エレキモンVi,Vi-Elecmon,RARE,R
-171,モドキベタモン,ModokiBetamon,RARE,R,261,黒い歯車,Black Gear,OPTION,,170,サイケモン,Psychemon,RARE,R
-160,ゲレモン,Geremon,RARE,C,268,攻撃プラグイン△,Attack Disk △,OPTION,,166,ハグルモン,Hagurumon,RARE,R
-160,ゲレモン,Geremon,RARE,C,300,退化,Digi-devolve,OPTION,,165,トイアグモンＬ,L-ToyAgumon,RARE,R
-4,パイルドラモン,Paildramon,FIRE,U,35,オメガモンⅡ,Omnimon II,ICE,U,0,インペリアルドラモン,Imperialdramon,FIRE,U
-12,エクスブイモン,ExVeemon,FIRE,C,117,スティングモン,Stingmon,DARKNESS,C,4,パイルドラモン,Paildramon,FIRE,U
-37,メタルガルルモン,MetalGarurumon,ICE,U,2,ウォーグレイモン,WarGreymon,FIRE,U,1,オメガモンⅠ,Omnimon I,FIRE,U
-39,ワーガルルモン,WereGarurumon,ICE,U,6,真メタルグレイモン,RealMetalGreymon,FIRE,U,35,オメガモンⅡ,Omnimon II,ICE,U
-142,シャッコウモン,Shakkoumon,RARE,U,40,ズドモン,Zudomon,ICE,U,34,ヴァイクモン,Vikemon,ICE,U
-42,メガシードラモン,MegaSeadramon,ICE,U,43,ワルシードラモン,WaruSeadramon,ICE,U,36,メタルシードラモン,MetalSeadramon,ICE,U
-3,ホウオウモン,Phoenixmon,FIRE,U,81,ブイドラモン,Veedramon,NATURE,U,72,エアロＶドラモン,AeroVeedramon,NATURE,U
-111,ヴァンデモン,Myotismon,DARKNESS,U,78,リリモン,Lillymon,NATURE,U,73,ロゼモン,Rosemon,NATURE,U
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,143,ジジモン,Jijimon,RARE,U,70,セラフィモン,Seraphimon,NATURE,U
-76,シルフィーモン,Sylphymon,NATURE,U,7,ガルダモン,Garudamon,FIRE,U,69,ヴァルキリモン,Valkyrimon,NATURE,U
-13,アクィラモン,Aquilamon,FIRE,C,83,テイルモンＲ,R-Gatomon,NATURE,C,76,シルフィーモン,Sylphymon,NATURE,U
-75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,77,エンジェウーモン,Angewomon,NATURE,U,71,ホーリードラモン,Magnadramon,NATURE,U
-74,ヘラクルカブテリモン,HerculesKabuterimon,NATURE,U,112,メガドラモン,Megadramon,DARKNESS,U,104,グランクワガーモン,GranKuwagamon,DARKNESS,U
-144,デジタマモン,Digitamamon,RARE,U,109,インフェルモン,Infermon,DARKNESS,U,105,ディアボロモン,Diaboromon,DARKNESS,U
-110,レディデビモン,LadyDevimon,DARKNESS,U,111,ヴァンデモン,Myotismon,DARKNESS,U,106,ヴェノムヴァンデモン,VenomMyotismon,DARKNESS,U
-145,ベーダモン,Vademon,RARE,U,38,マリンエンジェモン,MarineAngemon,ICE,U,140,スーパースターモン,SuperStarmon,RARE,U
-116,アンドロモン,Andromon,DARKNESS,U,150,エテモン,Etemon,RARE,U,141,メタルエテモン,MetalEtemon,RARE,U
-115,ワルもんざえモン,WaruMonzaemon,DARKNESS,U,147,もんざえモン,Monzaemon,RARE,U,139,ピノッキモン,Puppetmon,RARE,U
-82,エンジェモン,Angemon,NATURE,C,151,アンキロモン,Ankylomon,RARE,C,142,シャッコウモン,Shakkoumon,RARE,U
-6,真メタルグレイモン,RealMetalGreymon,FIRE,U,6,真メタルグレイモン,RealMetalGreymon,FIRE,U,200,にせセブンズ,Fake Sevens,OPTION,
-64,ペンモン,Penguinmon,ICE,R,113,スカルグレイモン,SkullGreymon,DARKNESS,U,200,にせセブンズ,Fake Sevens,OPTION,
-3,ホウオウモン,Phoenixmon,FIRE,U,5,ギガドラモン,Gigadramon,FIRE,U,200,にせセブンズ,Fake Sevens,OPTION,
-0,インペリアルドラモン,Imperialdramon,FIRE,U,15,ハヌモン,Apemon,FIRE,C,200,にせセブンズ,Fake Sevens,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,103,アポカリモン,Apokarimon,DARKNESS,U,200,にせセブンズ,Fake Sevens,OPTION,
-139,ピノッキモン,Puppetmon,RARE,U,95,ジャングルモジャモン,J-Mojyamon,NATURE,C,200,にせセブンズ,Fake Sevens,OPTION,
-70,セラフィモン,Seraphimon,NATURE,U,149,マメモン,Mamemon,RARE,U,200,にせセブンズ,Fake Sevens,OPTION,
-69,ヴァルキリモン,Valkyrimon,NATURE,U,80,ピッコロモン,Piximon,NATURE,U,200,にせセブンズ,Fake Sevens,OPTION,
-107,ピエモン,Piedmon,DARKNESS,U,97,テントモン,Tentomon,NATURE,R,200,にせセブンズ,Fake Sevens,OPTION,
-12,エクスブイモン,ExVeemon,FIRE,C,12,エクスブイモン,ExVeemon,FIRE,C,200,にせセブンズ,Fake Sevens,OPTION,
-65,ギザモン,Gizamon,ICE,R,134,コクワモン,Kokuwamon,DARKNESS,R,200,にせセブンズ,Fake Sevens,OPTION,
-40,ズドモン,Zudomon,ICE,U,52,ユキダルモン,Frigimon,ICE,C,200,にせセブンズ,Fake Sevens,OPTION,
-40,ズドモン,Zudomon,ICE,U,159,ゴーレモン,Rockmon,RARE,C,200,にせセブンズ,Fake Sevens,OPTION,
-8,ティラノ師匠,MasterTyrannomon,FIRE,U,2,ウォーグレイモン,WarGreymon,FIRE,U,276,デジダイヤモンド,Digi-Diamond,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,110,レディデビモン,LadyDevimon,DARKNESS,U,284,デジターコイズ,Digi-Turquoise,OPTION,
-4,パイルドラモン,Paildramon,FIRE,U,4,パイルドラモン,Paildramon,FIRE,U,281,デジサファイア,Digi-Sapphire,OPTION,
-3,ホウオウモン,Phoenixmon,FIRE,U,11,インセキモン,Meteormon,FIRE,U,283,デジトパーズ,Digi-Topaz,OPTION,
-17,モノクロモン,Monochromon,FIRE,C,17,モノクロモン,Monochromon,FIRE,C,203,トノサマのおふれ,Shogun's Order,OPTION,
-21,タンクモン,Tankmon,FIRE,C,21,タンクモン,Tankmon,FIRE,C,214,不幸のプログラム,Evil Program,OPTION,
-143,ジジモン,Jijimon,RARE,U,143,ジジモン,Jijimon,RARE,U,192,デビルチップ,Devil's Chip,OPTION,
-7,ガルダモン,Garudamon,FIRE,U,7,ガルダモン,Garudamon,FIRE,U,193,ホイッスル,Whistle,OPTION,
-0,インペリアルドラモン,Imperialdramon,FIRE,U,18,メラモン,Meramon,FIRE,C,196,輝くたてがみ,Shining Mane,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-280,デジサードニクス,Digi-Sardynx,OPTION,,297,ワープ進化,Warp Digivolve,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,192,デビルチップ,Devil's Chip,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-210,イエローデジヴァイス,Yellow Digivice,OPTION,,213,アンインストール,UnInstall,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-192,デビルチップ,Devil's Chip,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-206,レッドデジヴァイス,Red Digivice,OPTION,,226,ビームガン,Beam Gun,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-205,死を呼ぶ骨,Dark Bone,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,,274,デジアメジスト,Digi-Amethyst,OPTION,
-217,氷水の祭だん,Ice Altar,OPTION,,228,メタルパーツ,Metal Parts,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,
-211,ピンクデジヴァイス,Pink Digivice,OPTION,,281,デジサファイア,Digi-Sapphire,OPTION,,278,デジパール,Digi-Pearl,OPTION,
-171,モドキベタモン,ModokiBetamon,RARE,R,200,にせセブンズ,Fake Sevens,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-76,シルフィーモン,Sylphymon,NATURE,U,192,デビルチップ,Devil's Chip,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-40,ズドモン,Zudomon,ICE,U,191,金のバナナ,Golden Banana,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-143,ジジモン,Jijimon,RARE,U,191,金のバナナ,Golden Banana,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-73,ロゼモン,Rosemon,NATURE,U,229,メタルアーマー,Metal Armor,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,
-21,タンクモン,Tankmon,FIRE,C,297,ワープ進化,Warp Digivolve,OPTION,,281,デジサファイア,Digi-Sapphire,OPTION,
-104,グランクワガーモン,GranKuwagamon,DARKNESS,U,234,アーマークラッシュ,Armor Clash,OPTION,,281,デジサファイア,Digi-Sapphire,OPTION,
-98,パルモン,Palmon,NATURE,R,242,デラックスキノコ,Deluxe Mushroom,OPTION,,275,デジアクアマリン,Digi-Aquamarine,OPTION,
-108,ムゲンドラモン,Machinedramon,DARKNESS,U,73,ロゼモン,Rosemon,NATURE,U,37,メタルガルルモン,MetalGarurumon,ICE,U
-7,ガルダモン,Garudamon,FIRE,U,196,輝くたてがみ,Shining Mane,OPTION,,2,ウォーグレイモン,WarGreymon,FIRE,U
-63,ベタモン,Betamon,ICE,R,122,オーガモン,Ogremon,DARKNESS,C,22,レッドベジーモン,RedVegiemon,FIRE,C
-70,セラフィモン,Seraphimon,NATURE,U,225,ゴミの山,Heap of Junk,OPTION,,77,エンジェウーモン,Angewomon,NATURE,U
-107,ピエモン,Piedmon,DARKNESS,U,215,コロシアム,Coliseum,OPTION,,111,ヴァンデモン,Myotismon,DARKNESS,U
-133,ブラックテイルモン,BKGatomon,DARKNESS,R,200,にせセブンズ,Fake Sevens,OPTION,,122,オーガモン,Ogremon,DARKNESS,C
-167,トイアグモン,ToyAgumon,RARE,R,192,デビルチップ,Devil's Chip,OPTION,,152,スターモン,Starmon,RARE,C
-203,トノサマのおふれ,Shogun's Order,OPTION,,241,液晶化,Liquid Crystal,OPTION,,211,ピンクデジヴァイス,Pink Digivice,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,241,液晶化,Liquid Crystal,OPTION,,209,ブラックデジヴァイス,Black Digivice,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,241,液晶化,Liquid Crystal,OPTION,,206,レッドデジヴァイス,Red Digivice,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,241,液晶化,Liquid Crystal,OPTION,,210,イエローデジヴァイス,Yellow Digivice,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,241,液晶化,Liquid Crystal,OPTION,,207,ブルーデジヴァイス,Blue Digivice,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,241,液晶化,Liquid Crystal,OPTION,,208,グリーンデジヴァイス,Green Digivice,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,241,液晶化,Liquid Crystal,OPTION,,254,ハッキング,Hacking,OPTION,
-281,デジサファイア,Digi-Sapphire,OPTION,,300,退化,Digi-devolve,OPTION,,210,イエローデジヴァイス,Yellow Digivice,OPTION,
-281,デジサファイア,Digi-Sapphire,OPTION,,300,退化,Digi-devolve,OPTION,,208,グリーンデジヴァイス,Green Digivice,OPTION,
-281,デジサファイア,Digi-Sapphire,OPTION,,300,退化,Digi-devolve,OPTION,,209,ブラックデジヴァイス,Black Digivice,OPTION,
-281,デジサファイア,Digi-Sapphire,OPTION,,300,退化,Digi-devolve,OPTION,,207,ブルーデジヴァイス,Blue Digivice,OPTION,
-281,デジサファイア,Digi-Sapphire,OPTION,,300,退化,Digi-devolve,OPTION,,211,ピンクデジヴァイス,Pink Digivice,OPTION,
-281,デジサファイア,Digi-Sapphire,OPTION,,300,退化,Digi-devolve,OPTION,,206,レッドデジヴァイス,Red Digivice,OPTION,
-224,超防御プラグインX,Mega Def. Disk X,OPTION,,269,攻撃プラグインX,Attack Disk X,OPTION,,231,レベルバランサー,Level Balancer,OPTION,
-224,超防御プラグインX,Mega Def. Disk X,OPTION,,269,攻撃プラグインX,Attack Disk X,OPTION,,232,レベルマネージャー,Level Manager,OPTION,
-224,超防御プラグインX,Mega Def. Disk X,OPTION,,269,攻撃プラグインX,Attack Disk X,OPTION,,233,レベルブースター,Level Booster,OPTION,
-224,超防御プラグインX,Mega Def. Disk X,OPTION,,269,攻撃プラグインX,Attack Disk X,OPTION,,234,アーマークラッシュ,Armor Clash,OPTION,
-224,超防御プラグインX,Mega Def. Disk X,OPTION,,269,攻撃プラグインX,Attack Disk X,OPTION,,235,銀玉,Silver Ball,OPTION,
-247,デジモンアナライザー,Digimon Analyzer,OPTION,,296,突然変異,Mutant Digivolve,OPTION,,217,氷水の祭だん,Ice Altar,OPTION,
-247,デジモンアナライザー,Digimon Analyzer,OPTION,,296,突然変異,Mutant Digivolve,OPTION,,216,火炎の祭だん,Fire Altar,OPTION,
-247,デジモンアナライザー,Digimon Analyzer,OPTION,,296,突然変異,Mutant Digivolve,OPTION,,218,自然の祭だん,Nature Altar,OPTION,
-247,デジモンアナライザー,Digimon Analyzer,OPTION,,296,突然変異,Mutant Digivolve,OPTION,,220,暗黒の祭だん,Rare Altar,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,193,ホイッスル,Whistle,OPTION,,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,193,ホイッスル,Whistle,OPTION,,192,デビルチップ,Devil's Chip,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,193,ホイッスル,Whistle,OPTION,,194,ギガハンド,Giga Hand,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,193,ホイッスル,Whistle,OPTION,,196,輝くたてがみ,Shining Mane,OPTION,
-252,スカの呪い,Suka's Curse,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,232,レベルマネージャー,Level Manager,OPTION,
-252,スカの呪い,Suka's Curse,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,233,レベルブースター,Level Booster,OPTION,
-252,スカの呪い,Suka's Curse,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,234,アーマークラッシュ,Armor Clash,OPTION,
-252,スカの呪い,Suka's Curse,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,235,銀玉,Silver Ball,OPTION,
-233,レベルブースター,Level Booster,OPTION,,261,黒い歯車,Black Gear,OPTION,,234,アーマークラッシュ,Armor Clash,OPTION,
-233,レベルブースター,Level Booster,OPTION,,261,黒い歯車,Black Gear,OPTION,,231,レベルバランサー,Level Balancer,OPTION,
-233,レベルブースター,Level Booster,OPTION,,261,黒い歯車,Black Gear,OPTION,,232,レベルマネージャー,Level Manager,OPTION,
-233,レベルブースター,Level Booster,OPTION,,261,黒い歯車,Black Gear,OPTION,,235,銀玉,Silver Ball,OPTION,
-255,デジモン墓場,Digimon Grave,OPTION,,252,スカの呪い,Suka's Curse,OPTION,,251,クロスキラー,Cross Hitter,OPTION,
-255,デジモン墓場,Digimon Grave,OPTION,,252,スカの呪い,Suka's Curse,OPTION,,250,トライキラー,Triangle Hitter,OPTION,
-255,デジモン墓場,Digimon Grave,OPTION,,252,スカの呪い,Suka's Curse,OPTION,,248,トレーマニュアル,Training Manual,OPTION,
-255,デジモン墓場,Digimon Grave,OPTION,,252,スカの呪い,Suka's Curse,OPTION,,247,デジモンアナライザー,Digimon Analyzer,OPTION,
-243,運だめしキノコ,Lucky Mushroom,OPTION,,243,運だめしキノコ,Lucky Mushroom,OPTION,,230,メガハンド,Mega Hand,OPTION,
-243,運だめしキノコ,Lucky Mushroom,OPTION,,243,運だめしキノコ,Lucky Mushroom,OPTION,,225,ゴミの山,Heap of Junk,OPTION,
-243,運だめしキノコ,Lucky Mushroom,OPTION,,243,運だめしキノコ,Lucky Mushroom,OPTION,,228,メタルパーツ,Metal Parts,OPTION,
-243,運だめしキノコ,Lucky Mushroom,OPTION,,243,運だめしキノコ,Lucky Mushroom,OPTION,,226,ビームガン,Beam Gun,OPTION,
-211,ピンクデジヴァイス,Pink Digivice,OPTION,,281,デジサファイア,Digi-Sapphire,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,
-211,ピンクデジヴァイス,Pink Digivice,OPTION,,281,デジサファイア,Digi-Sapphire,OPTION,,196,輝くたてがみ,Shining Mane,OPTION,
-211,ピンクデジヴァイス,Pink Digivice,OPTION,,281,デジサファイア,Digi-Sapphire,OPTION,,194,ギガハンド,Giga Hand,OPTION,
-211,ピンクデジヴァイス,Pink Digivice,OPTION,,281,デジサファイア,Digi-Sapphire,OPTION,,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-239,奇跡のルビー,Miracle Ruby,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,221,大回復フロッピー,Sup. Rec. Floppy,OPTION,
-239,奇跡のルビー,Miracle Ruby,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,298,アーマー解除,De-Armor Digivolve,OPTION,
-239,奇跡のルビー,Miracle Ruby,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,265,高速プラグイン,High Speed Disk,OPTION,
-239,奇跡のルビー,Miracle Ruby,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,297,ワープ進化,Warp Digivolve,OPTION,
-299,スピード進化,Speed Digivolve,OPTION,,235,銀玉,Silver Ball,OPTION,,298,アーマー解除,De-Armor Digivolve,OPTION,
-299,スピード進化,Speed Digivolve,OPTION,,235,銀玉,Silver Ball,OPTION,,265,高速プラグイン,High Speed Disk,OPTION,
-299,スピード進化,Speed Digivolve,OPTION,,235,銀玉,Silver Ball,OPTION,,297,ワープ進化,Warp Digivolve,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,192,デビルチップ,Devil's Chip,OPTION,,196,輝くたてがみ,Shining Mane,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,192,デビルチップ,Devil's Chip,OPTION,,193,ホイッスル,Whistle,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,192,デビルチップ,Devil's Chip,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,
-258,炎のかけら,Fire Spot,OPTION,,261,黒い歯車,Black Gear,OPTION,,259,氷水晶,Ice Crystal,OPTION,
-258,炎のかけら,Fire Spot,OPTION,,261,黒い歯車,Black Gear,OPTION,,262,ぬいぐるみ,Stuffed Animal,OPTION,
-258,炎のかけら,Fire Spot,OPTION,,261,黒い歯車,Black Gear,OPTION,,260,大地のお守り,Earth Charm,OPTION,
-193,ホイッスル,Whistle,OPTION,,207,ブルーデジヴァイス,Blue Digivice,OPTION,,194,ギガハンド,Giga Hand,OPTION,
-193,ホイッスル,Whistle,OPTION,,207,ブルーデジヴァイス,Blue Digivice,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,
-193,ホイッスル,Whistle,OPTION,,207,ブルーデジヴァイス,Blue Digivice,OPTION,,196,輝くたてがみ,Shining Mane,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,,197,超回復フロッピー,Mega Rec. Floppy,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,,193,ホイッスル,Whistle,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,,192,デビルチップ,Devil's Chip,OPTION,
-240,サイバーパーツ,Cyber Parts,OPTION,,237,愛のばんそうこう,Patch of Love,OPTION,,223,超防御プラグイン△,Mega Def. Disk △,OPTION,
-240,サイバーパーツ,Cyber Parts,OPTION,,237,愛のばんそうこう,Patch of Love,OPTION,,222,超防御プラグイン〇,Mega Def. Disk 〇,OPTION,
-240,サイバーパーツ,Cyber Parts,OPTION,,237,愛のばんそうこう,Patch of Love,OPTION,,224,超防御プラグインX,Mega Def. Disk X,OPTION,
-233,レベルブースター,Level Booster,OPTION,,204,ビートルダイヤ,Beetle Diamond,OPTION,,203,トノサマのおふれ,Shogun's Order,OPTION,
-233,レベルブースター,Level Booster,OPTION,,204,ビートルダイヤ,Beetle Diamond,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,
-233,レベルブースター,Level Booster,OPTION,,204,ビートルダイヤ,Beetle Diamond,OPTION,,294,アーマー突破,ArmorCrush Digivolve,OPTION,
-239,奇跡のルビー,Miracle Ruby,OPTION,,233,レベルブースター,Level Booster,OPTION,,219,暗黒の祭だん,Darkness Altar,OPTION,
-239,奇跡のルビー,Miracle Ruby,OPTION,,233,レベルブースター,Level Booster,OPTION,,220,暗黒の祭だん,Rare Altar,OPTION,
-239,奇跡のルビー,Miracle Ruby,OPTION,,233,レベルブースター,Level Booster,OPTION,,217,氷水の祭だん,Ice Altar,OPTION,
-234,アーマークラッシュ,Armor Clash,OPTION,,231,レベルバランサー,Level Balancer,OPTION,,296,突然変異,Mutant Digivolve,OPTION,
-234,アーマークラッシュ,Armor Clash,OPTION,,231,レベルバランサー,Level Balancer,OPTION,,295,特殊進化,Special Digivolve,OPTION,
-234,アーマークラッシュ,Armor Clash,OPTION,,231,レベルバランサー,Level Balancer,OPTION,,215,コロシアム,Coliseum,OPTION,
-296,突然変異,Mutant Digivolve,OPTION,,255,デジモン墓場,Digimon Grave,OPTION,,299,スピード進化,Speed Digivolve,OPTION,
-296,突然変異,Mutant Digivolve,OPTION,,255,デジモン墓場,Digimon Grave,OPTION,,265,高速プラグイン,High Speed Disk,OPTION,
-296,突然変異,Mutant Digivolve,OPTION,,255,デジモン墓場,Digimon Grave,OPTION,,297,ワープ進化,Warp Digivolve,OPTION,
-245,小さな槍,Short Lance,OPTION,,245,小さな槍,Short Lance,OPTION,,227,チェンソー,Chain Saw,OPTION,
-245,小さな槍,Short Lance,OPTION,,245,小さな槍,Short Lance,OPTION,,228,メタルパーツ,Metal Parts,OPTION,
-245,小さな槍,Short Lance,OPTION,,245,小さな槍,Short Lance,OPTION,,229,メタルアーマー,Metal Armor,OPTION,
-248,トレーマニュアル,Training Manual,OPTION,,248,トレーマニュアル,Training Manual,OPTION,,236,サンゴのお守り,Coral Charm,OPTION,
-248,トレーマニュアル,Training Manual,OPTION,,248,トレーマニュアル,Training Manual,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,
-248,トレーマニュアル,Training Manual,OPTION,,248,トレーマニュアル,Training Manual,OPTION,,238,謎のタマゴ,Mystery Egg,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,212,裏次元,Another Dimension,OPTION,,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,212,裏次元,Another Dimension,OPTION,,201,ネットワーム,Net Worm,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,228,メタルパーツ,Metal Parts,OPTION,,204,ビートルダイヤ,Beetle Diamond,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,228,メタルパーツ,Metal Parts,OPTION,,202,ミサイルポッド,Missile Pod,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,
-203,トノサマのおふれ,Shogun's Order,OPTION,,239,奇跡のルビー,Miracle Ruby,OPTION,,294,アーマー突破,ArmorCrush Digivolve,OPTION,
-192,デビルチップ,Devil's Chip,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-192,デビルチップ,Devil's Chip,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,,194,ギガハンド,Giga Hand,OPTION,
-192,デビルチップ,Devil's Chip,OPTION,,215,コロシアム,Coliseum,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,
-192,デビルチップ,Devil's Chip,OPTION,,215,コロシアム,Coliseum,OPTION,,196,輝くたてがみ,Shining Mane,OPTION,
-280,デジサードニクス,Digi-Sardynx,OPTION,,261,黒い歯車,Black Gear,OPTION,,294,アーマー突破,ArmorCrush Digivolve,OPTION,
-280,デジサードニクス,Digi-Sardynx,OPTION,,261,黒い歯車,Black Gear,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,
-280,デジサードニクス,Digi-Sardynx,OPTION,,297,ワープ進化,Warp Digivolve,OPTION,,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-280,デジサードニクス,Digi-Sardynx,OPTION,,297,ワープ進化,Warp Digivolve,OPTION,,201,ネットワーム,Net Worm,OPTION,
-198,超攻撃チップ,Mega Attack Chip,OPTION,,203,トノサマのおふれ,Shogun's Order,OPTION,,195,メタルバナナ,Metallic Banana,OPTION,
-198,超攻撃チップ,Mega Attack Chip,OPTION,,203,トノサマのおふれ,Shogun's Order,OPTION,,196,輝くたてがみ,Shining Mane,OPTION,
-198,超攻撃チップ,Mega Attack Chip,OPTION,,213,アンインストール,UnInstall,OPTION,,197,超回復フロッピー,Mega Rec. Floppy,OPTION,
-198,超攻撃チップ,Mega Attack Chip,OPTION,,213,アンインストール,UnInstall,OPTION,,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-274,デジアメジスト,Digi-Amethyst,OPTION,,258,炎のかけら,Fire Spot,OPTION,,294,アーマー突破,ArmorCrush Digivolve,OPTION,
-274,デジアメジスト,Digi-Amethyst,OPTION,,258,炎のかけら,Fire Spot,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,
-241,液晶化,Liquid Crystal,OPTION,,256,データコピー,Data Copy,OPTION,,237,愛のばんそうこう,Patch of Love,OPTION,
-241,液晶化,Liquid Crystal,OPTION,,256,データコピー,Data Copy,OPTION,,236,サンゴのお守り,Coral Charm,OPTION,
-264,攻撃チップ,Attack Chip,OPTION,,258,炎のかけら,Fire Spot,OPTION,,263,混乱電波,Disrupt Ray,OPTION,
-264,攻撃チップ,Attack Chip,OPTION,,258,炎のかけら,Fire Spot,OPTION,,300,退化,Digi-devolve,OPTION,
-233,レベルブースター,Level Booster,OPTION,,254,ハッキング,Hacking,OPTION,,294,アーマー突破,ArmorCrush Digivolve,OPTION,
-233,レベルブースター,Level Booster,OPTION,,254,ハッキング,Hacking,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,
-300,退化,Digi-devolve,OPTION,,300,退化,Digi-devolve,OPTION,,264,攻撃チップ,Attack Chip,OPTION,
-300,退化,Digi-devolve,OPTION,,300,退化,Digi-devolve,OPTION,,266,回復フロッピー,Recovery Floppy,OPTION,
-195,メタルバナナ,Metallic Banana,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,,194,ギガハンド,Giga Hand,OPTION,
-195,メタルバナナ,Metallic Banana,OPTION,,200,にせセブンズ,Fake Sevens,OPTION,,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-274,デジアメジスト,Digi-Amethyst,OPTION,,281,デジサファイア,Digi-Sapphire,OPTION,,191,金のバナナ,Golden Banana,OPTION,
-274,デジアメジスト,Digi-Amethyst,OPTION,,280,デジサードニクス,Digi-Sardynx,OPTION,,191,金のバナナ,Golden Banana,OPTION,
-280,デジサードニクス,Digi-Sardynx,OPTION,,280,デジサードニクス,Digi-Sardynx,OPTION,,191,金のバナナ,Golden Banana,OPTION,
-192,デビルチップ,Devil's Chip,OPTION,,193,ホイッスル,Whistle,OPTION,,191,金のバナナ,Golden Banana,OPTION,
-281,デジサファイア,Digi-Sapphire,OPTION,,193,ホイッスル,Whistle,OPTION,,191,金のバナナ,Golden Banana,OPTION,
-274,デジアメジスト,Digi-Amethyst,OPTION,,252,スカの呪い,Suka's Curse,OPTION,,204,ビートルダイヤ,Beetle Diamond,OPTION,
-200,にせセブンズ,Fake Sevens,OPTION,,238,謎のタマゴ,Mystery Egg,OPTION,,204,ビートルダイヤ,Beetle Diamond,OPTION,
-206,レッドデジヴァイス,Red Digivice,OPTION,,226,ビームガン,Beam Gun,OPTION,,204,ビートルダイヤ,Beetle Diamond,OPTION,
-193,ホイッスル,Whistle,OPTION,,252,スカの呪い,Suka's Curse,OPTION,,204,ビートルダイヤ,Beetle Diamond,OPTION,
-198,超攻撃チップ,Mega Attack Chip,OPTION,,212,裏次元,Another Dimension,OPTION,,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-210,イエローデジヴァイス,Yellow Digivice,OPTION,,210,イエローデジヴァイス,Yellow Digivice,OPTION,,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-193,ホイッスル,Whistle,OPTION,,230,メガハンド,Mega Hand,OPTION,,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-212,裏次元,Another Dimension,OPTION,,212,裏次元,Another Dimension,OPTION,,202,ミサイルポッド,Missile Pod,OPTION,
-198,超攻撃チップ,Mega Attack Chip,OPTION,,231,レベルバランサー,Level Balancer,OPTION,,202,ミサイルポッド,Missile Pod,OPTION,
-193,ホイッスル,Whistle,OPTION,,245,小さな槍,Short Lance,OPTION,,202,ミサイルポッド,Missile Pod,OPTION,
-198,超攻撃チップ,Mega Attack Chip,OPTION,,237,愛のばんそうこう,Patch of Love,OPTION,,203,トノサマのおふれ,Shogun's Order,OPTION,
-206,レッドデジヴァイス,Red Digivice,OPTION,,221,大回復フロッピー,Sup. Rec. Floppy,OPTION,,203,トノサマのおふれ,Shogun's Order,OPTION,
-280,デジサードニクス,Digi-Sardynx,OPTION,,251,クロスキラー,Cross Hitter,OPTION,,203,トノサマのおふれ,Shogun's Order,OPTION,
-198,超攻撃チップ,Mega Attack Chip,OPTION,,228,メタルパーツ,Metal Parts,OPTION,,201,ネットワーム,Net Worm,OPTION,
-191,金のバナナ,Golden Banana,OPTION,,233,レベルブースター,Level Booster,OPTION,,201,ネットワーム,Net Worm,OPTION,
-210,イエローデジヴァイス,Yellow Digivice,OPTION,,213,アンインストール,UnInstall,OPTION,,201,ネットワーム,Net Worm,OPTION,
-224,超防御プラグインX,Mega Def. Disk X,OPTION,,236,サンゴのお守り,Coral Charm,OPTION,,214,不幸のプログラム,Evil Program,OPTION,
-217,氷水の祭だん,Ice Altar,OPTION,,241,液晶化,Liquid Crystal,OPTION,,214,不幸のプログラム,Evil Program,OPTION,
-258,炎のかけら,Fire Spot,OPTION,,258,炎のかけら,Fire Spot,OPTION,,262,ぬいぐるみ,Stuffed Animal,OPTION,
-224,超防御プラグインX,Mega Def. Disk X,OPTION,,226,ビームガン,Beam Gun,OPTION,,212,裏次元,Another Dimension,OPTION,
-263,混乱電波,Disrupt Ray,OPTION,,266,回復フロッピー,Recovery Floppy,OPTION,,264,攻撃チップ,Attack Chip,OPTION,
-205,死を呼ぶ骨,Dark Bone,OPTION,,205,死を呼ぶ骨,Dark Bone,OPTION,,198,超攻撃チップ,Mega Attack Chip,OPTION,
-206,レッドデジヴァイス,Red Digivice,OPTION,,274,デジアメジスト,Digi-Amethyst,OPTION,,194,ギガハンド,Giga Hand,OPTION,
-224,超防御プラグインX,Mega Def. Disk X,OPTION,,243,運だめしキノコ,Lucky Mushroom,OPTION,,296,突然変異,Mutant Digivolve,OPTION,
-296,突然変異,Mutant Digivolve,OPTION,,297,ワープ進化,Warp Digivolve,OPTION,,213,アンインストール,UnInstall,OPTION,
-193,ホイッスル,Whistle,OPTION,,198,超攻撃チップ,Mega Attack Chip,OPTION,,192,デビルチップ,Devil's Chip,OPTION,
-264,攻撃チップ,Attack Chip,OPTION,,264,攻撃チップ,Attack Chip,OPTION,,266,回復フロッピー,Recovery Floppy,OPTION,
-192,デビルチップ,Devil's Chip,OPTION,,220,暗黒の祭だん,Rare Altar,OPTION,,197,超回復フロッピー,Mega Rec. Floppy,OPTION,
-17,モノクロモン,Monochromon,FIRE,C,17,モノクロモン,Monochromon,FIRE,C,254,ハッキング,Hacking,OPTION,
-17,モノクロモン,Monochromon,FIRE,C,17,モノクロモン,Monochromon,FIRE,C,209,ブラックデジヴァイス,Black Digivice,OPTION,
-17,モノクロモン,Monochromon,FIRE,C,17,モノクロモン,Monochromon,FIRE,C,211,ピンクデジヴァイス,Pink Digivice,OPTION,
-17,モノクロモン,Monochromon,FIRE,C,17,モノクロモン,Monochromon,FIRE,C,210,イエローデジヴァイス,Yellow Digivice,OPTION,
-17,モノクロモン,Monochromon,FIRE,C,17,モノクロモン,Monochromon,FIRE,C,206,レッドデジヴァイス,Red Digivice,OPTION,
-17,モノクロモン,Monochromon,FIRE,C,17,モノクロモン,Monochromon,FIRE,C,207,ブルーデジヴァイス,Blue Digivice,OPTION,
-17,モノクロモン,Monochromon,FIRE,C,17,モノクロモン,Monochromon,FIRE,C,208,グリーンデジヴァイス,Green Digivice,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,170,サイケモン,Psychemon,RARE,R,206,レッドデジヴァイス,Red Digivice,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,170,サイケモン,Psychemon,RARE,R,210,イエローデジヴァイス,Yellow Digivice,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,170,サイケモン,Psychemon,RARE,R,209,ブラックデジヴァイス,Black Digivice,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,170,サイケモン,Psychemon,RARE,R,207,ブルーデジヴァイス,Blue Digivice,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,170,サイケモン,Psychemon,RARE,R,211,ピンクデジヴァイス,Pink Digivice,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,170,サイケモン,Psychemon,RARE,R,254,ハッキング,Hacking,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,170,サイケモン,Psychemon,RARE,R,208,グリーンデジヴァイス,Green Digivice,OPTION,
-38,マリンエンジェモン,MarineAngemon,ICE,U,43,ワルシードラモン,WaruSeadramon,ICE,U,195,メタルバナナ,Metallic Banana,OPTION,
-38,マリンエンジェモン,MarineAngemon,ICE,U,43,ワルシードラモン,WaruSeadramon,ICE,U,196,輝くたてがみ,Shining Mane,OPTION,
-38,マリンエンジェモン,MarineAngemon,ICE,U,43,ワルシードラモン,WaruSeadramon,ICE,U,194,ギガハンド,Giga Hand,OPTION,
-38,マリンエンジェモン,MarineAngemon,ICE,U,43,ワルシードラモン,WaruSeadramon,ICE,U,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-29,ピヨモン,Biyomon,FIRE,R,29,ピヨモン,Biyomon,FIRE,R,248,トレーマニュアル,Training Manual,OPTION,
-29,ピヨモン,Biyomon,FIRE,R,29,ピヨモン,Biyomon,FIRE,R,247,デジモンアナライザー,Digimon Analyzer,OPTION,
-29,ピヨモン,Biyomon,FIRE,R,29,ピヨモン,Biyomon,FIRE,R,249,サークルキラー,Circle Hitter,OPTION,
-29,ピヨモン,Biyomon,FIRE,R,29,ピヨモン,Biyomon,FIRE,R,246,中回復フロッピー,Med. Rec. Floppy,OPTION,
-3,ホウオウモン,Phoenixmon,FIRE,U,11,インセキモン,Meteormon,FIRE,U,196,輝くたてがみ,Shining Mane,OPTION,
-3,ホウオウモン,Phoenixmon,FIRE,U,11,インセキモン,Meteormon,FIRE,U,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-3,ホウオウモン,Phoenixmon,FIRE,U,11,インセキモン,Meteormon,FIRE,U,195,メタルバナナ,Metallic Banana,OPTION,
-3,ホウオウモン,Phoenixmon,FIRE,U,11,インセキモン,Meteormon,FIRE,U,194,ギガハンド,Giga Hand,OPTION,
-40,ズドモン,Zudomon,ICE,U,42,メガシードラモン,MegaSeadramon,ICE,U,196,輝くたてがみ,Shining Mane,OPTION,
-40,ズドモン,Zudomon,ICE,U,42,メガシードラモン,MegaSeadramon,ICE,U,194,ギガハンド,Giga Hand,OPTION,
-40,ズドモン,Zudomon,ICE,U,42,メガシードラモン,MegaSeadramon,ICE,U,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-40,ズドモン,Zudomon,ICE,U,42,メガシードラモン,MegaSeadramon,ICE,U,195,メタルバナナ,Metallic Banana,OPTION,
-22,レッドベジーモン,RedVegiemon,FIRE,C,22,レッドベジーモン,RedVegiemon,FIRE,C,295,特殊進化,Special Digivolve,OPTION,
-22,レッドベジーモン,RedVegiemon,FIRE,C,22,レッドベジーモン,RedVegiemon,FIRE,C,296,突然変異,Mutant Digivolve,OPTION,
-22,レッドベジーモン,RedVegiemon,FIRE,C,22,レッドベジーモン,RedVegiemon,FIRE,C,215,コロシアム,Coliseum,OPTION,
-27,アグモン,Agumon,FIRE,R,27,アグモン,Agumon,FIRE,R,239,奇跡のルビー,Miracle Ruby,OPTION,
-27,アグモン,Agumon,FIRE,R,27,アグモン,Agumon,FIRE,R,240,サイバーパーツ,Cyber Parts,OPTION,
-27,アグモン,Agumon,FIRE,R,27,アグモン,Agumon,FIRE,R,241,液晶化,Liquid Crystal,OPTION,
-6,真メタルグレイモン,RealMetalGreymon,FIRE,U,6,真メタルグレイモン,RealMetalGreymon,FIRE,U,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-6,真メタルグレイモン,RealMetalGreymon,FIRE,U,6,真メタルグレイモン,RealMetalGreymon,FIRE,U,194,ギガハンド,Giga Hand,OPTION,
-0,インペリアルドラモン,Imperialdramon,FIRE,U,11,インセキモン,Meteormon,FIRE,U,194,ギガハンド,Giga Hand,OPTION,
-0,インペリアルドラモン,Imperialdramon,FIRE,U,11,インセキモン,Meteormon,FIRE,U,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-7,ガルダモン,Garudamon,FIRE,U,7,ガルダモン,Garudamon,FIRE,U,196,輝くたてがみ,Shining Mane,OPTION,
-7,ガルダモン,Garudamon,FIRE,U,7,ガルダモン,Garudamon,FIRE,U,195,メタルバナナ,Metallic Banana,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,114,ファントモン,Phantomon,DARKNESS,U,194,ギガハンド,Giga Hand,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,114,ファントモン,Phantomon,DARKNESS,U,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-33,ゴブリモン,Goburimon,FIRE,R,33,ゴブリモン,Goburimon,FIRE,R,266,回復フロッピー,Recovery Floppy,OPTION,
-33,ゴブリモン,Goburimon,FIRE,R,33,ゴブリモン,Goburimon,FIRE,R,264,攻撃チップ,Attack Chip,OPTION,
-143,ジジモン,Jijimon,RARE,U,143,ジジモン,Jijimon,RARE,U,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-143,ジジモン,Jijimon,RARE,U,143,ジジモン,Jijimon,RARE,U,194,ギガハンド,Giga Hand,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,118,ウィザーモン,Wizardmon,DARKNESS,C,196,輝くたてがみ,Shining Mane,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,118,ウィザーモン,Wizardmon,DARKNESS,C,195,メタルバナナ,Metallic Banana,OPTION,
-40,ズドモン,Zudomon,ICE,U,52,ユキダルモン,Frigimon,ICE,C,201,ネットワーム,Net Worm,OPTION,
-40,ズドモン,Zudomon,ICE,U,52,ユキダルモン,Frigimon,ICE,C,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-12,エクスブイモン,ExVeemon,FIRE,C,12,エクスブイモン,ExVeemon,FIRE,C,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-12,エクスブイモン,ExVeemon,FIRE,C,12,エクスブイモン,ExVeemon,FIRE,C,201,ネットワーム,Net Worm,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,160,ゲレモン,Geremon,RARE,C,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,160,ゲレモン,Geremon,RARE,C,201,ネットワーム,Net Worm,OPTION,
-21,タンクモン,Tankmon,FIRE,C,21,タンクモン,Tankmon,FIRE,C,296,突然変異,Mutant Digivolve,OPTION,
-21,タンクモン,Tankmon,FIRE,C,21,タンクモン,Tankmon,FIRE,C,215,コロシアム,Coliseum,OPTION,
-69,ヴァルキリモン,Valkyrimon,NATURE,U,80,ピッコロモン,Piximon,NATURE,U,253,ジュレイモンの霧,Cherrymon's Mist,OPTION,
-69,ヴァルキリモン,Valkyrimon,NATURE,U,80,ピッコロモン,Piximon,NATURE,U,194,ギガハンド,Giga Hand,OPTION,
-9,メタルグレイモン,MetalGreymon,FIRE,U,9,メタルグレイモン,MetalGreymon,FIRE,U,198,超攻撃チップ,Mega Attack Chip,OPTION,
-38,マリンエンジェモン,MarineAngemon,ICE,U,50,シードラモン,Seadramon,ICE,C,198,超攻撃チップ,Mega Attack Chip,OPTION,
-0,インペリアルドラモン,Imperialdramon,FIRE,U,18,メラモン,Meramon,FIRE,C,198,超攻撃チップ,Mega Attack Chip,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,122,オーガモン,Ogremon,DARKNESS,C,198,超攻撃チップ,Mega Attack Chip,OPTION,
-69,ヴァルキリモン,Valkyrimon,NATURE,U,75,ホーリーエンジェモン,MagnaAngemon,NATURE,U,192,デビルチップ,Devil's Chip,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,110,レディデビモン,LadyDevimon,DARKNESS,U,192,デビルチップ,Devil's Chip,OPTION,
-4,パイルドラモン,Paildramon,FIRE,U,4,パイルドラモン,Paildramon,FIRE,U,192,デビルチップ,Devil's Chip,OPTION,
-40,ズドモン,Zudomon,ICE,U,34,ヴァイクモン,Vikemon,ICE,U,192,デビルチップ,Devil's Chip,OPTION,
-38,マリンエンジェモン,MarineAngemon,ICE,U,35,オメガモンⅡ,Omnimon II,ICE,U,191,金のバナナ,Golden Banana,OPTION,
-0,インペリアルドラモン,Imperialdramon,FIRE,U,4,パイルドラモン,Paildramon,FIRE,U,191,金のバナナ,Golden Banana,OPTION,
-103,アポカリモン,Apokarimon,DARKNESS,U,103,アポカリモン,Apokarimon,DARKNESS,U,191,金のバナナ,Golden Banana,OPTION,
-1,オメガモンⅠ,Omnimon I,FIRE,U,2,ウォーグレイモン,WarGreymon,FIRE,U,191,金のバナナ,Golden Banana,OPTION,
-8,ティラノ師匠,MasterTyrannomon,FIRE,U,11,インセキモン,Meteormon,FIRE,U,197,超回復フロッピー,Mega Rec. Floppy,OPTION,
-0,インペリアルドラモン,Imperialdramon,FIRE,U,15,ハヌモン,Apemon,FIRE,C,197,超回復フロッピー,Mega Rec. Floppy,OPTION,
-38,マリンエンジェモン,MarineAngemon,ICE,U,47,イッカクモン,Ikkakumon,ICE,C,197,超回復フロッピー,Mega Rec. Floppy,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,162,シマユニモン,ShimaUnimon,RARE,C,201,ネットワーム,Net Worm,OPTION,
-5,ギガドラモン,Gigadramon,FIRE,U,19,ケンタルモン,Centarumon,FIRE,C,201,ネットワーム,Net Worm,OPTION,
-142,シャッコウモン,Shakkoumon,RARE,U,142,シャッコウモン,Shakkoumon,RARE,U,201,ネットワーム,Net Worm,OPTION,
-14,グレイモン,Greymon,FIRE,C,14,グレイモン,Greymon,FIRE,C,202,ミサイルポッド,Missile Pod,OPTION,
-147,もんざえモン,Monzaemon,RARE,U,156,ナニモン,Nanimon,RARE,C,202,ミサイルポッド,Missile Pod,OPTION,
-40,ズドモン,Zudomon,ICE,U,38,マリンエンジェモン,MarineAngemon,ICE,U,193,ホイッスル,Whistle,OPTION,
-4,パイルドラモン,Paildramon,FIRE,U,5,ギガドラモン,Gigadramon,FIRE,U,193,ホイッスル,Whistle,OPTION,
-15,ハヌモン,Apemon,FIRE,C,15,ハヌモン,Apemon,FIRE,C,204,ビートルダイヤ,Beetle Diamond,OPTION,
-19,ケンタルモン,Centarumon,FIRE,C,19,ケンタルモン,Centarumon,FIRE,C,213,アンインストール,UnInstall,OPTION,
-3,ホウオウモン,Phoenixmon,FIRE,U,17,モノクロモン,Monochromon,FIRE,C,199,闇貴族のマント,Dark Lord's Cape,OPTION,
-140,スーパースターモン,SuperStarmon,RARE,U,165,トイアグモンＬ,L-ToyAgumon,RARE,R,203,トノサマのおふれ,Shogun's Order,OPTION,
+card1_number,card1_type,card1_lv,card2_number,card2_type,card2_lv,result_number,result_type,result_lv
+143,5,6,113,4,6,6,1,6
+110,4,6,145,5,6,6,1,6
+108,4,6,35,2,6,2,1,6
+142,5,6,115,4,6,2,1,6
+37,2,6,107,4,6,2,1,6
+44,2,6,110,4,6,7,1,6
+108,4,6,149,5,6,7,1,6
+104,4,6,47,2,4,7,1,6
+108,4,6,49,2,4,9,1,6
+103,4,6,156,5,4,9,1,6
+140,5,6,123,4,4,9,1,6
+35,2,6,111,4,6,3,1,6
+109,4,6,141,5,6,3,1,6
+145,5,6,106,4,6,5,1,6
+146,5,6,109,4,6,5,1,6
+110,4,6,37,2,6,4,1,6
+104,4,6,146,5,6,4,1,6
+34,2,6,120,4,4,8,1,6
+107,4,6,49,2,4,8,1,6
+107,4,6,157,5,4,10,1,6
+136,4,3,37,2,6,17,1,4
+105,4,6,171,5,3,17,1,4
+108,4,6,167,5,3,16,1,4
+34,2,6,135,4,3,16,1,4
+130,4,4,34,2,6,13,1,4
+160,5,4,110,4,6,13,1,4
+103,4,6,60,2,4,13,1,4
+142,5,6,132,4,3,15,1,4
+109,4,6,61,2,3,15,1,4
+161,5,4,105,4,6,12,1,4
+117,4,4,151,5,4,12,1,4
+40,2,6,125,4,4,12,1,4
+55,2,4,132,4,3,24,1,4
+128,4,4,163,5,4,24,1,4
+137,4,3,51,2,4,25,1,4
+128,4,4,62,2,3,25,1,4
+43,2,6,133,4,3,19,1,4
+67,2,3,111,4,6,19,1,4
+143,5,6,20,1,4,47,2,4
+63,2,3,122,4,4,23,1,4
+112,4,6,166,5,3,18,1,4
+64,2,3,119,4,4,21,1,4
+125,4,4,159,5,4,20,1,4
+130,4,4,165,5,3,26,1,4
+139,5,6,132,4,3,14,1,4
+171,5,3,135,4,3,32,1,3
+66,2,3,132,4,3,29,1,3
+133,4,3,65,2,3,30,1,3
+65,2,3,134,4,3,30,1,3
+134,4,3,165,5,3,28,1,3
+130,4,4,65,2,3,28,1,3
+62,2,3,132,4,3,27,1,3
+170,5,3,138,4,3,33,1,3
+138,4,3,63,2,3,31,1,3
+71,3,6,106,4,6,37,2,6
+108,4,6,69,3,6,37,2,6
+70,3,6,113,4,6,39,2,6
+73,3,6,110,4,6,39,2,6
+7,1,6,139,5,6,39,2,6
+145,5,6,1,1,6,39,2,6
+75,3,6,119,4,4,43,2,6
+4,1,6,152,5,4,43,2,6
+15,1,4,139,5,6,43,2,6
+7,1,6,141,5,6,40,2,6
+71,3,6,114,4,6,40,2,6
+110,4,6,76,3,6,40,2,6
+108,4,6,73,3,6,38,2,6
+73,3,6,109,4,6,38,2,6
+140,5,6,14,1,4,42,2,6
+10,1,6,143,5,6,42,2,6
+73,3,6,114,4,6,41,2,6
+6,1,6,153,5,4,45,2,6
+96,3,4,104,4,6,48,2,4
+103,4,6,96,3,4,48,2,4
+70,3,6,131,4,4,48,2,4
+83,3,4,118,4,4,48,2,4
+70,3,6,137,4,3,52,2,4
+139,5,6,32,1,3,52,2,4
+105,4,6,102,3,3,52,2,4
+145,5,6,27,1,3,52,2,4
+108,4,6,97,3,3,50,2,4
+160,5,4,9,1,6,50,2,4
+104,4,6,99,3,3,50,2,4
+72,3,6,125,4,4,46,2,4
+126,4,4,71,3,6,46,2,4
+1,1,6,160,5,4,46,2,4
+130,4,4,88,3,4,56,2,4
+128,4,4,89,3,4,56,2,4
+86,3,4,118,4,4,49,2,4
+107,4,6,97,3,3,49,2,4
+142,5,6,33,1,3,53,2,4
+28,1,3,145,5,6,53,2,4
+2,1,6,168,5,3,51,2,4
+28,1,3,160,5,4,60,2,4
+130,4,4,94,3,4,59,2,4
+139,5,6,23,1,4,47,2,4
+163,5,4,31,1,3,63,2,3
+28,1,3,165,5,3,63,2,3
+167,5,3,27,1,3,63,2,3
+170,5,3,33,1,3,68,2,3
+99,3,3,133,4,3,64,2,3
+135,4,3,99,3,3,65,2,3
+31,1,3,170,5,3,67,2,3
+96,3,4,132,4,3,61,2,3
+6,1,6,40,2,6,74,3,6
+0,1,6,34,2,6,74,3,6
+1,1,6,35,2,6,74,3,6
+10,1,6,34,2,6,74,3,6
+145,5,6,35,2,6,74,3,6
+44,2,6,147,5,6,78,3,6
+52,2,4,1,1,6,78,3,6
+18,1,4,34,2,6,78,3,6
+40,2,6,152,5,4,78,3,6
+6,1,6,41,2,6,75,3,6
+5,1,6,41,2,6,75,3,6
+34,2,6,12,1,4,75,3,6
+6,1,6,45,2,6,77,3,6
+140,5,6,50,2,4,77,3,6
+50,2,4,2,1,6,77,3,6
+18,1,4,39,2,6,80,3,6
+44,2,6,14,1,4,80,3,6
+34,2,6,159,5,4,80,3,6
+49,2,4,144,5,6,79,3,6
+161,5,4,39,2,6,83,3,4
+54,2,4,148,5,6,83,3,4
+40,2,6,23,1,4,83,3,4
+34,2,6,27,1,3,83,3,4
+1,1,6,68,2,3,86,3,4
+34,2,6,170,5,3,86,3,4
+18,1,4,51,2,4,86,3,4
+33,1,3,40,2,6,88,3,4
+61,2,3,12,1,4,88,3,4
+18,1,4,56,2,4,88,3,4
+56,2,4,10,1,6,84,3,4
+142,5,6,61,2,3,84,3,4
+139,5,6,63,2,3,84,3,4
+56,2,4,4,1,6,81,3,6
+152,5,4,46,2,4,81,3,6
+56,2,4,20,1,4,89,3,4
+159,5,4,54,2,4,89,3,4
+43,2,6,171,5,3,90,3,4
+169,5,3,46,2,4,90,3,4
+1,1,6,60,2,4,82,3,4
+30,1,3,48,2,4,91,3,4
+18,1,4,64,2,3,92,3,4
+18,1,4,68,2,3,94,3,4
+56,2,4,30,1,3,95,3,4
+56,2,4,12,1,4,85,3,4
+56,2,4,33,1,3,96,3,4
+43,2,6,27,1,3,87,3,4
+31,1,3,67,2,3,101,3,3
+30,1,3,67,2,3,101,3,3
+166,5,3,66,2,3,99,3,3
+61,2,3,33,1,3,99,3,3
+31,1,3,62,2,3,98,3,3
+30,1,3,65,2,3,100,3,3
+28,1,3,61,2,3,97,3,3
+170,5,3,68,2,3,102,3,3
+0,1,6,75,3,6,108,4,6
+144,5,6,71,3,6,108,4,6
+140,5,6,76,3,6,108,4,6
+0,1,6,70,3,6,107,4,6
+2,1,6,72,3,6,107,4,6
+139,5,6,72,3,6,107,4,6
+4,1,6,69,3,6,107,4,6
+72,3,6,18,1,4,115,4,6
+90,3,4,1,1,6,115,4,6
+70,3,6,20,1,4,115,4,6
+80,3,6,12,1,4,115,4,6
+75,3,6,5,1,6,110,4,6
+70,3,6,10,1,6,110,4,6
+145,5,6,73,3,6,110,4,6
+4,1,6,76,3,6,109,4,6
+76,3,6,142,5,6,109,4,6
+144,5,6,73,3,6,109,4,6
+5,1,6,77,3,6,111,4,6
+70,3,6,149,5,6,111,4,6
+76,3,6,146,5,6,111,4,6
+75,3,6,13,1,4,114,4,6
+12,1,4,77,3,6,114,4,6
+8,1,6,77,3,6,112,4,6
+10,1,6,76,3,6,112,4,6
+75,3,6,156,5,4,116,4,6
+139,5,6,92,3,4,116,4,6
+70,3,6,154,5,4,113,4,6
+32,1,3,74,3,6,123,4,4
+75,3,6,169,5,3,123,4,4
+72,3,6,168,5,3,122,4,4
+70,3,6,171,5,3,122,4,4
+75,3,6,166,5,3,122,4,4
+17,1,4,20,1,4,122,4,4
+148,5,6,86,3,4,117,4,4
+146,5,6,88,3,4,117,4,4
+142,5,6,97,3,3,120,4,4
+11,1,6,92,3,4,120,4,4
+69,3,6,168,5,3,121,4,4
+70,3,6,30,1,3,121,4,4
+96,3,4,140,5,6,118,4,4
+10,1,6,87,3,4,118,4,4
+165,5,3,81,3,6,124,4,4
+29,1,3,86,3,4,127,4,4
+97,3,3,158,5,4,128,4,4
+30,1,3,89,3,4,130,4,4
+28,1,3,82,3,4,125,4,4
+96,3,4,166,5,3,132,4,3
+170,5,3,92,3,4,132,4,3
+33,1,3,97,3,3,135,4,3
+30,1,3,99,3,3,135,4,3
+100,3,3,170,5,3,137,4,3
+30,1,3,102,3,3,137,4,3
+31,1,3,96,3,4,133,4,3
+168,5,3,97,3,3,134,4,3
+32,1,3,102,3,3,138,4,3
+28,1,3,102,3,3,136,4,3
+108,4,6,17,1,4,148,5,6
+36,2,6,90,3,4,148,5,6
+44,2,6,81,3,6,148,5,6
+112,4,6,14,1,4,148,5,6
+0,1,6,139,5,6,142,5,6
+1,1,6,106,4,6,142,5,6
+108,4,6,1,1,6,142,5,6
+107,4,6,7,1,6,142,5,6
+73,3,6,35,2,6,142,5,6
+110,4,6,9,1,6,145,5,6
+44,2,6,75,3,6,145,5,6
+34,2,6,83,3,4,145,5,6
+106,4,6,7,1,6,143,5,6
+70,3,6,44,2,6,143,5,6
+35,2,6,80,3,6,143,5,6
+75,3,6,52,2,4,149,5,6
+70,3,6,56,2,4,149,5,6
+82,3,4,45,2,6,149,5,6
+9,1,6,113,4,6,146,5,6
+10,1,6,113,4,6,146,5,6
+73,3,6,48,2,4,146,5,6
+44,2,6,85,3,4,150,5,6
+41,2,6,76,3,6,144,5,6
+87,3,4,35,2,6,147,5,6
+70,3,6,68,2,3,155,5,4
+2,1,6,138,4,3,155,5,4
+105,4,6,33,1,3,155,5,4
+122,4,4,17,1,4,155,5,4
+69,3,6,60,2,4,151,5,4
+104,4,6,29,1,3,153,5,4
+40,2,6,95,3,4,153,5,4
+43,2,6,100,3,3,158,5,4
+23,1,4,122,4,4,158,5,4
+123,4,4,28,1,3,161,5,4
+118,4,4,23,1,4,156,5,4
+128,4,4,28,1,3,164,5,4
+62,2,3,88,3,4,160,5,4
+34,2,6,101,3,3,154,5,4
+72,3,6,59,2,4,152,5,4
+130,4,4,33,1,3,167,5,3
+102,3,3,59,2,4,167,5,3
+98,3,3,63,2,3,167,5,3
+98,3,3,68,2,3,169,5,3
+31,1,3,135,4,3,169,5,3
+65,2,3,101,3,3,169,5,3
+30,1,3,135,4,3,169,5,3
+136,4,3,28,1,3,168,5,3
+30,1,3,133,4,3,168,5,3
+29,1,3,135,4,3,168,5,3
+96,3,4,63,2,3,165,5,3
+101,3,3,58,2,4,165,5,3
+28,1,3,132,4,3,166,5,3
+12,1,4,192,6,0,6,1,6
+7,1,6,202,6,0,6,1,6
+3,1,6,195,6,0,4,1,6
+7,1,6,280,6,0,4,1,6
+0,1,6,205,6,0,5,1,6
+7,1,6,196,6,0,5,1,6
+12,1,4,204,6,0,10,1,6
+7,1,6,211,6,0,9,1,6
+3,1,6,194,6,0,2,1,6
+3,1,6,230,6,0,11,1,6
+0,1,6,245,6,0,13,1,4
+7,1,6,226,6,0,13,1,4
+12,1,4,213,6,0,13,1,4
+3,1,6,251,6,0,15,1,4
+12,1,4,259,6,0,21,1,4
+7,1,6,240,6,0,16,1,4
+33,1,3,280,6,0,17,1,4
+33,1,3,253,6,0,18,1,4
+33,1,3,227,6,0,26,1,4
+33,1,3,267,6,0,32,1,3
+33,1,3,244,6,0,29,1,3
+33,1,3,237,6,0,28,1,3
+38,2,6,192,6,0,37,2,6
+38,2,6,213,6,0,43,2,6
+38,2,6,205,6,0,41,2,6
+40,2,6,200,6,0,41,2,6
+40,2,6,195,6,0,39,2,6
+34,2,6,202,6,0,39,2,6
+38,2,6,201,6,0,40,2,6
+40,2,6,191,6,0,38,2,6
+68,2,3,215,6,0,58,2,4
+63,2,3,225,6,0,58,2,4
+60,2,4,235,6,0,58,2,4
+58,2,4,248,6,0,60,2,4
+63,2,3,235,6,0,60,2,4
+63,2,3,207,6,0,55,2,4
+60,2,4,217,6,0,55,2,4
+68,2,3,193,6,0,52,2,4
+40,2,6,252,6,0,52,2,4
+60,2,4,208,6,0,53,2,4
+40,2,6,261,6,0,53,2,4
+58,2,4,191,6,0,47,2,4
+58,2,4,226,6,0,56,2,4
+58,2,4,236,6,0,59,2,4
+34,2,6,247,6,0,49,2,4
+60,2,4,226,6,0,57,2,4
+40,2,6,245,6,0,50,2,4
+68,2,3,266,6,0,67,2,3
+63,2,3,272,6,0,67,2,3
+63,2,3,249,6,0,64,2,3
+68,2,3,228,6,0,61,2,3
+63,2,3,260,6,0,65,2,3
+76,3,6,192,6,0,74,3,6
+73,3,6,193,6,0,74,3,6
+70,3,6,225,6,0,78,3,6
+76,3,6,214,6,0,78,3,6
+73,3,6,220,6,0,78,3,6
+73,3,6,204,6,0,75,3,6
+76,3,6,203,6,0,77,3,6
+76,3,6,225,6,0,80,3,6
+92,3,4,249,6,0,93,3,4
+98,3,3,226,6,0,93,3,4
+98,3,3,242,6,0,96,3,4
+102,3,3,231,6,0,96,3,4
+73,3,6,233,6,0,81,3,6
+92,3,4,196,6,0,81,3,6
+76,3,6,230,6,0,81,3,6
+98,3,3,232,6,0,94,3,4
+102,3,3,225,6,0,94,3,4
+70,3,6,241,6,0,82,3,4
+76,3,6,235,6,0,82,3,4
+92,3,4,227,6,0,89,3,4
+92,3,4,200,6,0,83,3,4
+102,3,3,210,6,0,91,3,4
+98,3,3,194,6,0,85,3,4
+98,3,3,202,6,0,87,3,4
+98,3,3,214,6,0,90,3,4
+102,3,3,298,6,0,100,3,3
+104,4,6,230,6,0,115,4,6
+107,4,6,227,6,0,115,4,6
+104,4,6,234,6,0,116,4,6
+103,4,6,232,6,0,116,4,6
+103,4,6,209,6,0,111,4,6
+107,4,6,208,6,0,111,4,6
+105,4,6,213,6,0,112,4,6
+107,4,6,215,6,0,112,4,6
+105,4,6,204,6,0,110,4,6
+103,4,6,220,6,0,113,4,6
+103,4,6,194,6,0,107,4,6
+107,4,6,194,6,0,108,4,6
+107,4,6,201,6,0,109,4,6
+138,4,3,198,6,0,124,4,4
+138,4,3,195,6,0,123,4,4
+133,4,3,200,6,0,123,4,4
+133,4,3,209,6,0,125,4,4
+133,4,3,229,6,0,129,4,4
+138,4,3,207,6,0,127,4,4
+138,4,3,193,6,0,122,4,4
+133,4,3,192,6,0,120,4,4
+133,4,3,236,6,0,131,4,4
+107,4,6,238,6,0,117,4,4
+133,4,3,244,6,0,132,4,3
+133,4,3,251,6,0,134,4,3
+143,5,6,197,6,0,142,5,6
+139,5,6,193,6,0,142,5,6
+139,5,6,212,6,0,145,5,6
+139,5,6,230,6,0,148,5,6
+143,5,6,197,6,0,144,5,6
+160,5,4,222,6,0,157,5,4
+139,5,6,247,6,0,152,5,4
+143,5,6,234,6,0,151,5,4
+171,5,3,247,6,0,168,5,3
+171,5,3,244,6,0,167,5,3
+171,5,3,252,6,0,169,5,3
+171,5,3,261,6,0,170,5,3
+160,5,4,268,6,0,166,5,3
+160,5,4,300,6,0,165,5,3
+4,1,6,35,2,6,0,1,6
+12,1,4,117,4,4,4,1,6
+37,2,6,2,1,6,1,1,6
+39,2,6,6,1,6,35,2,6
+142,5,6,40,2,6,34,2,6
+42,2,6,43,2,6,36,2,6
+3,1,6,81,3,6,72,3,6
+111,4,6,78,3,6,73,3,6
+75,3,6,143,5,6,70,3,6
+76,3,6,7,1,6,69,3,6
+13,1,4,83,3,4,76,3,6
+75,3,6,77,3,6,71,3,6
+74,3,6,112,4,6,104,4,6
+144,5,6,109,4,6,105,4,6
+110,4,6,111,4,6,106,4,6
+145,5,6,38,2,6,140,5,6
+116,4,6,150,5,6,141,5,6
+115,4,6,147,5,6,139,5,6
+82,3,4,151,5,4,142,5,6
+6,1,6,6,1,6,200,6,0
+64,2,3,113,4,6,200,6,0
+3,1,6,5,1,6,200,6,0
+0,1,6,15,1,4,200,6,0
+103,4,6,103,4,6,200,6,0
+139,5,6,95,3,4,200,6,0
+70,3,6,149,5,6,200,6,0
+69,3,6,80,3,6,200,6,0
+107,4,6,97,3,3,200,6,0
+12,1,4,12,1,4,200,6,0
+65,2,3,134,4,3,200,6,0
+40,2,6,52,2,4,200,6,0
+40,2,6,159,5,4,200,6,0
+8,1,6,2,1,6,276,6,0
+103,4,6,110,4,6,284,6,0
+4,1,6,4,1,6,281,6,0
+3,1,6,11,1,6,283,6,0
+17,1,4,17,1,4,203,6,0
+21,1,4,21,1,4,214,6,0
+143,5,6,143,5,6,192,6,0
+7,1,6,7,1,6,193,6,0
+0,1,6,18,1,4,196,6,0
+191,6,0,195,6,0,200,6,0
+280,6,0,297,6,0,200,6,0
+191,6,0,192,6,0,200,6,0
+210,6,0,213,6,0,200,6,0
+192,6,0,205,6,0,200,6,0
+206,6,0,226,6,0,200,6,0
+205,6,0,205,6,0,274,6,0
+217,6,0,228,6,0,205,6,0
+211,6,0,281,6,0,278,6,0
+171,5,3,200,6,0,200,6,0
+76,3,6,192,6,0,200,6,0
+40,2,6,191,6,0,200,6,0
+143,5,6,191,6,0,200,6,0
+73,3,6,229,6,0,200,6,0
+21,1,4,297,6,0,281,6,0
+104,4,6,234,6,0,281,6,0
+98,3,3,242,6,0,275,6,0
+108,4,6,73,3,6,37,2,6
+7,1,6,196,6,0,2,1,6
+63,2,3,122,4,4,22,1,4
+70,3,6,225,6,0,77,3,6
+107,4,6,215,6,0,111,4,6
+133,4,3,200,6,0,122,4,4
+167,5,3,192,6,0,152,5,4
+203,6,0,241,6,0,211,6,0
+203,6,0,241,6,0,209,6,0
+203,6,0,241,6,0,206,6,0
+203,6,0,241,6,0,210,6,0
+203,6,0,241,6,0,207,6,0
+203,6,0,241,6,0,208,6,0
+203,6,0,241,6,0,254,6,0
+281,6,0,300,6,0,210,6,0
+281,6,0,300,6,0,208,6,0
+281,6,0,300,6,0,209,6,0
+281,6,0,300,6,0,207,6,0
+281,6,0,300,6,0,211,6,0
+281,6,0,300,6,0,206,6,0
+224,6,0,269,6,0,231,6,0
+224,6,0,269,6,0,232,6,0
+224,6,0,269,6,0,233,6,0
+224,6,0,269,6,0,234,6,0
+224,6,0,269,6,0,235,6,0
+247,6,0,296,6,0,217,6,0
+247,6,0,296,6,0,216,6,0
+247,6,0,296,6,0,218,6,0
+247,6,0,296,6,0,220,6,0
+191,6,0,193,6,0,253,6,0
+191,6,0,193,6,0,192,6,0
+191,6,0,193,6,0,194,6,0
+191,6,0,193,6,0,196,6,0
+252,6,0,239,6,0,232,6,0
+252,6,0,239,6,0,233,6,0
+252,6,0,239,6,0,234,6,0
+252,6,0,239,6,0,235,6,0
+233,6,0,261,6,0,234,6,0
+233,6,0,261,6,0,231,6,0
+233,6,0,261,6,0,232,6,0
+233,6,0,261,6,0,235,6,0
+255,6,0,252,6,0,251,6,0
+255,6,0,252,6,0,250,6,0
+255,6,0,252,6,0,248,6,0
+255,6,0,252,6,0,247,6,0
+243,6,0,243,6,0,230,6,0
+243,6,0,243,6,0,225,6,0
+243,6,0,243,6,0,228,6,0
+243,6,0,243,6,0,226,6,0
+211,6,0,281,6,0,195,6,0
+211,6,0,281,6,0,196,6,0
+211,6,0,281,6,0,194,6,0
+211,6,0,281,6,0,253,6,0
+239,6,0,239,6,0,221,6,0
+239,6,0,239,6,0,298,6,0
+239,6,0,239,6,0,265,6,0
+239,6,0,239,6,0,297,6,0
+299,6,0,235,6,0,298,6,0
+299,6,0,235,6,0,265,6,0
+299,6,0,235,6,0,297,6,0
+191,6,0,192,6,0,196,6,0
+191,6,0,192,6,0,193,6,0
+191,6,0,192,6,0,195,6,0
+258,6,0,261,6,0,259,6,0
+258,6,0,261,6,0,262,6,0
+258,6,0,261,6,0,260,6,0
+193,6,0,207,6,0,194,6,0
+193,6,0,207,6,0,195,6,0
+193,6,0,207,6,0,196,6,0
+191,6,0,195,6,0,197,6,0
+191,6,0,195,6,0,193,6,0
+191,6,0,195,6,0,192,6,0
+240,6,0,237,6,0,223,6,0
+240,6,0,237,6,0,222,6,0
+240,6,0,237,6,0,224,6,0
+233,6,0,204,6,0,203,6,0
+233,6,0,204,6,0,205,6,0
+233,6,0,204,6,0,294,6,0
+239,6,0,233,6,0,219,6,0
+239,6,0,233,6,0,220,6,0
+239,6,0,233,6,0,217,6,0
+234,6,0,231,6,0,296,6,0
+234,6,0,231,6,0,295,6,0
+234,6,0,231,6,0,215,6,0
+296,6,0,255,6,0,299,6,0
+296,6,0,255,6,0,265,6,0
+296,6,0,255,6,0,297,6,0
+245,6,0,245,6,0,227,6,0
+245,6,0,245,6,0,228,6,0
+245,6,0,245,6,0,229,6,0
+248,6,0,248,6,0,236,6,0
+248,6,0,248,6,0,239,6,0
+248,6,0,248,6,0,238,6,0
+203,6,0,212,6,0,199,6,0
+203,6,0,212,6,0,201,6,0
+203,6,0,228,6,0,204,6,0
+203,6,0,228,6,0,202,6,0
+203,6,0,239,6,0,205,6,0
+203,6,0,239,6,0,294,6,0
+192,6,0,205,6,0,253,6,0
+192,6,0,205,6,0,194,6,0
+192,6,0,215,6,0,195,6,0
+192,6,0,215,6,0,196,6,0
+280,6,0,261,6,0,294,6,0
+280,6,0,261,6,0,205,6,0
+280,6,0,297,6,0,199,6,0
+280,6,0,297,6,0,201,6,0
+198,6,0,203,6,0,195,6,0
+198,6,0,203,6,0,196,6,0
+198,6,0,213,6,0,197,6,0
+198,6,0,213,6,0,199,6,0
+274,6,0,258,6,0,294,6,0
+274,6,0,258,6,0,205,6,0
+241,6,0,256,6,0,237,6,0
+241,6,0,256,6,0,236,6,0
+264,6,0,258,6,0,263,6,0
+264,6,0,258,6,0,300,6,0
+233,6,0,254,6,0,294,6,0
+233,6,0,254,6,0,205,6,0
+300,6,0,300,6,0,264,6,0
+300,6,0,300,6,0,266,6,0
+195,6,0,200,6,0,194,6,0
+195,6,0,200,6,0,253,6,0
+274,6,0,281,6,0,191,6,0
+274,6,0,280,6,0,191,6,0
+280,6,0,280,6,0,191,6,0
+192,6,0,193,6,0,191,6,0
+281,6,0,193,6,0,191,6,0
+274,6,0,252,6,0,204,6,0
+200,6,0,238,6,0,204,6,0
+206,6,0,226,6,0,204,6,0
+193,6,0,252,6,0,204,6,0
+198,6,0,212,6,0,199,6,0
+210,6,0,210,6,0,199,6,0
+193,6,0,230,6,0,199,6,0
+212,6,0,212,6,0,202,6,0
+198,6,0,231,6,0,202,6,0
+193,6,0,245,6,0,202,6,0
+198,6,0,237,6,0,203,6,0
+206,6,0,221,6,0,203,6,0
+280,6,0,251,6,0,203,6,0
+198,6,0,228,6,0,201,6,0
+191,6,0,233,6,0,201,6,0
+210,6,0,213,6,0,201,6,0
+224,6,0,236,6,0,214,6,0
+217,6,0,241,6,0,214,6,0
+258,6,0,258,6,0,262,6,0
+224,6,0,226,6,0,212,6,0
+263,6,0,266,6,0,264,6,0
+205,6,0,205,6,0,198,6,0
+206,6,0,274,6,0,194,6,0
+224,6,0,243,6,0,296,6,0
+296,6,0,297,6,0,213,6,0
+193,6,0,198,6,0,192,6,0
+264,6,0,264,6,0,266,6,0
+192,6,0,220,6,0,197,6,0
+17,1,4,17,1,4,254,6,0
+17,1,4,17,1,4,209,6,0
+17,1,4,17,1,4,211,6,0
+17,1,4,17,1,4,210,6,0
+17,1,4,17,1,4,206,6,0
+17,1,4,17,1,4,207,6,0
+17,1,4,17,1,4,208,6,0
+140,5,6,170,5,3,206,6,0
+140,5,6,170,5,3,210,6,0
+140,5,6,170,5,3,209,6,0
+140,5,6,170,5,3,207,6,0
+140,5,6,170,5,3,211,6,0
+140,5,6,170,5,3,254,6,0
+140,5,6,170,5,3,208,6,0
+38,2,6,43,2,6,195,6,0
+38,2,6,43,2,6,196,6,0
+38,2,6,43,2,6,194,6,0
+38,2,6,43,2,6,253,6,0
+29,1,3,29,1,3,248,6,0
+29,1,3,29,1,3,247,6,0
+29,1,3,29,1,3,249,6,0
+29,1,3,29,1,3,246,6,0
+3,1,6,11,1,6,196,6,0
+3,1,6,11,1,6,253,6,0
+3,1,6,11,1,6,195,6,0
+3,1,6,11,1,6,194,6,0
+40,2,6,42,2,6,196,6,0
+40,2,6,42,2,6,194,6,0
+40,2,6,42,2,6,253,6,0
+40,2,6,42,2,6,195,6,0
+22,1,4,22,1,4,295,6,0
+22,1,4,22,1,4,296,6,0
+22,1,4,22,1,4,215,6,0
+27,1,3,27,1,3,239,6,0
+27,1,3,27,1,3,240,6,0
+27,1,3,27,1,3,241,6,0
+6,1,6,6,1,6,253,6,0
+6,1,6,6,1,6,194,6,0
+0,1,6,11,1,6,194,6,0
+0,1,6,11,1,6,253,6,0
+7,1,6,7,1,6,196,6,0
+7,1,6,7,1,6,195,6,0
+103,4,6,114,4,6,194,6,0
+103,4,6,114,4,6,253,6,0
+33,1,3,33,1,3,266,6,0
+33,1,3,33,1,3,264,6,0
+143,5,6,143,5,6,253,6,0
+143,5,6,143,5,6,194,6,0
+103,4,6,118,4,4,196,6,0
+103,4,6,118,4,4,195,6,0
+40,2,6,52,2,4,201,6,0
+40,2,6,52,2,4,199,6,0
+12,1,4,12,1,4,199,6,0
+12,1,4,12,1,4,201,6,0
+140,5,6,160,5,4,199,6,0
+140,5,6,160,5,4,201,6,0
+21,1,4,21,1,4,296,6,0
+21,1,4,21,1,4,215,6,0
+69,3,6,80,3,6,253,6,0
+69,3,6,80,3,6,194,6,0
+9,1,6,9,1,6,198,6,0
+38,2,6,50,2,4,198,6,0
+0,1,6,18,1,4,198,6,0
+103,4,6,122,4,4,198,6,0
+69,3,6,75,3,6,192,6,0
+103,4,6,110,4,6,192,6,0
+4,1,6,4,1,6,192,6,0
+40,2,6,34,2,6,192,6,0
+38,2,6,35,2,6,191,6,0
+0,1,6,4,1,6,191,6,0
+103,4,6,103,4,6,191,6,0
+1,1,6,2,1,6,191,6,0
+8,1,6,11,1,6,197,6,0
+0,1,6,15,1,4,197,6,0
+38,2,6,47,2,4,197,6,0
+140,5,6,162,5,4,201,6,0
+5,1,6,19,1,4,201,6,0
+142,5,6,142,5,6,201,6,0
+14,1,4,14,1,4,202,6,0
+147,5,6,156,5,4,202,6,0
+40,2,6,38,2,6,193,6,0
+4,1,6,5,1,6,193,6,0
+15,1,4,15,1,4,204,6,0
+19,1,4,19,1,4,213,6,0
+3,1,6,17,1,4,199,6,0
+140,5,6,165,5,3,203,6,0

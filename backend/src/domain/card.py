@@ -17,6 +17,23 @@ class CardBase(SQLModel):
             match s:
                 case "オプション":
                     return cls.OPTION
+            if s in cls._member_names_:
+                return cls._member_map_.get(s)
+
+        def to_int(self):
+            match self.value:
+                case self.FIRE.value:
+                    return 1
+                case self.ICE.value:
+                    return 2
+                case self.NATURE.value:
+                    return 3
+                case self.DARKNESS.value:
+                    return 4
+                case self.RARE.value:
+                    return 5
+                case self.OPTION.value:
+                    return 6
 
         def color(self):
             match self.value:
@@ -40,13 +57,26 @@ class CardBase(SQLModel):
 
         @classmethod
         def _missing_(cls, s: str):
-            match s.upper():
+            match s:
                 case "III":
                     return cls.R
                 case "IV":
                     return cls.C
                 case "A":
                     return cls.A
+            if s in cls._member_names_:
+                return cls._member_map_.get(s)
+
+        def to_int(self):
+            match self.value:
+                case self.U.value:
+                    return 6
+                case self.A.value:
+                    return 5
+                case self.C.value:
+                    return 4
+                case self.R.value:
+                    return 3
 
     number: int = Field(ge=0, le=301, primary_key=True)
     name: str

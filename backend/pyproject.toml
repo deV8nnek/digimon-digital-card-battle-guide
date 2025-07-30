@@ -73,6 +73,7 @@ ignore = [
     "C416",  # Unnecessary `list` comprehension (rewrite using `list()`)
     "C408",  # Unnecessary `dict` call (rewrite as a literal)
     "B905",  # `zip()` without an explicit `strict=` parameter
+    "UP008", # Use `super()` instead of `super(__class__, self)`
 ]
 
 [tool.ruff.lint.pyupgrade]

@@ -63,7 +63,7 @@ $ alembic upgrade head
 ```
 
 * After changing a model (for example, adding a column), inside the container, create a revision, e.g.:
-* Add import to new model in `alembic/envy.py`.
+* Add import to new model in `alembic/env.py`.
 
 ```console
 $ alembic revision --autogenerate -m "Add column last_name to User model"

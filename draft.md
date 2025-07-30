@@ -400,6 +400,26 @@ TensorFlow: This is Google's flagship open-source machine learning framework, an
 card A + card B 
 card: number~~, name~~, type, lv //variables to make Card C
 
+rethinking about goals
+nothing fancy but a simple model then try other complex algorithms in the future
+supervised learning - classification - linear regression
+offtopic heard of naive bayes much in school, but the school restricted to use it due to commonality in thesis
+anyways starting from the simplest
+idk why but i kind of leaning to support vector machine (svm) and 
+semi-supervised learning for both unsupervised and supervised though the use case is leaning more on supervised
+
+In game mechanics, card fusion is based on hidden composite and material value of a card, fixed pairs to generate result card
+not goal but aiming the model to learn before all data is fed  
+
+after understanding the code somewhat, might explore diffent algorithms if it's ~~encapsulated~~highly abstracted why not?
+
+Will use neural networks
+Will start with 1 hidden layer, ... n hidden layers
+Will choose between linear regression, and other algorithms, mix and match
+Noting topics, activation, cost function, loss optimizers, gradients
+So basically instead of a classical approach, will be able to explore these other algorithms in neural networks
+Reminder: take a screenshot of each result
+
 ```
 
 ## Maintenance

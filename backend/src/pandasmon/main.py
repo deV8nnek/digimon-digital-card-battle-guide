@@ -106,7 +106,7 @@ if not cards.exists():
     cards.parent.mkdir(parents=True, exist_ok=True)
     cards = clean_card(read_card())
     cards.to_csv("data/processed/cards.csv", index=False)
-# card1 = cards.copy().sample(n=1)
+
 filter = [member.value for member in Card.CardType][:-1]
 
 card1 = cards[cards["name"] == "アカトリモン"]
