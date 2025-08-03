@@ -7,8 +7,22 @@ class CardFusionModel(nn.Module):
         # Finding right model
         super(CardFusionModel, self).__init__()
         # each neuron -> function that returns a number from 0 to 1
+        # card1, card2
+        # each card has number, type, lv
+        # 300 card samples with assigned type from 6 types, with assigned lv from 5 lv including 0 for no lv
+        # so 300, 6, 5, 300, 6, 5 for each sample or row
+        # in short sample size is 300 but each sample is an array of values
+        # fact: while there are 300 cards, some cards are unobtainable through fusion, regardless
+        # output may be 1 of the 300.
+        # try output as an array or [number, type, lv]
+        # fact: card1 + card 2 = card result
+        # if card is an array or [number, type, lv]
+        # [number, type, lv] + [number, type lv]
+        # or [number, type, lv, number, type, lv]
+        # so 6 inputs if number, type, lv, number, type lvl
+        # but 2 inputs is clearer in array or [[number,type,lv],[number,type,lv]]
         # number(300), type(6), lv (0 or 4=5) organize in vector
-        self.input_output = nn.Linear(3, 300)  # no hidden
+        self.input_output = nn.Linear(300, 300)  # no hidden
         # if 2D number image recognition is length x width or the number of pixels with values 0.0 black to 1.0 white
         # so input layer means regardless of values, in this case, 3 for number, type, lv
         # self.input = nn.Linear(3, 1) # 1 hidden, 1 neuron

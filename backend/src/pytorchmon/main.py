@@ -59,6 +59,14 @@ for epoch in range(num_epochs):
 test_dataset = CardFusionBasicDataset(train_dataset)
 
 # Make useful predictions
-predicted_prob = model(test_dataset.data[0])
-predicted_class = (predicted_prob > 0.5).float().item()
-print(f"For X = [6.0, 7.0], Predicted Probability: {predicted_prob.item():.4f}, Predicted Class: {predicted_class}")
+correct = 0
+with torch.no_grad():
+    for idx, data in enumerate(test_dataset):
+        y = model(data)
+        print(f"Index [{idx}], Card Number {y.argmax().item()}")
+
+        if y.argmax().item() == test_dataset[idx]:
+            correct += 1
+        # predicted_prob = model(test_dataset.data[0])
+        # predicted_class = (predicted_prob > 0.5).float().item()
+        # print(f"For X = [6.0, 7.0], Predicted Probability: {predicted_prob.item():.4f}, Predicted Class: {predicted_class}")

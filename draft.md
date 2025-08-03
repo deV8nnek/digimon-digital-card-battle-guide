@@ -419,8 +419,9 @@ Will choose between linear regression, and other algorithms, mix and match
 Noting topics, activation, cost function, loss optimizers, gradients
 So basically instead of a classical approach, will be able to explore these other algorithms in neural networks
 Reminder: take a screenshot of each result
-
 ```
+
+![machine-learning](/img/machine-learning.png)
 
 ## Maintenance
 
