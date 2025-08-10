@@ -47,88 +47,6 @@ wheels = [
 ]
 
 [[package]]
-name = "app"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "alembic" },
-    { name = "bcrypt" },
-    { name = "email-validator" },
-    { name = "emails" },
-    { name = "fastapi", extra = ["standard"] },
-    { name = "httpx" },
-    { name = "japanize-matplotlib" },
-    { name = "jinja2" },
-    { name = "matplotlib" },
-    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "numpy", version = "2.3.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
-    { name = "pandas" },
-    { name = "passlib", extra = ["bcrypt"] },
-    { name = "pillow" },
-    { name = "psycopg", extra = ["binary"] },
-    { name = "pydantic" },
-    { name = "pydantic-settings" },
-    { name = "pyjwt" },
-    { name = "python-multipart" },
-    { name = "scrapy" },
-    { name = "sentry-sdk", extra = ["fastapi"] },
-    { name = "sqlmodel" },
-    { name = "tenacity" },
-    { name = "torch" },
-    { name = "twisted" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "coverage" },
-    { name = "ipykernel" },
-    { name = "mypy" },
-    { name = "pre-commit" },
-    { name = "pytest" },
-    { name = "ruff" },
-    { name = "types-passlib" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "alembic", specifier = ">=1.12.1,<2.0.0" },
-    { name = "bcrypt", specifier = "==4.3.0" },
-    { name = "email-validator", specifier = ">=2.1.0.post1,<3.0.0.0" },
-    { name = "emails", specifier = ">=0.6,<1.0" },
-    { name = "fastapi", extras = ["standard"], specifier = ">=0.114.2,<1.0.0" },
-    { name = "httpx", specifier = ">=0.25.1,<1.0.0" },
-    { name = "japanize-matplotlib" },
-    { name = "jinja2", specifier = ">=3.1.4,<4.0.0" },
-    { name = "matplotlib" },
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "passlib", extras = ["bcrypt"], specifier = ">=1.7.4,<2.0.0" },
-    { name = "pillow" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3.1.13,<4.0.0" },
-    { name = "pydantic", specifier = ">2.0" },
-    { name = "pydantic-settings", specifier = ">=2.2.1,<3.0.0" },
-    { name = "pyjwt", specifier = ">=2.8.0,<3.0.0" },
-    { name = "python-multipart", specifier = ">=0.0.7,<1.0.0" },
-    { name = "scrapy" },
-    { name = "sentry-sdk", extras = ["fastapi"], specifier = ">=1.40.6,<2.0.0" },
-    { name = "sqlmodel", specifier = ">=0.0.21,<1.0.0" },
-    { name = "tenacity", specifier = ">=8.2.3,<9.0.0" },
-    { name = "torch" },
-    { name = "twisted", specifier = "==21.7.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.4.3,<8.0.0" },
-    { name = "ipykernel" },
-    { name = "mypy", specifier = ">=1.8.0,<2.0.0" },
-    { name = "pre-commit", specifier = ">=3.6.2,<4.0.0" },
-    { name = "pytest", specifier = ">=7.4.3,<8.0.0" },
-    { name = "ruff", specifier = ">=0.2.2,<1.0.0" },
-    { name = "types-passlib", specifier = ">=1.7.7.20240106,<2.0.0.0" },
-]
-
-[[package]]
 name = "appnope"
 version = "0.1.4"
 source = { registry = "https://pypi.org/simple" }
@@ -2787,6 +2705,88 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/86/4b/c2ad0496f5bdc6073d9b4cef52be9c04f2b37a5773441cc6600b1857648b/sqlmodel-0.0.24.tar.gz", hash = "sha256:cc5c7613c1a5533c9c7867e1aab2fd489a76c9e8a061984da11b4e613c182423", size = 116780, upload-time = "2025-03-07T05:43:32.887Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/16/91/484cd2d05569892b7fef7f5ceab3bc89fb0f8a8c0cde1030d383dbc5449c/sqlmodel-0.0.24-py3-none-any.whl", hash = "sha256:6778852f09370908985b667d6a3ab92910d0d5ec88adcaf23dbc242715ff7193", size = 28622, upload-time = "2025-03-07T05:43:30.37Z" },
+]
+
+[[package]]
+name = "src"
+version = "1.0.0"
+source = { editable = "." }
+dependencies = [
+    { name = "alembic" },
+    { name = "bcrypt" },
+    { name = "email-validator" },
+    { name = "emails" },
+    { name = "fastapi", extra = ["standard"] },
+    { name = "httpx" },
+    { name = "japanize-matplotlib" },
+    { name = "jinja2" },
+    { name = "matplotlib" },
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "numpy", version = "2.3.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "pandas" },
+    { name = "passlib", extra = ["bcrypt"] },
+    { name = "pillow" },
+    { name = "psycopg", extra = ["binary"] },
+    { name = "pydantic" },
+    { name = "pydantic-settings" },
+    { name = "pyjwt" },
+    { name = "python-multipart" },
+    { name = "scrapy" },
+    { name = "sentry-sdk", extra = ["fastapi"] },
+    { name = "sqlmodel" },
+    { name = "tenacity" },
+    { name = "torch" },
+    { name = "twisted" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "coverage" },
+    { name = "ipykernel" },
+    { name = "mypy" },
+    { name = "pre-commit" },
+    { name = "pytest" },
+    { name = "ruff" },
+    { name = "types-passlib" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "alembic", specifier = ">=1.12.1,<2.0.0" },
+    { name = "bcrypt", specifier = "==4.3.0" },
+    { name = "email-validator", specifier = ">=2.1.0.post1,<3.0.0.0" },
+    { name = "emails", specifier = ">=0.6,<1.0" },
+    { name = "fastapi", extras = ["standard"], specifier = ">=0.114.2,<1.0.0" },
+    { name = "httpx", specifier = ">=0.25.1,<1.0.0" },
+    { name = "japanize-matplotlib" },
+    { name = "jinja2", specifier = ">=3.1.4,<4.0.0" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "passlib", extras = ["bcrypt"], specifier = ">=1.7.4,<2.0.0" },
+    { name = "pillow" },
+    { name = "psycopg", extras = ["binary"], specifier = ">=3.1.13,<4.0.0" },
+    { name = "pydantic", specifier = ">2.0" },
+    { name = "pydantic-settings", specifier = ">=2.2.1,<3.0.0" },
+    { name = "pyjwt", specifier = ">=2.8.0,<3.0.0" },
+    { name = "python-multipart", specifier = ">=0.0.7,<1.0.0" },
+    { name = "scrapy" },
+    { name = "sentry-sdk", extras = ["fastapi"], specifier = ">=1.40.6,<2.0.0" },
+    { name = "sqlmodel", specifier = ">=0.0.21,<1.0.0" },
+    { name = "tenacity", specifier = ">=8.2.3,<9.0.0" },
+    { name = "torch" },
+    { name = "twisted", specifier = "==21.7.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "coverage", specifier = ">=7.4.3,<8.0.0" },
+    { name = "ipykernel" },
+    { name = "mypy", specifier = ">=1.8.0,<2.0.0" },
+    { name = "pre-commit", specifier = ">=3.6.2,<4.0.0" },
+    { name = "pytest", specifier = ">=7.4.3,<8.0.0" },
+    { name = "ruff", specifier = ">=0.2.2,<1.0.0" },
+    { name = "types-passlib", specifier = ">=1.7.7.20240106,<2.0.0.0" },
 ]
 
 [[package]]

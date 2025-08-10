@@ -1,4 +1,4 @@
 #! /usr/bin/env bash
 
-cd src/pandasmon
+cd src/module/pandasmon
 python $1.py

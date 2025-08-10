@@ -14,6 +14,7 @@ class CardBase(SQLModel):
 
         @classmethod
         def _missing_(cls, s: str):
+            s = s.upper()
             match s:
                 case "オプション":
                     return cls.OPTION
@@ -44,10 +45,10 @@ class CardBase(SQLModel):
                 case self.NATURE.value:
                     return "lightgreen"
                 case self.DARKNESS.value:
-                    return "black"
+                    return "plum"
                 case self.RARE.value:
                     return "gold"
-            return "brown"
+            return "black"
 
     class CardLv(Enum):
         R = "Ⅲ"
@@ -105,4 +106,8 @@ class CardBase(SQLModel):
 
 
 class Card(CardBase, table=True):
+    pass
+
+
+class CardPublic(CardBase):
     pass

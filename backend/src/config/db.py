@@ -1,6 +1,5 @@
-# from src.config import settings
-from sqlmodel import create_engine
+from sqlalchemy.ext.asyncio import create_async_engine
 
-from app.core.config import settings
+from src.config.env import settings
 
-engine = create_engine(str(settings.SQLALCHEMY_DATABASE_URI))
+engine = create_async_engine(str(settings.SQLALCHEMY_DATABASE_URI))

@@ -5,10 +5,6 @@
 * [Docker](https://www.docker.com/).
 * [uv](https://docs.astral.sh/uv/) for Python package and environment management.
 
-## Docker Compose
-
-Start the local development environment with Docker Compose following the guide in [../development.md](../development.md).
-
 ## General Workflow
 
 By default, the dependencies are managed with [uv](https://docs.astral.sh/uv/), go there and install it.
@@ -76,6 +72,10 @@ $ alembic revision --autogenerate -m "Add column last_name to User model"
 ```console
 $ alembic upgrade head
 ```
+
+## Docker Compose
+
+Start the local development environment with Docker Compose following the guide in [../development.md](../development.md).
 
 * Start an interactive session in the backend container:
 

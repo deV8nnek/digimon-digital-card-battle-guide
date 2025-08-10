@@ -1,8 +1,8 @@
 from logging.config import fileConfig
 
 from alembic import context
-from app.core.config import settings
 from sqlalchemy import engine_from_config, pool
+from src.config.env import settings
 from src.domain.card import SQLModel
 
 # from src.domain.mymodel import SQLModel

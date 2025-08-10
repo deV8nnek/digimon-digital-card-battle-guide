@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-cd src/scrapymon
+cd src/module/scrapymon
 
 if [[ $1 == "card_spider_en" ]]; 
 then
