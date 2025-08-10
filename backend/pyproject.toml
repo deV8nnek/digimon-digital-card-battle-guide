@@ -22,7 +22,7 @@ dependencies = [
     "sentry-sdk[fastapi]<2.0.0,>=1.40.6",
     "pyjwt<3.0.0,>=2.8.0",
     "scrapy",
-    "twisted==21.7.0", #new versions, 22.10.0 issue with scrapy
+    "twisted==25.5.0", #new versions, 22.10.0 issue with scrapy
     "pillow", #scrapy image pipeline
     "numpy",
     "pandas",
