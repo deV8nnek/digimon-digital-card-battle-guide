@@ -73,6 +73,15 @@ $ alembic revision --autogenerate -m "Add column last_name to User model"
 $ alembic upgrade head
 ```
 
+## FastAPI
+
+Run backend locally
+
+```bash
+cd backend
+fastapi dev src/main.py
+```
+
 ## Docker Compose
 
 Start the local development environment with Docker Compose following the guide in [../development.md](../development.md).

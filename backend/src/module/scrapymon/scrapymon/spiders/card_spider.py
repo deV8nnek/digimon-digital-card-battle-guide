@@ -5,6 +5,7 @@ from pathlib import Path
 import scrapy
 import scrapy.exceptions
 
+from src.domain.card import Card
 from src.module.scrapymon.scrapymon.items import CardItem
 
 
@@ -12,9 +13,9 @@ class CardSpider(scrapy.Spider):
     name = "card_spider"
     is_image = False
     batch = 100
-    b = 1
-    path_icon = "~/img/icon"
-    path_card = "~/img/card"
+    b = 4
+    path_icon = "~/asset/img/icon"
+    path_card = "~/asset/img/card"
     custom_settings = {
         "FEED_EXPORT_ENCODING": "utf-8",
     }
@@ -33,7 +34,7 @@ class CardSpider(scrapy.Spider):
                         "overwrite": False,
                         "item_export_kwargs": {
                             "export_empty_fields": True,
-                            "include_headers_line": True,
+                            "include_headers_line": True if b == 1 else False,
                         },
                     }
                 }
@@ -95,13 +96,12 @@ class CardSpider(scrapy.Spider):
             '//*[@id="main_content"]//a[not(contains(@href, "#"))]/@href'
         ).getall():
             if (self.is_image and i not in n) or (i >= n and self.batch > 0):
-                if i == 2:
-                    yield scrapy.Request(
-                        url=href,
-                        callback=self.parse_pageN,
-                        headers=self.random_header(),
-                        dont_filter=True,
-                    )
+                yield scrapy.Request(
+                    url=href,
+                    callback=self.parse_pageN,
+                    headers=self.random_header(),
+                    dont_filter=True,
+                )
                 self.batch -= 1
             i += 1
 
@@ -111,16 +111,17 @@ class CardSpider(scrapy.Spider):
         def repl(match):
             if match:
                 icon = match[0]
-                match match[0]:
-                    case "〇":
-                        icon = "circle"
-                    case "△":
-                        icon = "triangle"
-                    case "✖":
-                        icon = "x"
-                return item.model_fields["img"].default.format(
-                    self.path_icon, icon, icon
-                )
+                # match match[0]:
+                #     case "〇":
+                #         icon = "circle"
+                #     case "△":
+                #         icon = "triangle"
+                #     case "✖":
+                #         icon = "x"
+                return Card.button(icon)
+                # return item.model_fields["img"].default.format(
+                #     self.path_icon, icon, icon
+                # )
             return None
 
         try:
@@ -153,11 +154,22 @@ class CardSpider(scrapy.Spider):
                     item.x = int(
                         self.r_num.search(table[19])[0]
                     )  # weird data for flamedramon
-                    item.special_effect = self.r_icon.sub(repl, table[24])
-                table[7] = table[25] if item.lv else table[7]
-                item.effect = self.r_icon.sub(repl, table[7])
+                    temp = response.xpath('//*[@id="main_content"]//table//td')
+                    temp = temp[24].xpath(".//text()[normalize-space()]").getall()
+                    temp = "".join(temp).strip()
+                    item.special_effect = self.r_icon.sub(repl, temp)
+                if item.lv:
+                    temp = response.xpath('//*[@id="main_content"]//table//td')
+                    temp = temp[25].xpath(".//text()[normalize-space()]").getall()
+                    temp = "".join(temp).strip()
+                    item.effect = self.r_icon.sub(repl, temp)
+                else:
+                    temp = response.xpath('//*[@id="main_content"]//table//td')
+                    temp = temp[7].xpath(".//text()[normalize-space()]").getall()
+                    temp = "".join(temp).strip()
+                    item.effect = self.r_icon.sub(repl, temp)
                 item.img = item.img.format(
-                    self.path_card, f"card_{item.number}_{item.name}", item.name
+                    self.path_card, f"card_{item.number}_{item.name}"
                 )
                 yield item
         except IndexError:

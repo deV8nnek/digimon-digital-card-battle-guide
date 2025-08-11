@@ -77,23 +77,3 @@ def gen_chart(card, filter):
     chart_data = gen_chart_data(card, filter)
     chart = gen_fig(chart_data)
     return chart
-
-
-# card = Card(
-#     number=0,
-#     name="インペリアルドラモン",
-#     type=Card.CardType.FIRE,
-#     lv=Card.CardLv.U,
-#     hp=1900,
-#     circle=980,
-#     pow=10,
-#     dp=60,
-#     x=0,
-#     triangle=670,
-#     special_effect="",
-#     effect="",
-#     img="",
-# )
-# filter = [member.value for member in Card.CardType][:-1]
-# chart = gen_chart(card, filter)
-# chart.show()

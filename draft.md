@@ -423,6 +423,19 @@ Reminder: take a screenshot of each result
 
 ![machine-learning](/img/machine-learning.png)
 
+### Backend
+
+```text
+For now, expecting 3 API routes is necessary for the backend
+Will add more if needed in frontend
+
+Added some async
+```
+
+![request-get-card](/img/request-get-card.png)
+![request-get-card-stat-chart](/img/request-get-card-stat-chart.png)
+![request-get-card-fusion](/img/request-get-card-fusion.png)
+
 ## Maintenance
 
 - search

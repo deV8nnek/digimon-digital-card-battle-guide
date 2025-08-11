@@ -9,12 +9,12 @@
             "type": "debugpy",
             "request": "launch",
             "module": "scrapy",
-            "cwd": "${workspaceFolder}/backend/src/scrapymon",
+            "cwd": "${workspaceFolder}/backend/src/module/scrapymon",
             "args": [
                 "runspider",
-                //"scrapymon/spiders/card_spider.py",
+                "scrapymon/spiders/card_spider.py",
                 //"scrapymon/spiders/card_spider_en.py",
-                "scrapymon/spiders/card_fusion_spider.py",
+                // "scrapymon/spiders/card_fusion_spider.py",
             ],
         },
         {

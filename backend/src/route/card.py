@@ -1,7 +1,7 @@
 from io import BytesIO
 from typing import Annotated
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, HTTPException, Query, status
 from fastapi.responses import StreamingResponse
 from sqlmodel import select
 
@@ -22,17 +22,32 @@ async def get_cards(session: Session):
 
 @router.get("/stat-chart/{num}")
 async def get_chart(session: Session, num: int, filter: Annotated[list[str], Query()]):
+    if num < 0 or num > 190:
+        raise HTTPException(
+            status_code=status.HTTP_406_NOT_ACCEPTABLE,
+            detail="Only digimon cards (0 to 190) are valid",
+        )
     card = await session.exec(select(Card).where(Card.number == num))
     card = card.first()
     result = pandasmon.gen_chart(card, filter)
     buffer = BytesIO()
-    result.savefig(buffer, format="png", dpi=300, transparent=True)
+    result.savefig(buffer, format="png", dpi=53, transparent=True)
     buffer.seek(0)
     return StreamingResponse(buffer, media_type="image/png")
 
 
 @router.get("/fusion")
 async def get_fusion(session: Session, num1: int, num2: int):
+    if num1 >= 172 and num1 <= 190 or num2 >= 172 and num2 <= 190:
+        raise HTTPException(
+            status_code=status.HTTP_406_NOT_ACCEPTABLE,
+            detail="Partner cards are not valid for fusion",
+        )
+    if num1 in [103, 200, range(273, 293)] or num2 in [103, 200, range(273, 293)]:
+        raise HTTPException(
+            status_code=status.HTTP_406_NOT_ACCEPTABLE,
+            detail="Hard to obtain cards are not recommended for fusion",
+        )
     card1 = await session.exec(select(Card).where(Card.number == num1))
     card2 = await session.exec(select(Card).where(Card.number == num2))
     card1, card2 = card1.first(), card2.first()
