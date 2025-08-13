@@ -1,11 +1,25 @@
 # FastAPI Project - Backend
 
-## Requirements
+## Requirement
 
 * [Docker](https://www.docker.com/).
 * [uv](https://docs.astral.sh/uv/) for Python package and environment management.
 
-## General Workflow
+## Directory Layout
+
+* `backend/asset` - subset of resource but static like media
+* `backend/resource` - non-code files
+* `backend/scripts` - run modules, etc.
+* `backend/src` - source folder
+* `backend/src/alembic` - migration
+* `backend/src/common` - dependency, etc.
+* `backend/src/config` - environment, security, etc.
+* `backend/src/domain` - entity, etc.
+* `backend/src/module` - logic, etc.
+* `backend/src/route` - endpoints, etc.
+* `backend/test` - test folder
+
+## Backend Development
 
 By default, the dependencies are managed with [uv](https://docs.astral.sh/uv/), go there and install it.
 

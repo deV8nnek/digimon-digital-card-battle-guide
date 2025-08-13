@@ -1,6 +1,8 @@
 # Digimon Digital Card Battle Guide
 
-A Game Guide for Digimon Digital Card Battle<del>, from the japanese website, https://www.y-gamelab.com/,</del> that shows card and deck collection, card distribution, and play with the deck guesser.
+A Game Guide for Digimon Digital Card Battle that shows card collection, card distribution, and predict card fusion.
+
+~~A Game Guide for Digimon Digital Card Battle<del>, from the japanese website, https://www.y-gamelab.com/,</del> that shows card and deck collection, card distribution, and play with the deck guesser.~~
 
 ~~that extracts the card collection using a game data which is digimon digital card battle from a Japanese (this app language too) website then show card distribution of types, stats, (and infer some insights or trends) then simple battle simulator, create training and test dataset, and ai predict winner from new matchups.~~
 
