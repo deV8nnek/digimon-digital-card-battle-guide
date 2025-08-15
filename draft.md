@@ -425,7 +425,7 @@ Reminder: take a screenshot of each result
 
 ![machine-learning](/img/machine-learning.png)
 
-### Backend
+### Back-end
 
 ```text
 For now, expecting 3 API routes is necessary for the backend
@@ -438,6 +438,32 @@ Added some async
 ![request-get-card-stat-chart](/img/request-get-card-stat-chart.png)
 ![request-get-card-fusion](/img/request-get-card-fusion.png)
 
+### Front-end
+
+#### TODO
+
+- [x] Initialize Nextjs
+- [x] Copy Figma to Shadcn, Tailwind, Nextjs code
+- [ ] Overall Layout (Box is fine, try tailwind)
+- [ ] Each Component High to Low
+- [ ] Integrate with back-end
+
+#### Nice-to-Have
+
+- [ ] Try Responsive Design
+- [ ] Animate
+
+```text
+
+Instead of the template 
+Change to
+
+Next.js/React (Front-end only)
+Tailwindcss
+```
+
+![dashboard](/img/dashboard.png)
+
 ## Maintenance
 
 - search
@@ -445,3 +471,4 @@ Added some async
 - english
 - ~~dynamic web scraper~~ refine ~~web scaper~~ scrapymon
 - refine pandasmon
+- refine pytorchmon

@@ -1,22 +1,32 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ScrollArea } from "@/components/ui/scroll-area";
+'use client'
+
+import { Button } from "@/component/button";
+import { Card, CardContent } from "@/component/card";
+import { ScrollArea } from "@/component/scroll-area";
 import React, { useState } from "react";
 
-const filterButtons = [
-  { icon: null, label: "Ascending", active: true },
-  { icon: null, label: "Descending", active: false },
-  { text: "全", label: "All", active: true },
-  { icon: null, label: "Fire", active: false, customIcon: true },
-  { icon: null, label: "Ice", active: false },
-  { icon: null, label: "Nature", active: false },
-  { icon: null, label: "Darkness", active: false },
-  { icon: null, label: "Rare", active: false },
-  { text: "OP", label: "OP", active: false },
-];
+import { cn } from "@/lib/utils"
 
-const CardList = () => {
+// const filterButtons = [
+//   { icon: null, label: "Ascending", active: true },
+//   { icon: null, label: "Descending", active: false },
+//   { text: "全", label: "All", active: true },
+//   { icon: null, label: "Fire", active: false, customIcon: true },
+//   { icon: null, label: "Ice", active: false },
+//   { icon: null, label: "Nature", active: false },
+//   { icon: null, label: "Darkness", active: false },
+//   { icon: null, label: "Rare", active: false },
+//   { text: "OP", label: "OP", active: false },
+// ];
 
+function CardList({ className, ...props }: React.ComponentProps<"div">) {
+  return (
+    <Card className="size-full">
+    </Card>
+  );
+};
+
+function FigmaCardList({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div className="inline-flex min-w-[159px] min-h-[132px] items-start gap-2 p-2 rounded-2xl border border-solid border-black">
       <header className="flex flex-col w-[18px] items-start gap-2 self-stretch bg-transparent">
@@ -25,7 +35,7 @@ const CardList = () => {
         </div>
 
         <div className="flex flex-col w-[19px] items-start gap-2 flex-[0_0_auto] mr-[-1.00px] z-0">
-          {filterButtons.map((button, index) => (
+          {/* {filterButtons.map((button, index) => (
             <Button
               key={index}
               variant="ghost"
@@ -51,14 +61,14 @@ const CardList = () => {
                 </span>
               )}
             </Button>
-          ))}
+          ))} */}
         </div>
       </header>
 
       <Card className="w-[1088px] h-[547px] rounded-[var(--shape-corner-large)] border border-solid border-black">
         <CardContent className="p-2">
           <ScrollArea className="h-full">
-            <div className="grid grid-cols-10 gap-2">
+            {/* <div className="grid grid-cols-10 gap-2">
               {cardImages.map((card) => (
                 <img
                   key={card.id}
@@ -67,7 +77,7 @@ const CardList = () => {
                   src={card.src}
                 />
               ))}
-            </div>
+            </div> */}
           </ScrollArea>
         </CardContent>
       </Card>
@@ -75,4 +85,4 @@ const CardList = () => {
   );
 };
 
-export default CardList;
+export { CardList };

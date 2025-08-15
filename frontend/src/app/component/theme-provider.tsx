@@ -1,6 +1,6 @@
 "use client";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import type { ThemeProviderProps } from "next-themes/dist/types";
+type ThemeProviderProps = React.ComponentProps<typeof NextThemesProvider>;
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (
@@ -9,8 +9,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
       defaultTheme="system" // Uses OS preference as default
       enableSystem // Allows choosing the "system" option
       disableTransitionOnChange // Prevents flickering on change
-      {...props}
-    >
+      {...props}>
       {children}
     </NextThemesProvider>
   );

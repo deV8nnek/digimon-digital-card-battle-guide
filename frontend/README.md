@@ -2,12 +2,11 @@
 
 ## Requirements
 
-* [Vite](https://vitejs.dev/)
+* [Nextjs](https://vitejs.dev/)
+* [Tailwind](https://reactjs.org/)
+* [PostCss](https://reactjs.org/)
 * [React](https://reactjs.org/)
 * [TypeScript](https://www.typescriptlang.org/)
-* [TanStack Query](https://tanstack.com/query)
-* [TanStack Router](https://tanstack.com/router)
-* [Chakra UI](https://chakra-ui.com/).
 
 ## Code Structure
 
