@@ -1,27 +1,66 @@
 'use client'
 
-import { Button } from "@/component/button";
-import { Card, CardContent } from "@/component/card";
-import { ScrollArea } from "@/component/scroll-area";
+import { Button } from "@/component/ui/button";
+import { ScrollArea } from "@/component/ui/scroll-area";
 import React, { useState } from "react";
-
+import { ArrowUp01, ArrowDown01 } from 'lucide-react';
+import Image from 'next/image'
 import { cn } from "@/lib/utils"
+import { Card, CardHead, CardBody } from "./card";
+//import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
+import * as RadioGroup from "@radix-ui/react-radio-group";
+import { Toggle } from "./ui/toggle";
 
-// const filterButtons = [
-//   { icon: null, label: "Ascending", active: true },
-//   { icon: null, label: "Descending", active: false },
-//   { text: "全", label: "All", active: true },
-//   { icon: null, label: "Fire", active: false, customIcon: true },
-//   { icon: null, label: "Ice", active: false },
-//   { icon: null, label: "Nature", active: false },
-//   { icon: null, label: "Darkness", active: false },
-//   { icon: null, label: "Rare", active: false },
-//   { text: "OP", label: "OP", active: false },
-// ];
+const title = "カード一覧"
+
+const filter = [
+  { button: <ArrowUp01 />, label: "Ascending" },
+  { button: <ArrowDown01 />, label: "Descending" },
+  { button: "全", label: "All" },
+  { button: "/asset/image/icon/fire.png", label: "Fire" },
+  { button: "/asset/image/icon/ice.png", label: "Ice" },
+  { button: "/asset/image/icon/nature.png", label: "Nature" },
+  { button: "/asset/image/icon/darkness.png", label: "Darkness" },
+  { button: "/asset/image/icon/rare.png", label: "Rare" },
+  { button: "/asset/image/icon/option.png", label: "Option" },
+];
+
 
 function CardList({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <Card className="size-full">
+    <Card>
+      <CardHead>
+        <div className="bg-amber-300">
+          {title}
+        </div>
+        <RadioGroup.Root
+          defaultValue={filter[0].label}
+        >
+          {filter.slice(0, 2).map((el) => (
+            <RadioGroup.Item
+              key={el.label}
+              value={el.label}
+              className="bg-amber-300 data-[state=checked]:bg-amber-400"
+            >
+              <span className="font-semibold tracking-tight">{el.button}</span>
+            </RadioGroup.Item>
+          ))}
+        </RadioGroup.Root>
+        <Toggle className="bg-amber-300 block h-6 [line-height:24px] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400">
+          {filter[2].button}
+        </Toggle>
+        {
+          filter.slice(3).map(el => (
+            <Toggle className="bg-amber-300 flex items-center w-full h-6 [line-height:0] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400">
+              <Image key={el.label} src={`${el.button}`} alt={el.label} width={16} height={16} quality={100} priority />
+            </Toggle>
+            ))
+            
+        }
+      </CardHead>
+      <CardBody>
+
+      </CardBody>
     </Card>
   );
 };
@@ -65,10 +104,10 @@ function FigmaCardList({ className, ...props }: React.ComponentProps<"div">) {
         </div>
       </header>
 
-      <Card className="w-[1088px] h-[547px] rounded-[var(--shape-corner-large)] border border-solid border-black">
+      {/* <Card className="w-[1088px] h-[547px] rounded-[var(--shape-corner-large)] border border-solid border-black">
         <CardContent className="p-2">
           <ScrollArea className="h-full">
-            {/* <div className="grid grid-cols-10 gap-2">
+            <div className="grid grid-cols-10 gap-2">
               {cardImages.map((card) => (
                 <img
                   key={card.id}
@@ -77,10 +116,10 @@ function FigmaCardList({ className, ...props }: React.ComponentProps<"div">) {
                   src={card.src}
                 />
               ))}
-            </div> */}
+            </div>
           </ScrollArea>
         </CardContent>
-      </Card>
+      </Card> */}
     </div>
   );
 };

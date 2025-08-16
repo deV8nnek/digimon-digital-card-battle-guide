@@ -460,6 +460,42 @@ Change to
 
 Next.js/React (Front-end only)
 Tailwindcss
+
+Pseudo does not reflect tsx
+Overall Layout (Box is fine, try tailwind)
+Layout Body
+ThemeProvider
+Wrapper - Set Screen Size
+
+/
+Page
+Main - Flex Column
+ Section - CardInfo
+  Wrapper - Flex 1:1-md
+   Card - Flex
+    Head - Flex Col Wrap 1:n :If
+    Body - Grid 2x2 Top left Clockwise
+     Image
+     DetailHead
+     DetailEffect
+     DetailStats
+ Section - CardList
+  Wrapper - Flex 1
+   Card - Flex
+    Head - Flex Col Wrap 1:n :If
+     Title
+     Button - Client
+     - ASC/DESC Radio Icon
+     - All Toggle Text
+     - Type Toggle Icon
+     - OP Toggle Text
+    Body - Flex Row Wrap
+     CardItem - Server Button Toggle Limit 1:1 :if
+      Image
+      Type - If
+      Num
+
+
 ```
 
 ![dashboard](/img/dashboard.png)

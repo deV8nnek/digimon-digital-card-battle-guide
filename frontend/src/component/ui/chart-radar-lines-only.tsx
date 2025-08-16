@@ -10,13 +10,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/component/card"
+} from "@/component/ui/card"
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/component/chart"
+} from "@/component/ui/chart"
 
 export const description = "A radar chart with lines only"
 

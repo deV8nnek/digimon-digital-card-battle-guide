@@ -1,6 +1,6 @@
 'use client'
 
-import { Card, CardContent } from "@/component/card";
+import { Card, CardContent } from "@/component/ui/card";
 import React from "react";
 // import { MainContentSection } from "./MainContentSection";
 // import { NavigationHeaderSection } from "./NavigationHeaderSection";
