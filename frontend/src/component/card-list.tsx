@@ -26,6 +26,8 @@ const filter = [
 ];
 
 
+
+
 function CardList({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <Card>
@@ -46,20 +48,60 @@ function CardList({ className, ...props }: React.ComponentProps<"div">) {
             </RadioGroup.Item>
           ))}
         </RadioGroup.Root>
-        <Toggle className="bg-amber-300 block h-6 [line-height:24px] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400">
+        <Toggle className="bg-amber-300 block h-6 [line-height:24px] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400 data-state-on">
           {filter[2].button}
         </Toggle>
         {
-          filter.slice(3).map(el => (
-            <Toggle className="bg-amber-300 flex items-center w-full h-6 [line-height:0] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400">
-              <Image key={el.label} src={`${el.button}`} alt={el.label} width={16} height={16} quality={100} priority />
+          filter.slice(3).map((el,index) => (
+            <Toggle key={index}className="bg-amber-300 flex items-center w-full h-6 [line-height:0] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400">
+              <Image src={`${el.button}`} alt={el.label} width={16} height={16} quality={100} priority />
             </Toggle>
             ))
             
         }
       </CardHead>
-      <CardBody>
-
+      <CardBody className="flex flex-wrap content-start items-center gap-2">
+        <div className="relative size-[100px]">
+          <Image src="/asset/image/card/card_0_インペリアルドラモン.png" alt="0" width={100} height={100} quality={100}/>
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
+        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
+          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
+          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
+        </div>
       </CardBody>
     </Card>
   );

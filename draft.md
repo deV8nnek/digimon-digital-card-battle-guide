@@ -474,11 +474,23 @@ Main - Flex Column
   Wrapper - Flex 1:1-md
    Card - Flex
     Head - Flex Col Wrap 1:n :If
-    Body - Grid 2x2 Top left Clockwise
-     Image
-     DetailHead
-     DetailEffect
-     DetailStats
+     Button - Client
+     - Info
+     - Chart
+      Chart Component?
+     - Fusion
+      Dialog Progress Animation
+    Body - Grid
+     If Info 2x2 Top left Clockwise
+      Image
+      DetailHead
+      DetailEffect
+      DetailStats
+     If Chart 1x 
+      Chart
+     If Fusion 1x
+      Dialog Progress Animation
+
  Section - CardList
   Wrapper - Flex 1
    Card - Flex
@@ -494,6 +506,9 @@ Main - Flex Column
       Image
       Type - If
       Num
+
+Next time one page focus on static skeleton duplicate code later component unless known method
+
 
 
 ```
