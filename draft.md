@@ -49,7 +49,7 @@ Offtopic reading about the AI will replace us, AI is already better and will get
   - Human resources: Solo
   - Tools and technologies
     - Programming Languages: Python
-    - Framework: FastAPI, React
+    - Framework: FastAPI, Next.js/React
     - Infrastructure (Software)
       - OS: Windows
       - DB: PostgreSQL
@@ -110,7 +110,7 @@ Forgot to write why I choose FastAPI, React, etc.
 
 ## Design
 
-Though coupled with different requirements/functions, the design is like a dashboard where everything is connected.
+Though coupled with different requirements/functions, the design is like a dashboard where everything is connected. Also to see react interactive capabilities.
 
 ### Wireframe & Prototype
 
@@ -444,7 +444,7 @@ Added some async
 
 - [x] Initialize Nextjs
 - [x] Copy Figma to Shadcn, Tailwind, Nextjs code
-- [ ] Overall Layout (Box is fine, try tailwind)
+- [x] Overall Layout (Box is fine, try tailwind)
 - [ ] Each Component High to Low
 - [ ] Integrate with back-end
 
@@ -510,6 +510,11 @@ Main - Flex Column
 Next time one page focus on static skeleton duplicate code later component unless known method
 
 
+To Fix Issues In Code
+For Now, Manual Fixing
+- Card > img url to filename only no card_* no extension png
+- Card > Number 172 (missing), 222-224 267-272 (filename button - Card > Name & Img) 
+- Is Card > Img necessary why not computed?
 
 ```
 

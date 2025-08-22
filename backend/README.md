@@ -44,7 +44,16 @@ $ source .venv/Scripts/activate
 
 Make sure your editor is using the correct Python virtual environment, with the interpreter at `backend/.venv/bin/python`.
 
-Modify or add SQLModel models for data and SQL tables in `./backend/app/models.py`, API endpoints in `./backend/app/api/`, CRUD (Create, Read, Update, Delete) utils in `./backend/app/crud.py`.
+Modify or add SQLModel models for data and SQL tables in `./backend/src/domain/`, API endpoints in `./backend/src/route/`
+
+## FastAPI
+
+Run backend locally
+
+```bash
+cd backend
+fastapi dev src/main.py
+```
 
 ## VS Code
 
@@ -85,15 +94,6 @@ $ alembic revision --autogenerate -m "Add column last_name to User model"
 
 ```console
 $ alembic upgrade head
-```
-
-## FastAPI
-
-Run backend locally
-
-```bash
-cd backend
-fastapi dev src/main.py
 ```
 
 ## Docker Compose

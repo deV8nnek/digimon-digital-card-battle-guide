@@ -116,6 +116,11 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-game-darkblue: #101040;
+  --color-game-lightblue: #000020;
+  --color-game-border-out: #8888b0;
+  --color-game-border-in: #9898b8;
+  --color-game-button: #606060;
 }
 
 /* 4. Base styles using @layer */

@@ -9,7 +9,7 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <_Card data-slot="card"
       className={cn(
-        "size-full flex-row flex p-2 gap-2",
+        "size-full flex-row flex bg-game-border-out border-l-game-border-in border-l-[5px] gap-0 gap-x-1 gap-y-0 p-1 pl-0",
         className
       )}
       {...props}
@@ -21,7 +21,7 @@ function CardHead({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <CardHeader data-slot="card-head"
       className={cn(
-        "bg-amber-200 min-w-6 flex p-0 [writing-mode:vertical-rl]",
+        "flex p-0 [writing-mode:vertical-rl] text-game-darkblue gap-2 w-[24px]",
         className
       )}
       {...props}
@@ -33,7 +33,7 @@ function CardBody({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <Card data-slot="card-body"
       className={cn(
-        "bg-amber-200 grow shadow-none",
+        "grow shadow-none border-none bg-[repeating-linear-gradient(0deg,_#101040,_#101040_50%,_#000020_50%,_#000020)] bg-[size:100%_5px] p-0 px-2",
         className
       )}
       {...props}

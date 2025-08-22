@@ -7,6 +7,7 @@ import { ArrowUp01, ArrowDown01 } from 'lucide-react';
 import Image from 'next/image'
 import { cn } from "@/lib/utils"
 import { Card, CardHead, CardBody } from "./card";
+import { Card as CardItem } from "./app/card-list/card";
 //import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
 import * as RadioGroup from "@radix-ui/react-radio-group";
 import { Toggle } from "./ui/toggle";
@@ -14,8 +15,8 @@ import { Toggle } from "./ui/toggle";
 const title = "カード一覧"
 
 const filter = [
-  { button: <ArrowUp01 />, label: "Ascending" },
-  { button: <ArrowDown01 />, label: "Descending" },
+  { button: "/asset/image/icon/ascending.png", label: "Ascending" },
+  { button: "/asset/image/icon/descending.png", label: "Descending" },
   { button: "全", label: "All" },
   { button: "/asset/image/icon/fire.png", label: "Fire" },
   { button: "/asset/image/icon/ice.png", label: "Ice" },
@@ -25,144 +26,66 @@ const filter = [
   { button: "/asset/image/icon/option.png", label: "Option" },
 ];
 
+const card0: Card = {
+  number: 0,
+  name: "インペリアルドラモン",
+  type: "火炎",
+  lv: "完",
+  hp: 1900,
+  dp: 60,
+  pow: 10,
+  circle: 980,
+  triangle: 670,
+  x: 0,
+  special_effect: "〇カウンター",
+  effect: "自分の攻撃力に、自分の場のＰＯＷカード枚数×100を足す",
+  img: "0_インペリアルドラモン"
+}
 
-
-
-function CardList({ className, ...props }: React.ComponentProps<"div">) {
+function CardList({ cards }: { cards: Card[] }) {
   return (
     <Card>
       <CardHead>
-        <div className="bg-amber-300">
+        <div>
           {title}
         </div>
+
+        <Toggle className="bg-game-darkblue text-white min-w-6 h-6 text-center rounded-none p-0 text-xs [line-height:0] hover:text-foreground hover:bg-amber-400 data-[state=on]:bg-amber-400 data-state-on">
+          {filter[2].button}
+        </Toggle>
+        {
+          filter.slice(3).map((el, index) => (
+            <Toggle key={index} className="bg-game-darkblue flex items-center w-full h-6 [line-height:0] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400">
+              <img src={`${el.button}`} alt={el.label} />
+            </Toggle>
+          ))
+
+        }
         <RadioGroup.Root
-          defaultValue={filter[0].label}
+          // defaultValue={filter[0].label}
+          className="flex gap-2 w-full"
         >
           {filter.slice(0, 2).map((el) => (
             <RadioGroup.Item
               key={el.label}
               value={el.label}
-              className="bg-amber-300 data-[state=checked]:bg-amber-400"
+              className="bg-game-darkblue flex justify-center items-center w-full h-6 [line-height:0] data-[state=checked]:bg-amber-400"
             >
-              <span className="font-semibold tracking-tight">{el.button}</span>
+              <img src={`${el.button}`} alt={el.label} className="size-[16px]" />
             </RadioGroup.Item>
           ))}
         </RadioGroup.Root>
-        <Toggle className="bg-amber-300 block h-6 [line-height:24px] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400 data-state-on">
-          {filter[2].button}
-        </Toggle>
-        {
-          filter.slice(3).map((el,index) => (
-            <Toggle key={index}className="bg-amber-300 flex items-center w-full h-6 [line-height:0] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400 data-[state=on]:bg-amber-400">
-              <Image src={`${el.button}`} alt={el.label} width={16} height={16} quality={100} priority />
-            </Toggle>
-            ))
-            
-        }
       </CardHead>
-      <CardBody className="flex flex-wrap content-start items-center gap-2">
-        <div className="relative size-[100px]">
-          <Image src="/asset/image/card/card_0_インペリアルドラモン.png" alt="0" width={100} height={100} quality={100}/>
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-        <div className="relative size-[100px] bg-contain bg-[url('/asset/image/card/card_0_インペリアルドラモン.png')]">
-          <div className="absolute top-0 left-0 z-1 m-2 text-white">完</div>
-          <div className="absolute bottom-0 right-0 z-1 m-2 text-white">000</div>
-        </div>
-      </CardBody>
-    </Card>
-  );
-};
-
-function FigmaCardList({ className, ...props }: React.ComponentProps<"div">) {
-  return (
-    <div className="inline-flex min-w-[159px] min-h-[132px] items-start gap-2 p-2 rounded-2xl border border-solid border-black">
-      <header className="flex flex-col w-[18px] items-start gap-2 self-stretch bg-transparent">
-        <div className="w-[18px] mt-[-1.00px] z-[1] font-heading-6 font-[number:var(--heading-6-font-weight)] text-black text-[length:var(--heading-6-font-size)] tracking-[var(--heading-6-letter-spacing)] leading-[var(--heading-6-line-height)] [font-style:var(--heading-6-font-style)]">
-          カード一覧
-        </div>
-
-        <div className="flex flex-col w-[19px] items-start gap-2 flex-[0_0_auto] mr-[-1.00px] z-0">
-          {/* {filterButtons.map((button, index) => (
-            <Button
-              key={index}
-              variant="ghost"
-              size="sm"
-              className={`w-full h-[19px] p-0 bg-[#d9d9d9] hover:bg-[#c9c9c9] aspect-[1] ${
-                activeFilters.includes(index) ? "bg-[#b9b9b9]" : ""
-              }`}
-              onClick={() => toggleFilter(index)}
-            >
-              {button.icon && !button.customIcon && (
-                <button.icon className="w-3.5 h-3 text-black" />
-              )}
-              {button.customIcon && index === 3 && (
-                <img
-                  className="w-[15px] h-[15px] aspect-[0.98]"
-                  alt="Fire"
-                  src=""
-                />
-              )}
-              {button.text && (
-                <span className="font-body-m font-[number:var(--body-m-font-weight)] text-[length:var(--body-m-font-size)] leading-[var(--body-m-line-height)] text-black tracking-[var(--body-m-letter-spacing)] [font-style:var(--body-m-font-style)]">
-                  {button.text}
-                </span>
-              )}
-            </Button>
-          ))} */}
-        </div>
-      </header>
-
-      {/* <Card className="w-[1088px] h-[547px] rounded-[var(--shape-corner-large)] border border-solid border-black">
-        <CardContent className="p-2">
-          <ScrollArea className="h-full">
-            <div className="grid grid-cols-10 gap-2">
-              {cardImages.map((card) => (
-                <img
-                  key={card.id}
-                  className="w-[100px] h-[100px] aspect-[1] object-cover cursor-pointer hover:opacity-80 transition-opacity"
-                  alt={`Card ${card.id}`}
-                  src={card.src}
-                />
+      <CardBody>
+          <ScrollArea type="always" className="min-h-0">
+            <div className="flex flex-wrap gap-2">
+              {cards.map((_, i) => (
+                <CardItem key={i} card={_} />
               ))}
             </div>
           </ScrollArea>
-        </CardContent>
-      </Card> */}
-    </div>
+      </CardBody>
+    </Card>
   );
 };
 

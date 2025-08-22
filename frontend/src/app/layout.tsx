@@ -25,7 +25,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {/* Wrap the entire content that should react to theme changes */}
         <ThemeProvider>
           {/* e.g., <Header /> */}
-          <div className="h-screen">{children}</div>
+          {children}
         </ThemeProvider>
       </body>
     </html>

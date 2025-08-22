@@ -14,8 +14,6 @@ class CardSpider(scrapy.Spider):
     is_image = False
     batch = 100
     b = 4
-    path_icon = "~/asset/img/icon"
-    path_card = "~/asset/img/card"
     custom_settings = {
         "FEED_EXPORT_ENCODING": "utf-8",
     }
@@ -169,7 +167,7 @@ class CardSpider(scrapy.Spider):
                     temp = "".join(temp).strip()
                     item.effect = self.r_icon.sub(repl, temp)
                 item.img = item.img.format(
-                    self.path_card, f"card_{item.number}_{item.name}"
+                    f"card_{item.number}_{item.name}"
                 )
                 yield item
         except IndexError:
