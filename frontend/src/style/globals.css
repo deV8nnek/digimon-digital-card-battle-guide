@@ -116,11 +116,17 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-game-darkblue: #101040;
-  --color-game-lightblue: #000020;
+  --color-game-darkblue1: #101040;
+  --color-game-darkblue2: #000020;
   --color-game-border-out: #8888b0;
   --color-game-border-in: #9898b8;
   --color-game-button: #606060;
+  --color-game-fire: #f89078;
+  --color-game-ice: #8890f8;
+  --color-game-nature: #90f888;
+  --color-game-darkness: #404040;
+  --color-game-rare: #f8f868;
+  --color-game-option: #e0e0e0;
 }
 
 /* 4. Base styles using @layer */
@@ -137,3 +143,13 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+@keyframes scrollbg {
+  0% {
+    background-position: 0% 0%; /* Start position */
+  }
+  100% {
+    background-position: 100% 100%; /* End position, moves diagonally */
+  }
+}
+

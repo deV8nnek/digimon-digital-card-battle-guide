@@ -39,7 +39,7 @@ or
 
 For Windows,
 ```console
-$ source .venv/Scripts/activate
+source .venv/Scripts/activate
 ```
 
 Make sure your editor is using the correct Python virtual environment, with the interpreter at `backend/.venv/bin/python`.
