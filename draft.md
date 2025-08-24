@@ -442,16 +442,18 @@ Added some async
 
 #### TODO
 
-- [x] Initialize Nextjs
-- [x] Copy Figma to Shadcn, Tailwind, Nextjs code
-- [x] Overall Layout (Box is fine, try tailwind)
-- [ ] Each Component High to Low
-- [ ] Integrate with back-end
+- [x] initialize nextjs
+- [x] copy figma to shadcn, tailwind, nextjs code
+- [x] overall layout (box is fine, try tailwind)
+- [ ] add each component high to low
+- [ ] integrate with back-end
 
 #### Nice-to-Have
 
 - [ ] Try Responsive Design
 - [ ] Animate
+- [ ] Dark Mode (Hacker Theme)
+- [ ] Patrner Scrolling Background
 
 ```text
 
@@ -512,9 +514,10 @@ Next time one page focus on static skeleton duplicate code later component unles
 
 To Fix Issues In Code
 For Now, Manual Fixing
-- Card > img url to filename only no card_* no extension png
-- Card > Number 172 (missing), 222-224 267-272 (filename button - Card > Name & Img) 
+- [x] Card > img url to filename only no card_* no extension png
+- [x] Card > Number 172 (missing), 222-224 267-272 (filename button - Card > Name & Img) 
 - Is Card > Img necessary why not computed?
+- Card > special effect and effect missing icons
 
 ```
 

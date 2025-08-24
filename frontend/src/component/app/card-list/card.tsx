@@ -18,7 +18,7 @@ function Card({ card, cardState }: { card: Card, cardState: { card: number[], se
     if (cardState.card.includes(card.number)) {
       cardState.setCard(cardState.card.filter(_ => _ != card.number))
     }
-    if (cardState.card.length < maxSelect) {
+    else if (cardState.card.length < maxSelect) {
       cardState.setCard([...cardState.card, card.number])
     }
   }

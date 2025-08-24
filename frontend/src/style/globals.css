@@ -127,6 +127,7 @@
   --color-game-darkness: #404040;
   --color-game-rare: #f8f868;
   --color-game-option: #e0e0e0;
+  --color-game-highlight: #d0d000;
 }
 
 /* 4. Base styles using @layer */

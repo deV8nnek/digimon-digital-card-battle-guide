@@ -74,7 +74,7 @@ function CardList({ cards, cardState }: { cards: Card[], cardState: { card: numb
 
       <CardBody>
         <ScrollArea type="always" className="min-h-0">
-          <div className="flex flex-wrap gap-2 py-2">
+          <div className="flex flex-wrap justify-center gap-2 py-2">
             {cards.map((_, i) => (
               <CardItem key={i} card={_} cardState={ cardState } />
             ))}

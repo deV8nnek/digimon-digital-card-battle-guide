@@ -91,7 +91,7 @@ class CardBase(SQLModel):
     x: int | None = Field(default=None, ge=0)
     special_effect: str | None = None
     effect: str
-    img: str = Field(default="{0}.png")
+    img: str = Field(default="{0}")
 
     @staticmethod
     def button(s: str) -> str:
@@ -102,7 +102,7 @@ class CardBase(SQLModel):
                 return "△"
             case "x" | "✖":
                 return "X"
-        return ""
+        return s
 
 
 class Card(CardBase, table=True):

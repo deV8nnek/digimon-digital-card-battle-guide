@@ -12,21 +12,11 @@ function CardMain({ cards }: { cards: Card[] }) {
     <main className="grid grid-rows-2 px-2 md:px-24 h-screen" style={{ background: "url('/asset/image/background/デジモンワールド.png') repeat 0 0", animation: "scrollbg 20s linear infinite" }}>
       <section className="flex flex-1">
         <div className="flex flex-1 gap-2">
-          {cardState.card.length >= 1 && <CardView card={cards[cardState.card[0]]} />}
+          {cardState.card.length >= 1 ? <CardView card={cards[cardState.card[0]]}/> : <CardView/>}
         </div>
-        {/* <div className="bg-amber-300 hidden md:flex flex-1">
-          <Card>
-            <CardHead>
-              <div className="bg-amber-300">
-                カート
-              </div>
-              <div className="bg-amber-300">button</div>
-            </CardHead>
-            <CardBody>
-
-            </CardBody>
-          </Card>
-        </div> */}
+        <div className="hidden md:flex flex-1">
+          {cardState.card.length >= 2 ? <CardView card={cards[cardState.card[1]]}/> : <CardView/> }
+        </div>
       </section>
       <section className="flex flex-1">
         <CardList cards={cards} cardState={cardState}></CardList>
