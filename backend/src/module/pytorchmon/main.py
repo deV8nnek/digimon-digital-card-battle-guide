@@ -32,10 +32,10 @@ def predict_fusion(card1: Card, card2: Card):
         [
             card1.number,
             card1.type.to_int(),
-            card1.lv.to_int(),
+            0 if card1.lv is None else card1.lv.to_int(),
             card2.number,
             card2.type.to_int(),
-            card2.lv.to_int(),
+            0 if card2.lv is None else card2.lv.to_int()
         ]
     )
     model = load()

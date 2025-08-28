@@ -31,7 +31,7 @@ async def get_chart(session: Session, num: int, filter: Annotated[list[str], Que
     card = card.first()
     result = pandasmon.gen_chart(card, filter)
     buffer = BytesIO()
-    result.savefig(buffer, format="png", dpi=53, transparent=True)
+    result.savefig(buffer, format="png", dpi=100, transparent=True)
     buffer.seek(0)
     return StreamingResponse(buffer, media_type="image/png")
 

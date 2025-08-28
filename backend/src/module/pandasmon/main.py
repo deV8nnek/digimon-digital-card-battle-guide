@@ -48,10 +48,13 @@ def gen_fig(chart_data):
     theta = [n / float(len(labels)) * 2 * np.pi for n in range(len(labels))]
     theta.append(theta[0])  # close line
 
+    plt.style.use('dark_background')
+    plt.rcParams.update({'font.size': 15})
     fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+
     ax.set_theta_zero_location("N")
     ax.set_axisbelow(False)
-    ax.set_rlabel_position(90)
+    ax.set_rlabel_position(45)
     ax.set_xticks(theta[:-1], labels)
     ax.set_yticks(yt[1:], yt[1:])
     ax.set_title("スタッツ")
@@ -68,7 +71,8 @@ def gen_fig(chart_data):
             alpha = 0.7
         ax.plot(theta, row, color=color, label=index)
         ax.fill(theta, row, color=color, alpha=alpha)
-    ax.legend(ncol=1, facecolor="ivory", loc="lower center")
+    ax.legend(ncol=1, facecolor="ivory", labelcolor="black", 
+              fontsize=10, loc="lower center")
     return fig
 
 

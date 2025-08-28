@@ -1,11 +1,7 @@
-'use client'
-
-import { Button } from "@/component/ui/button"
-import { Card as _Card, CardContent, CardHeader, CardTitle } from "@/component/ui/card"
-import { ScrollArea } from "@/component/ui/scroll-area"
+import { Card as _Card, CardHeader } from "@/component/ui/card"
 import { cn } from "@/lib/utils"
 
-function Card({ className, ...props }: React.ComponentProps<"div">) {
+export function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <_Card data-slot="card"
       className={cn(
@@ -17,7 +13,7 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-function CardHead({ className, ...props }: React.ComponentProps<"div">) {
+export function CardHead({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <CardHeader data-slot="card-head"
       className={cn(
@@ -29,7 +25,7 @@ function CardHead({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-function CardHeadButton({ className, ...props }: React.ComponentProps<"div">) {
+export function CardHeadButton({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div data-slot="card-head-button"
       className={cn(
@@ -41,7 +37,7 @@ function CardHeadButton({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-function CardBody({ className, ...props }: React.ComponentProps<"div">) {
+export function CardBody({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <Card data-slot="card-body"
       className={cn(
@@ -52,5 +48,3 @@ function CardBody({ className, ...props }: React.ComponentProps<"div">) {
     />
   );
 }
-
-export { Card, CardHead, CardHeadButton, CardBody }

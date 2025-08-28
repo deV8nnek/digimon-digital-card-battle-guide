@@ -2,101 +2,93 @@
 
 ## Requirement
 
-* [Docker](https://www.docker.com/).
-* [uv](https://docs.astral.sh/uv/) for Python package and environment management.
+- [uv](https://docs.astral.sh/uv/) for Python package and dependency management
 
 ## Directory Layout
 
-* `backend/asset` - subset of resource but static like media
-* `backend/resource` - non-code files
-* `backend/scripts` - run modules, etc.
-* `backend/src` - source folder
-* `backend/src/alembic` - migration
-* `backend/src/common` - dependency, etc.
-* `backend/src/config` - environment, security, etc.
-* `backend/src/domain` - entity, etc.
-* `backend/src/module` - logic, etc.
-* `backend/src/route` - endpoints, etc.
-* `backend/test` - test folder
+- `backend` - project root
+  - `/asset` - subset of resource but static like media
+  - `/resource` - non-code files
+  - `/scripts` - run modules, etc.
+  - `/src` - source folder
+    - `/alembic` - migration
+    - `/common` - dependency, etc.
+    - `/config` - environment, security, etc.
+    - `/domain` - entity, etc.
+    - `/module` - logic, etc.
+    - `/route` - endpoints, etc.
+  - `/test` - test folder
 
-## Backend Development
+## Setup
 
-By default, the dependencies are managed with [uv](https://docs.astral.sh/uv/), go there and install it.
+Install dependencies
 
-From `./backend/` you can install all the dependencies with:
-
-```console
+```bash
 $ uv sync
 ```
 
-Then you can activate the virtual environment with:
+Set python interpreter from `backend/.venv`
 
-```console
-$ source .venv/bin/activate
-```
+## Run
 
-or
+Activate virtual environment
 
-For Windows,
-```console
+```bash
+# Linux
+source .venv/bin/activate
+# Windows
 source .venv/Scripts/activate
 ```
 
-Make sure your editor is using the correct Python virtual environment, with the interpreter at `backend/.venv/bin/python`.
-
-Modify or add SQLModel models for data and SQL tables in `./backend/src/domain/`, API endpoints in `./backend/src/route/`
-
-## FastAPI
-
-Run backend locally
+Run in local environment
 
 ```bash
-cd backend
 fastapi dev src/main.py
 ```
 
-## VS Code
+## Debug
 
-There are already configurations in place to run the backend through the VS Code debugger, so that you can use breakpoints, pause and explore variables, etc.
+Edit `vscode/launch.json` as necessary
 
-The setup is also already configured so you can run the tests through the VS Code Python tests tab.
+See VSCode > Run and Debug
 
-## Migrations
+## Test
 
-As during local development your app directory is mounted as a volume inside the container, you can also run the migrations with `alembic` commands inside the container and the migration code will be in your app directory (instead of being only inside the container). So you can add it to your git repository.
+### Backend tests
 
-Make sure you create a "revision" of your models and that you "upgrade" your database with that revision every time you change them. As this is what will update the tables in your database. Otherwise, your application will have errors.
-
-If you don't want to start with the default models and want to remove them / modify them, from the beginning, without having any previous revision, you can remove the revision files (`.py` Python files) under `alembic/versions`. And then create a first migration as described above.
-
-* If you don't want to use migrations at all, uncomment the lines in the file at `core/db.py` that end in:
-
-```python
-SQLModel.metadata.create_all(engine)
-```
-
-and comment the line in the file `scripts/prestart.sh` that contains:
+To test the backend run:
 
 ```console
-$ alembic upgrade head
+bash ./scripts/test.sh
 ```
 
-* After changing a model (for example, adding a column), inside the container, create a revision, e.g.:
-* Add import to new model in `alembic/env.py`.
+The tests run with Pytest, modify and add tests to `./backend/app/tests/`.
 
-```console
-$ alembic revision --autogenerate -m "Add column last_name to User model"
+If you use GitHub Actions the tests will run automatically.
+
+### Test running stack
+
+If your stack is already up and you just want to run the tests, you can use:
+
+```bash
+docker compose exec backend bash scripts/tests-start.sh
 ```
 
-* Commit to the git repository the files generated in the alembic directory.
+That `/app/scripts/tests-start.sh` script just calls `pytest` after making sure that the rest of the stack is running. If you need to pass extra arguments to `pytest`, you can pass them to that command and they will be forwarded.
 
-* After creating the revision, run the migration in the database (this is what will actually change the database):
+For example, to stop on first error:
 
-```console
-$ alembic upgrade head
+```bash
+docker compose exec backend bash scripts/tests-start.sh -x
 ```
 
-## Docker Compose
+### Test Coverage
+
+When the tests are run, a file `htmlcov/index.html` is generated, you can open it in your browser to see the coverage of the tests.
+
+## Deploy
+
+### Docker Compose
 
 Start the local development environment with Docker Compose following the guide in [../development.md](../development.md).
 
@@ -105,8 +97,6 @@ Start the local development environment with Docker Compose following the guide 
 ```console
 $ docker compose exec backend bash
 ```
-
-## Docker Compose Override
 
 During development, you can change Docker Compose settings that will only affect the local development environment in the file `docker-compose.override.yml`.
 
@@ -160,39 +150,44 @@ Nevertheless, if it doesn't detect a change but a syntax error, it will just sto
 
 ...this previous detail is what makes it useful to have the container alive doing nothing and then, in a Bash session, make it run the live reload server.
 
-## Backend tests
+## Configure
 
-To test the backend run:
+### Migrations
+
+As during local development your app directory is mounted as a volume inside the container, you can also run the migrations with `alembic` commands inside the container and the migration code will be in your app directory (instead of being only inside the container). So you can add it to your git repository.
+
+Make sure you create a "revision" of your models and that you "upgrade" your database with that revision every time you change them. As this is what will update the tables in your database. Otherwise, your application will have errors.
+
+If you don't want to start with the default models and want to remove them / modify them, from the beginning, without having any previous revision, you can remove the revision files (`.py` Python files) under `alembic/versions`. And then create a first migration as described above.
+
+* If you don't want to use migrations at all, uncomment the lines in the file at `core/db.py` that end in:
+
+```python
+SQLModel.metadata.create_all(engine)
+```
+
+and comment the line in the file `scripts/prestart.sh` that contains:
 
 ```console
-$ bash ./scripts/test.sh
+$ alembic upgrade head
 ```
 
-The tests run with Pytest, modify and add tests to `./backend/app/tests/`.
+* After changing a model (for example, adding a column), inside the container, create a revision, e.g.:
+* Add import to new model in `alembic/env.py`.
 
-If you use GitHub Actions the tests will run automatically.
-
-### Test running stack
-
-If your stack is already up and you just want to run the tests, you can use:
-
-```bash
-docker compose exec backend bash scripts/tests-start.sh
+```console
+$ alembic revision --autogenerate -m "Add column last_name to User model"
 ```
 
-That `/app/scripts/tests-start.sh` script just calls `pytest` after making sure that the rest of the stack is running. If you need to pass extra arguments to `pytest`, you can pass them to that command and they will be forwarded.
+* Commit to the git repository the files generated in the alembic directory.
 
-For example, to stop on first error:
+* After creating the revision, run the migration in the database (this is what will actually change the database):
 
-```bash
-docker compose exec backend bash scripts/tests-start.sh -x
+```console
+$ alembic upgrade head
 ```
 
-### Test Coverage
-
-When the tests are run, a file `htmlcov/index.html` is generated, you can open it in your browser to see the coverage of the tests.
-
-## Email Templates
+### Email Templates
 
 The email templates are in `./backend/app/email-templates/`. Here, there are two directories: `build` and `src`. The `src` directory contains the source files that are used to build the final email templates. The `build` directory contains the final email templates that are used by the application.
 

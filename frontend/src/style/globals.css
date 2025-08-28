@@ -40,6 +40,18 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --game-darkblue1: oklch(0.2117 0.0885 275.75);
+  --game-darkblue2: oklch(0.1101 0.0763 264.05);
+  --game-border-out: oklch(0.6413 0.0595 284.6);
+  --game-border-in: oklch(0.6907 0.0467 285.11);
+  --game-button: oklch(0.4891 0 0);
+  --game-fire: oklch(0.7584 0.1313 33.92);
+  --game-ice: oklch(0.6926 0.1516 278.33);
+  --game-nature: oklch(0.8902 0.1776 142.45);
+  --game-darkness: oklch(0.3715 0 0);
+  --game-rare: oklch(0.9525 0.1638 109.14);
+  --game-option: oklch(0.9067 0 0);
+  --game-highlight: oklch(0.8301 0.181 109.77);
 }
 
 .dark {
@@ -75,6 +87,19 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  /* TODO: hacker theme */
+  --game-darkblue1: oklch(0.2117 0.0885 275.75);
+  --game-darkblue2: oklch(0.1101 0.0763 264.05);
+  --game-border-out: oklch(0.6413 0.0595 284.6);
+  --game-border-in: oklch(0.6907 0.0467 285.11);
+  --game-button: oklch(0.4891 0 0);
+  --game-fire: oklch(0.7584 0.1313 33.92);
+  --game-ice: oklch(0.6926 0.1516 278.33);
+  --game-nature: oklch(0.8902 0.1776 142.45);
+  --game-darkness: oklch(0.3715 0 0);
+  --game-rare: oklch(0.9525 0.1638 109.14);
+  --game-option: oklch(0.9067 0 0);
+  --game-highlight: oklch(0.8301 0.181 109.77);
 }
 
 /* 3. Map variables using @theme inline */
@@ -116,18 +141,18 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-game-darkblue1: #101040;
-  --color-game-darkblue2: #000020;
-  --color-game-border-out: #8888b0;
-  --color-game-border-in: #9898b8;
-  --color-game-button: #606060;
-  --color-game-fire: #f89078;
-  --color-game-ice: #8890f8;
-  --color-game-nature: #90f888;
-  --color-game-darkness: #404040;
-  --color-game-rare: #f8f868;
-  --color-game-option: #e0e0e0;
-  --color-game-highlight: #d0d000;
+  --color-game-darkblue1: var(--game-darkblue1);
+  --color-game-darkblue2: var(--game-darkblue2);
+  --color-game-border-out: var(--game-border-out);
+  --color-game-border-in: var(--game-border-in);
+  --color-game-button: var(--game-button);
+  --color-game-fire:var(--game-fire);
+  --color-game-ice: var(--game-ice);
+  --color-game-nature: var(--game-nature);
+  --color-game-darkness: var(--game-darkness);
+  --color-game-rare: var(--game-rae);
+  --color-game-option: var(--game-option);
+  --color-game-highlight: var(--game-highlight);
 }
 
 /* 4. Base styles using @layer */

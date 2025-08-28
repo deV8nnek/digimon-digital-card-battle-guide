@@ -1,16 +1,10 @@
-'use client'
-
-import { Button } from "@/component/ui/button";
 import { ScrollArea } from "@/component/ui/scroll-area";
-import React, { Dispatch, SetStateAction, useState } from "react";
-import { ArrowUp01, ArrowDown01 } from 'lucide-react';
-import Image from 'next/image'
 import { cn } from "@/lib/utils"
-import { Card, CardHead, CardHeadButton, CardBody } from "./card";
-import { Card as CardItem } from "./app/card-list/card";
-//import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
+import { Card, CardHead, CardHeadButton, CardBody } from "../card";
+import { Card as CardItem } from "./card";
 import * as RadioGroup from "@radix-ui/react-radio-group";
-import { Toggle } from "./ui/toggle";
+import { Toggle } from "../../ui/toggle";
+import { Card as ICard } from "@/domain/card";
 
 const title = "カード一覧"
 
@@ -26,9 +20,18 @@ const filter = [
   { button: "/asset/image/icon/descending.png", label: "Descending" },
 ];
 
-function CardList({ cards, cardState }: { cards: Card[], cardState: { card: number[], setCard: Dispatch<SetStateAction<number[]>> } }) {
+interface Props {
+  className?: string,
+  cardList: ICard[],
+  cardView: (ICard | null)[],
+  onSelect: (card: ICard | null, index: number) => void
+}
+
+function CardList({ className, cardList, cardView, onSelect }: Props) {
   return (
-    <Card>
+    <Card className={cn(
+      className
+    )}>
       <CardHead>
         <div>
           {title}
@@ -41,15 +44,11 @@ function CardList({ cards, cardState }: { cards: Card[], cardState: { card: numb
         </Toggle>
         {
           filter.slice(1, -2).map((el, index) => (
-            // bg-game-darkblue1 flex items-center w-full h-6 [line-height:0] min-w-min p-0 hover:text-foreground rounded-none hover:bg-amber-400
             <Toggle key={index} className="
             data-[state=on]:bg-game-darkblue1 data-[state=on]:hover:bg-transparent data-[state=on]:text-white 
-        hover:bg-game-darkblue1 hover:text-white border-game-darkblue1 border-1 border-dashed p-0 leading-0 rounded-none min-w-min h-6 w-full"
+            hover:bg-game-darkblue1 hover:text-white border-game-darkblue1 border-1 border-dashed p-0 leading-0 rounded-none min-w-min h-6 w-full"
               defaultPressed aria-label={el.label}>
               <img src={`${el.button}`} alt={el.label} className="size-[16px]" />
-              {/* <CardHeadButton>
-                <img src={`${el.button}`} alt={el.label} className="size-[16px]" />
-              </CardHeadButton> */}
             </Toggle>
           ))
 
@@ -75,8 +74,8 @@ function CardList({ cards, cardState }: { cards: Card[], cardState: { card: numb
       <CardBody>
         <ScrollArea type="always" className="min-h-0">
           <div className="flex flex-wrap justify-center gap-2 py-2">
-            {cards.map((_, i) => (
-              <CardItem key={i} card={_} cardState={ cardState } />
+            {cardList.map((el, i) => (
+              <CardItem key={i} card={el} cardView={cardView} onSelect={onSelect} />
             ))}
           </div>
         </ScrollArea>

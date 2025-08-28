@@ -1,4 +1,15 @@
-interface Card {
+export const enumCardType = {
+  fire: { name: "FIRE", value: "火炎" },
+  ice: { name: "ICE", value: "氷水" },
+  nature: { name: "NATURE",value: "自然"},
+  darkness: {name: "DARKNESS", value: "暗黒"},
+  rare: {name: "RARE", value: "珍種"},
+  option: {name: "OPTION", value: "ＯＰ"}
+} as const;
+
+export type EnumCardType = typeof enumCardType[keyof typeof enumCardType];
+
+export interface Card {
   number: number;
   name: string;
   type: "FIRE" | "火炎"

@@ -1,6 +1,4 @@
-"use client"
-
-function Icon({ name }: { name: string }) {
+export function Icon({ name }: { name: string }) {
   let file = name == "火炎" ? "fire"
     : name == "氷水" ? "ice"
       : name == "自然" ? "nature"
@@ -28,7 +26,7 @@ function Icon({ name }: { name: string }) {
   );
 }
 
-function TextIcon({ text }: { text?: string }) {
+export function TextIcon({ text }: { text?: string }) {
   const icon = /(〇|△|X|火炎|氷水|自然|暗黒|珍種|ＯＰ)/
 
   return (
@@ -41,5 +39,3 @@ function TextIcon({ text }: { text?: string }) {
     </>
   );
 }
-
-export { Icon, TextIcon }
