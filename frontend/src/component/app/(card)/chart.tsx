@@ -1,17 +1,18 @@
-import { Card, EnumCardType } from "@/domain/card";
+import { Card, enumCardType, EnumCardType } from "@/domain/card";
 import { cn } from "@/lib/utils";
+import { Filter } from "./main";
 
 // TODO: Filter omit type option
 
 interface Props {
   className?: string,
   card: Card,
-  filter: EnumCardType[]
+  filters: Filter[]
 }
 
-export function CardChart({ className, card, filter }: Props) {
+export function CardChart({ className, card, filters }: Props) {
   const img = "http://localhost:8000/card/stat-chart/" + card.number + "?" +
-    filter.map(el => el.value).map((el) => "filter=" + el).join("&");
+    filters.filter(el => el.isOn && el.cardType != enumCardType.option).map((el) => "filter=" + el.cardType.value).join("&");
 
   return (
     <div className={cn("size-full flex flex-col justify-center pt-2",

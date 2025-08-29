@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/component/theme-provider"; // Use the correct path
-import "../style/globals.css";
+import "@/style/globals.css";
 
 const inter = Inter({
   variable: '--font-sans',

@@ -1,4 +1,4 @@
-import { CardMain } from "@/component/app/card-main";
+import { CardMain } from "@/component/app/(card)/main";
 import { Card } from "@/domain/card";
 
 async function getCards() {

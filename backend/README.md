@@ -32,17 +32,13 @@ Set python interpreter from `backend/.venv`
 ## Run
 
 Activate virtual environment
-
-```bash
-# Linux
-source .venv/bin/activate
-# Windows
-source .venv/Scripts/activate
-```
-
 Run in local environment
 
 ```bash
+# Linux
+# source .venv/bin/activate 
+# Windows
+source .venv/Scripts/activate
 fastapi dev src/main.py
 ```
 

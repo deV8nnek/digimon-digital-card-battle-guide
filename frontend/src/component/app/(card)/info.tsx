@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
-import { Icon, TextIcon } from "../icon";
+import { Icon, TextIcon } from "./icon";
 import { Card } from "@/domain/card";
+
 
 interface Props {
   className?: string,
