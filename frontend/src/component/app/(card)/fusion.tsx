@@ -4,17 +4,16 @@ import { use } from "react";
 
 interface Props {
   className?: string,
-  card: Promise<Card>
+  card: Card
 }
 
 export function CardFusion({ className, card }: Props) {
-  const fusion = use(card);
-
   return (
+    
     <div className={cn("flex justify-center",
       className
     )}>
-      <img className="object-contain w-auto h-full" src={`/asset/image/card/${fusion.img}.png`} alt={fusion.name} />
+      <img className="object-contain w-auto h-full" src={`/asset/image/card/${card.img}.png`} alt={card.name} />
     </div>
   );
 }
