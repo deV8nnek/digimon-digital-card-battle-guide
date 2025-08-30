@@ -445,12 +445,12 @@ Added some async
 - [x] initialize nextjs
 - [x] copy figma to shadcn, tailwind, nextjs code
 - [x] overall layout (box is fine, try tailwind)
-- [ ] add each component high to low
-- [ ] integrate with back-end
+- [x] add each component high to low
+- [x] integrate with back-end
 
 #### Nice-to-Have
 
-- [ ] Try Responsive Design
+- [x] Try Responsive Design (somewhat)
 - [ ] Animate
 - [ ] Dark Mode (Hacker Theme)
 - [ ] Patrner Scrolling Background
@@ -519,9 +519,50 @@ For Now, Manual Fixing
 - Is Card > Img necessary why not computed?
 - Card > special effect and effect missing icons
 
+smallest 1x1
+largest 2x2
+Digimon default 175
+option default 197
+all
+not all
+some type
+sort asc
+sort desc
+disabled chart option
+disabled fusion empty
+disabled list max 2 largest
+text icon effect special effect name
+268 6 0 | C1 R3
+101 3 3 | C3 R5
+102 3 3 | C2 R4
+
+
+front-end-smallest-empty-index-0-chart-tab
+front-end-smallest-info-170-index-0-text-icon-digimon-rare-desc
+front-end-smallest-info-197-index-1-option-desc
+front-end-mid-chart-174-175-partner-min-filter-fire-ice-desc
+front-end-mid-chart-54-103-mean-max-filter-all-asc
+front-end-compare-chart-174-175-54-103
+front-end-largest-fusion-101-268-102-text-icon-name-sp-effect-filter-ice-option
+front-end-largest-fusion-115-187-error-partner-filter-darkness-desc
+front-end-largest-fusion-115-103-error-hard-obtain-darkness-asc
+
 ```
 
-![dashboard](/img/dashboard.png)
+![front-end-smallest-empty-index-0-chart-tab](/img/front-end-smallest-empty-index-0-chart-tab.png)
+![front-end-smallest-info-170-index-0-text-icon-digimon-rare-desc](/img/front-end-smallest-info-170-index-0-text-icon-digimon-rare-desc.png)
+![front-end-smallest-info-197-index-1-option-desc](/img/front-end-smallest-info-197-index-1-option-desc.png)
+![front-end-mid-chart-174-175-partner-min-filter-fire-ice-desc](/img/front-end-mid-chart-174-175-partner-min-filter-fire-ice-desc.png)
+![front-end-mid-chart-54-103-mean-max-filter-all-asc](/img/front-end-mid-chart-54-103-mean-max-filter-all-asc.png)
+![front-end-compare-chart-174-175-54-103](/img/front-end-compare-chart-174-175-54-103.png)
+![front-end-largest-fusion-101-268-102-text-icon-name-sp-effect-filter-ice-option](/img/front-end-largest-fusion-101-268-102-text-icon-name-sp-effect-filter-ice-option.png)
+![front-end-largest-fusion-115-187-error-partner-filter-darkness-desc](/img/front-end-largest-fusion-115-187-error-partner-filter-darkness-desc.png)
+![front-end-largest-fusion-115-103-error-hard-obtain-darkness-asc](/img/front-end-largest-fusion-115-103-error-hard-obtain-darkness-asc.png)
+
+## Testing
+
+## Deployment
+
 
 ## Maintenance
 

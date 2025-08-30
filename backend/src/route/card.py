@@ -25,7 +25,8 @@ async def get_chart(session: Session, num: int, filter: Annotated[list[str], Que
     if num < 0 or num > 190:
         raise HTTPException(
             status_code=status.HTTP_406_NOT_ACCEPTABLE,
-            detail="Only digimon cards (0 to 190) are valid",
+            # detail="Only digimon cards (0 to 190) are valid"
+            detail="有効なのはデジモンカード（0から190まで）だけです"
         )
     card = await session.exec(select(Card).where(Card.number == num))
     card = card.first()
@@ -41,12 +42,14 @@ async def get_fusion(session: Session, num1: int, num2: int):
     if num1 >= 172 and num1 <= 190 or num2 >= 172 and num2 <= 190:
         raise HTTPException(
             status_code=status.HTTP_406_NOT_ACCEPTABLE,
-            detail="Partner cards are not valid for fusion",
+            # detail="Partner cards as input is invalid"
+            detail="パートナーカードの入力は無効です"
         )
     if num1 in [103, 200, range(273, 293)] or num2 in [103, 200, range(273, 293)]:
         raise HTTPException(
             status_code=status.HTTP_406_NOT_ACCEPTABLE,
-            detail="Hard to obtain cards are not recommended for fusion",
+            # detail="Hard to obtain cards as input is not recommended"
+            detail="入手困難なカードの入力は推奨しません"
         )
     card1 = await session.exec(select(Card).where(Card.number == num1))
     card2 = await session.exec(select(Card).where(Card.number == num2))

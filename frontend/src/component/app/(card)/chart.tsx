@@ -2,8 +2,6 @@ import { Card, enumCardType, EnumCardType } from "@/domain/card";
 import { cn } from "@/lib/utils";
 import { Filter } from "./main";
 
-// TODO: Filter omit type option
-
 interface Props {
   className?: string,
   card: Card,
@@ -19,7 +17,7 @@ export function CardChart({ className, card, filters }: Props) {
       className
     )}>
       <div className="text-center">{card.number.toString().padStart(3, "0")} {card.name}</div>
-      <img className="object-contain min-h w-full lg:h-full lg:w-auto" src={img} alt={card.name} />
+        <img className="object-contain min-h w-full lg:h-full lg:w-auto" src={img} alt={card.name} /> 
     </div>
   );
 }

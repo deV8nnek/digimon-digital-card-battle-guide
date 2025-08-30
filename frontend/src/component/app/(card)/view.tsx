@@ -12,20 +12,23 @@ import { CardFusion } from "./fusion";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/component/ui/dialog";
 import { Filter } from "./main";
 
-interface FusionResponse {
-  status: boolean,
-  data: unknown
-}
-
-interface Error {
+export interface Error {
   detail: string
 }
 
-async function getFusion(cards: ICard[]): Promise<FusionResponse> {
+function isError(obj: any): obj is Error {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    'detail' in obj
+  );
+}
+
+async function getFusion(cards: ICard[]) {
   const response = await fetch("http://localhost:8000/card/fusion?num1=" + cards[0].number + "&num2=" + cards[1].number,
     { cache: 'force-cache' });
-    
-  return { status: response.ok, data: await response.json() };
+  const result: Promise<ICard | Error> = await response.json();
+  return result;
 };
 
 const view = [
@@ -45,17 +48,19 @@ interface Props {
   index: number,
   filters: Filter[],
   onClear: (card: ICard | null, index: number) => void
+  onShow: () => void
 }
 
-export function CardView({ className, cardView, index, filters, onClear }: Props) {
+export function CardView({ className, cardView, index, filters, onClear, onShow }: Props) {
   const [state, setState] = useState<View | undefined>(view[0]);
-  const [fusionResponse, setFusionResponse] = useState<Promise<FusionResponse>>(Promise.resolve({ status: false, data: null }));
+  const [fusionResponse, setFusionResponse] = useState<Promise<ICard | Error>>(Promise.resolve({ detail: "" }));
 
   const fusion = use(fusionResponse);
 
-  const show = (value: string) => setState(view.find(_ => _.label == value));
+  const showState = (value: string) => setState(view.find(_ => _.label == value));
   const clear = () => onClear(null, index);
   const fuse = () => setFusionResponse(getFusion(cardView.filter(el => el != null)));
+  const showView = onShow;
 
   return (
     <Card className={cn(
@@ -65,7 +70,7 @@ export function CardView({ className, cardView, index, filters, onClear }: Props
         <RadioGroup.Root
           defaultValue={state?.label}
           className="flex gap-2 w-full"
-          onValueChange={(value: string) => show(value)}
+          onValueChange={(value: string) => showState(value)}
         >
           {
             view.slice(0, 2).map((el) => (
@@ -92,15 +97,22 @@ export function CardView({ className, cardView, index, filters, onClear }: Props
               {view[2].button}
             </Button>
           </DialogTrigger>
-          <DialogContent className="bg-black text-white h-1/3 p-0 min-w-full border-none rounded-none py-8 [&>button:last-child]:hidden">
+          <DialogContent className="h-1/3 p-0 min-w-full border-none rounded-none [&>button:last-child]:hidden">
             <DialogTitle className="sr-only">
               Card Fusion Dialog
             </DialogTitle>
-            {fusion.status ? <CardFusion card={fusion.data as ICard} />
-              : <div className="w-full text-center mt-auto mb-auto">{"ERROR"}</div> }
+            {
+              isError(fusion) ? <CardFusion message={fusion as Error} />
+                : <CardFusion card={fusion as ICard} />
+            }
           </DialogContent>
         </Dialog>
-
+        <Button className="min-md:hidden
+        hover:bg-transparent hover:text-game-darkblue1
+        text-white bg-game-darkblue1 border-game-darkblue1 border-1 border-dashed p-0 leading-0 min-w-min min-h-fit w-full pt-2 pb-2 rounded-none [writing-mode:initial]"
+        onClick={showView}>
+          {index}
+        </Button>
         {
           !!cardView[index] &&
           <Button className="

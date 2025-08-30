@@ -45,10 +45,10 @@ class CardBase(SQLModel):
                 case self.NATURE.value:
                     return "lightgreen"
                 case self.DARKNESS.value:
-                    return "plum"
+                    return "black"
                 case self.RARE.value:
                     return "gold"
-            return "black"
+            return "ivory"
 
     class CardLv(Enum):
         R = "Ⅲ"

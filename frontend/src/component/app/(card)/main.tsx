@@ -22,6 +22,7 @@ export function CardMain({ className, cardList }: Props) {
   const [filters, setFilters] = useState<Filter[]>(Object.entries(enumCardType).map((el) =>
     ({ isOn: true, cardType: el[1] })
   ));
+  const [index, setIndex] = useState<0 | 1>(0);
 
   const replace = (card: Card | null, index: number) => setCardView(cardView.map((el, i) => (i == index) ? card : el));
   const filter = (isAll?: boolean, label?: string) => {
@@ -34,6 +35,9 @@ export function CardMain({ className, cardList }: Props) {
     });
     setFilters(nextFilter);
   };
+  const show = () => {
+    setIndex(index == 0 ? 1 : 0)
+  };
 
   return (
     <main
@@ -44,11 +48,15 @@ export function CardMain({ className, cardList }: Props) {
       style={{ background: "url('/asset/image/background/デジモンワールド.png') repeat 0 0", animation: "scrollbg 20s linear infinite" }}>
       <section className="flex flex-1">
         <div className="flex flex-1 gap-2">
-          <CardView cardView={cardView} index={0} onClear={replace} filters={filters} />
+          {
+            index == 0
+              ? <CardView cardView={cardView} index={0} onClear={replace} filters={filters} onShow={show} />
+              : <CardView cardView={cardView} index={1} onClear={replace} filters={filters} onShow={show} />
+          }
         </div>
         {/* TODO: md below add switch button between card view */}
-        <div className="hidden md:flex flex-1">
-          <CardView cardView={cardView} index={1} onClear={replace} filters={filters} />
+        <div className="hidden md:flex flex-1 gap-2">
+          <CardView cardView={cardView} index={1} onClear={replace} filters={filters} onShow={show} />
         </div>
       </section>
       <section className="flex flex-1">
