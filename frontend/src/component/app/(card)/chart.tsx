@@ -17,7 +17,7 @@ export function CardChart({ className, card, filters }: Props) {
       className
     )}>
       <div className="text-center">{card.number.toString().padStart(3, "0")} {card.name}</div>
-        <img className="object-contain min-h w-full lg:h-full lg:w-auto" src={img} alt={card.name} /> 
+        <img className="object-contain h-full lg:h-full lg:w-auto" src={img} alt={card.name} /> 
     </div>
   );
 }

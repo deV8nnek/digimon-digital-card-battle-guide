@@ -11,7 +11,7 @@ A Game Guide for Digimon Digital Card Battle that shows card collection, card di
 
 ## Card Info
 
-![front-end-smallest-info-170-index-0-text-icon-digimon-rare-desc](/img/front-end-smallest-info-170-index-0-text-icon-digimon-rare-desc.png)
+![front-end-smallest-320x756-info-170-index-0-text-icon-digimon-rare-desc](/img/front-end-smallest-320x756-info-170-index-0-text-icon-digimon-rare-desc.png)
 
 ## Card Chart
 

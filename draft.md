@@ -537,9 +537,12 @@ text icon effect special effect name
 102 3 3 | C2 R4
 
 
-front-end-smallest-empty-index-0-chart-tab
-front-end-smallest-info-170-index-0-text-icon-digimon-rare-desc
-front-end-smallest-info-197-index-1-option-desc
+front-end-smallest-320x756-empty-chart-tab
+front-end-smallest-320x756-info-170-index-0-text-icon-digimon-rare-desc
+front-end-smallest-320x756-info-197-index-1-option-asc
+front-end-smallest-320-756-chart-175-index-0-filter-fire-ice-desc
+front-end-smallest-320-756-chart-54-index-1-filter-all-asc
+front-end-smallest-640-756-chart-54-index-1-filter-all-asc
 front-end-mid-chart-174-175-partner-min-filter-fire-ice-desc
 front-end-mid-chart-54-103-mean-max-filter-all-asc
 front-end-compare-chart-174-175-54-103
@@ -549,9 +552,9 @@ front-end-largest-fusion-115-103-error-hard-obtain-darkness-asc
 
 ```
 
-![front-end-smallest-empty-index-0-chart-tab](/img/front-end-smallest-empty-index-0-chart-tab.png)
-![front-end-smallest-info-170-index-0-text-icon-digimon-rare-desc](/img/front-end-smallest-info-170-index-0-text-icon-digimon-rare-desc.png)
-![front-end-smallest-info-197-index-1-option-desc](/img/front-end-smallest-info-197-index-1-option-desc.png)
+![front-end-smallest-320x756-empty-chart-tab](/img/front-end-smallest-320x756-empty-chart-tab.png)
+![front-end-smallest-320x756-info-170-index-0-text-icon-digimon-rare-desc](/img/front-end-smallest-320x756-info-170-index-0-text-icon-digimon-rare-desc.png)
+![front-end-smallest-320x756-info-197-index-1-option-asc](/img/front-end-smallest-320x756-info-197-index-1-option-asc.png)
 ![front-end-mid-chart-174-175-partner-min-filter-fire-ice-desc](/img/front-end-mid-chart-174-175-partner-min-filter-fire-ice-desc.png)
 ![front-end-mid-chart-54-103-mean-max-filter-all-asc](/img/front-end-mid-chart-54-103-mean-max-filter-all-asc.png)
 ![front-end-compare-chart-174-175-54-103](/img/front-end-compare-chart-174-175-54-103.png)
