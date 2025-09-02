@@ -1,0 +1,99 @@
+# name: Docker, K8s, Terraform, AWS CI/CD
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# env:
+#   # The AWS region where your resources are located.
+#   AWS_REGION: us-east-1
+#   # The name of your ECR repository.
+#   ECR_REPOSITORY_NAME: my-app-repo
+#   # The name of your EKS cluster.
+#   EKS_CLUSTER_NAME: my-eks-cluster
+#   # The directory containing your Terraform files.
+#   TF_WORKING_DIR: ./terraform
+
+# jobs:
+#   # Job 1: Provisions or updates AWS infrastructure with Terraform
+#   terraform:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout Code
+#         uses: actions/checkout@v4
+
+#       - name: Configure AWS Credentials
+#         uses: aws-actions/configure-aws-credentials@v4
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: ${{ env.AWS_REGION }}
+
+#       - name: Setup Terraform
+#         uses: hashicorp/setup-terraform@v2
+#         with:
+#           terraform_version: "1.5.0"
+
+#       - name: Terraform Init
+#         id: init
+#         run: terraform -chdir=${{ env.TF_WORKING_DIR }} init
+
+#       - name: Terraform Plan
+#         id: plan
+#         run: terraform -chdir=${{ env.TF_WORKING_DIR }} plan -no-color -input=false
+
+#       - name: Terraform Apply
+#         run: terraform -chdir=${{ env.TF_WORKING_DIR }} apply -auto-approve -input=false
+
+#   # Job 2: Builds and pushes the Docker image to Amazon ECR
+#   build-and-push-docker:
+#     needs: terraform
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout Code
+#         uses: actions/checkout@v4
+
+#       - name: Configure AWS Credentials
+#         uses: aws-actions/configure-aws-credentials@v4
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: ${{ env.AWS_REGION }}
+
+#       - name: Login to Amazon ECR
+#         id: login-ecr
+#         uses: aws-actions/amazon-ecr-login@v2
+
+#       - name: Build, tag, and push image to Amazon ECR
+#         env:
+#           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+#           IMAGE_TAG: ${{ github.sha }}
+#         run: |
+#           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY_NAME:$IMAGE_TAG .
+#           docker push $ECR_REGISTRY/$ECR_REPOSITORY_NAME:$IMAGE_TAG
+
+#   # Job 3: Deploys the new image to the EKS cluster
+#   deploy-to-eks:
+#     needs: build-and-push-docker
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout Code
+#         uses: actions/checkout@v4
+
+#       - name: Configure AWS Credentials
+#         uses: aws-actions/configure-aws-credentials@v4
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: ${{ env.AWS_REGION }}
+
+#       - name: Update kubeconfig
+#         run: aws eks update-kubeconfig --region ${{ env.AWS_REGION }} --name ${{ env.EKS_CLUSTER_NAME }}
+
+#       - name: Deploy to Kubernetes
+#         run: |
+#           # Use `sed` to replace the image tag in your deployment manifest
+#           sed -i "s|latest|${{ github.sha }}|g" k8s/deployment.yaml
+#           kubectl apply -f k8s/
+#           kubectl rollout status deployment/your-app-deployment
