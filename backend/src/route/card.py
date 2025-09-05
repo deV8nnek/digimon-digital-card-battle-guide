@@ -22,6 +22,14 @@ async def get_cards(session: Session):
 
 @router.get("/stat-chart/{num}")
 async def get_chart(session: Session, num: int, filter: Annotated[list[str], Query()]):
+    try:
+        [Card.CardType(el) for el in filter]
+    except ValueError:
+        raise HTTPException(
+            status_code=status.HTTP_406_NOT_ACCEPTABLE,
+            # detail="Filter is invalid"
+            detail="フィルターの入力は無効です",
+        )
     if num < 0 or num > 190:
         raise HTTPException(
             status_code=status.HTTP_406_NOT_ACCEPTABLE,
