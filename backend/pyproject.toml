@@ -35,10 +35,7 @@ asyncio_mode = "auto"
 [tool.uv]
 dev-dependencies = [
     "pytest",
-    "pytest-asyncio",
-    "anyio",
-    "aiosqlite",
-    "ruff<1.0.0,>=0.2.2",
+    "ruff",
     "ipykernel",
 ]
 
