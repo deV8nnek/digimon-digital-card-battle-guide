@@ -1,6 +1,6 @@
 # https://docs.github.com/en/actions/how-tos/write-workflows
 # https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
-name: Test Workflow
+name: Test backend
 
 on: [workflow_dispatch]
   # https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run
@@ -13,31 +13,39 @@ jobs:
   # https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run
   # https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do
   # https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/run-jobs-in-a-container
-  runs-on: ubuntu-latest
   backend:
-    services:
-      postgres:
-        image: postgres
-        env:
-          POSTGRES_PASSWORD: postgres
-        ports: 5433
-        # Set health checks to wait until postgres has started
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+    # services:
+    #   postgres:
+    #     image: postgres
+    #     env:
+    #       POSTGRES_PASSWORD: postgres
+    #     ports: 
+    #       - "5433:5433"
+    #     # Set health checks to wait until postgres has star ted
+    #     options: >-
+    #       --health-cmd pg_isready
+    #       --health-interval 10s
+    #       --health-timeout 5s
+    #       --health-retries 5
     steps:
       - name: Checkout own repo
         uses: actions/checkout@v5
-      - name: Install dependencies
+      - name: Install uv
         uses: astral-sh/setup-uv@v6
         with:
-          working-directory: backend
           activate-environment: true
-      - name: Initialize database
-        run: |
-          alembic upgrade head
-          psql -d postgresql://postgres:postgres@localhost/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
-      - name: Run test  
-        run: pytest
+          enable-cache: true
+      # - name: Echo current working directory
+      #   run: echo "$PWD"
+      # - name: Install dependencies
+      #   run: uv sync
+      # - name: Initialize database
+      #   run: |
+      #     alembic upgrade head
+      #     psql -d postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+      # - name: Run test  
+      #   run: pytest
