@@ -1,0 +1,27 @@
+name: Clean workflow runs
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Number of workflows runs'
+        default: 100
+        required: false
+        type: number
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write-all
+    steps:
+    - name: Checkout own repo
+      uses: actions/checkout@v5
+    - name: Delete
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+        gh run list --json databaseId  -q '.[].databaseId' --limit ${{ github.event.inputs.limit }} | 
+          xargs -IID gh api --header 'Accept: application/vnd.github.v3.raw+json' \
+          "repos/$(gh repo view --json nameWithOwner -q .nameWithOwner)/actions/runs/ID" \
+          -X DELETE 
