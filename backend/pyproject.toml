@@ -1,26 +1,15 @@
 [project]
 name = "src"
 version = "1.0.0"
-description = ""
-requires-python = ">=3.10,<4.0"
+description = "Digimon Digital Card Battle Guide"
+requires-python = ">=3.10"
 dependencies = [
-    "fastapi[standard]<1.0.0,>=0.114.2",
-    "python-multipart<1.0.0,>=0.0.7",
-    "email-validator<3.0.0.0,>=2.1.0.post1",
-    "passlib[bcrypt]<2.0.0,>=1.7.4",
-    "tenacity<9.0.0,>=8.2.3",
-    "pydantic>2.0",
-    "emails<1.0,>=0.6",
-    "jinja2<4.0.0,>=3.1.4",
-    "alembic<2.0.0,>=1.12.1",
-    "httpx<1.0.0,>=0.25.1",
-    "psycopg[binary]<4.0.0,>=3.1.13",
-    "sqlmodel<1.0.0,>=0.0.21",
-    # Pin bcrypt until passlib supports the latest
-    "bcrypt==4.3.0",
-    "pydantic-settings<3.0.0,>=2.2.1",
-    "sentry-sdk[fastapi]<2.0.0,>=1.40.6",
-    "pyjwt<3.0.0,>=2.8.0",
+    "fastapi[standard]",
+    "pydantic",
+    "pydantic-settings",
+    "alembic",
+    "psycopg[binary]",
+    "sqlmodel",
     "scrapy",
     "twisted==21.7.0", #new versions, 22.10.0 issue with scrapy
     "pillow", #scrapy image pipeline
@@ -31,24 +20,27 @@ dependencies = [
     "torch",
 ]
 
-[tool.uv]
-dev-dependencies = [
-    "pytest<8.0.0,>=7.4.3",
-    "mypy<2.0.0,>=1.8.0",
-    "ruff<1.0.0,>=0.2.2",
-    "pre-commit<4.0.0,>=3.6.2",
-    "types-passlib<2.0.0.0,>=1.7.7.20240106",
-    "coverage<8.0.0,>=7.4.3",
-    "ipykernel",
-]
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.mypy]
-strict = true
-exclude = ["venv", ".venv", "alembic"]
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["--import-mode=importlib", "-p no:warnings"]
+testpaths = ["test"]
+python_files = ["*.py", "main.py"]
+python_functions = ["*"]
+asyncio_mode = "auto"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-asyncio",
+    "anyio",
+    "aiosqlite",
+    "ruff<1.0.0,>=0.2.2",
+    "ipykernel",
+]
 
 [tool.ruff]
 target-version = "py310"

@@ -4,8 +4,8 @@ A Game Guide for Digimon Digital Card Battle that shows card collection, card di
 
 ## Technology Stack and Tools
 
-- Backend: Python | FastAPI | PostgreSQL | Pandas, Numpy, Matplotlib, SQLModel, Pydantic, Alembic
-- Frontend: Typescript | Next.js/React, Tailwind CSS | Shadcn | Node.js
+- Back-end: Python | FastAPI/Starlette, Scrapy | PostgreSQL | Pandas, Numpy, Matplotlib, SQLModel/Pydantic/SQLAlchemy/Alembic
+- Front-end: Typescript | Next.js/React, Tailwind CSS | Shadcn | Node.js
 - Design: Figma
 - Pending: Docker/Docker Compose, Kubernetes, Terraform, AWS
 
@@ -21,13 +21,15 @@ A Game Guide for Digimon Digital Card Battle that shows card collection, card di
 
 ![front-end-largest-fusion-101-268-102-text-icon-name-sp-effect-filter-ice-option](/img/front-end-largest-fusion-101-268-102-text-icon-name-sp-effect-filter-ice-option.png)
 
-## Backend
+## Testing
 
-Backend docs: [backend/README.md](./backend/README.md)
+## Back-end
 
-## Frontend
+Back-end docs: [backend/README.md](./backend/README.md)
 
-Fackend docs: [frontend/README.md](./frontend/README.md)
+## Front-end
+
+Front-end docs: [frontend/README.md](./frontend/README.md)
 
 ## Developer Notes Draft
 

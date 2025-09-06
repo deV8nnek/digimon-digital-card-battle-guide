@@ -8,7 +8,7 @@ A Game Guide for Digimon Digital Card Battle that shows card collection, card di
 
 ## Disclaimer
 
-This is a personal project for development purposes only and this draft focuses more on the goals and catching up with the latest technologies and may be informal.
+This is a personal project for development purposes only and this draft focuses more on the goals and catching up with the latest technologies and may be informal. I initially write this to show that I'm working on what during the early stages, so on later stages I might write less here which will be on the official documentation.
 As if the template is an existing codebase where I add new features.
 
 ## Notes

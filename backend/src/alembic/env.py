@@ -5,7 +5,7 @@ from sqlalchemy import engine_from_config, pool
 from src.config.env import settings
 from src.domain.card import SQLModel
 
-# from src.domain.mymodel import SQLModel
+# from src.domain.addmodelhere import SQLModel
 
 
 # this is the Alembic Config object, which provides

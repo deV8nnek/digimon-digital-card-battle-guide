@@ -5,4 +5,5 @@ app.egg-info
 .mypy_cache
 .coverage
 htmlcov
+# VSCode
 .venv

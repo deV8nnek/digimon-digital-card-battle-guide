@@ -50,6 +50,10 @@ See VSCode > Run and Debug
 
 ## Test
 
+**Manually**,
+<br>Edit the log_file such as for current year month in pytest config from `pyproject.toml`
+<br>For each test, rename the log file to not be overwritten
+
 ### Backend tests
 
 To test the backend run:
