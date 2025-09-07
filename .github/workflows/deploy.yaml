@@ -1,6 +1,6 @@
-# name: Docker, K8s, Terraform, AWS CI/CD
+name: Deploy
 
-# on:
+on: [workflow_dispatch]
 #   push:
 #     branches:
 #       - main
@@ -15,7 +15,14 @@
 #   # The directory containing your Terraform files.
 #   TF_WORKING_DIR: ./terraform
 
-# jobs:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Basic Echo
+        run: echo success
+
+
 #   # Job 1: Provisions or updates AWS infrastructure with Terraform
 #   terraform:
 #     runs-on: ubuntu-latest
