@@ -27,7 +27,25 @@ Install dependencies
 $ uv sync
 ```
 
-Set python interpreter from `backend/.venv`
+Set python interpreter in VSCode from `backend/.venv`
+
+Initialize database
+
+```bash
+uv run alembic upgrade head
+```
+
+Import the data from `resource/data/external/card.csv` to the database.
+
+If using command,
+
+```bash
+# Postgresql must be installed and with environment variable
+# Change parameters as needed
+psql -d postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+```
+
+For further configurations, see **Migrations** section at the bottom.
 
 ## Run
 
@@ -50,41 +68,15 @@ See VSCode > Run and Debug
 
 ## Test
 
-**Manually**,
-<br>Edit the log_file such as for current year month in pytest config from `pyproject.toml`
-<br>For each test, rename the log file to not be overwritten
-
-### Backend tests
-
-To test the backend run:
-
-```console
-bash ./scripts/test.sh
-```
-
-The tests run with Pytest, modify and add tests to `./backend/app/tests/`.
-
-If you use GitHub Actions the tests will run automatically.
-
-### Test running stack
-
-If your stack is already up and you just want to run the tests, you can use:
+Run in local environment
 
 ```bash
-docker compose exec backend bash scripts/tests-start.sh
+pytest
 ```
 
-That `/app/scripts/tests-start.sh` script just calls `pytest` after making sure that the rest of the stack is running. If you need to pass extra arguments to `pytest`, you can pass them to that command and they will be forwarded.
+Manage CI workflows from `.github/workflows`
 
-For example, to stop on first error:
-
-```bash
-docker compose exec backend bash scripts/tests-start.sh -x
-```
-
-### Test Coverage
-
-When the tests are run, a file `htmlcov/index.html` is generated, you can open it in your browser to see the coverage of the tests.
+Runs automatically in Github Actions
 
 ## Deploy
 
