@@ -146,7 +146,7 @@ Nevertheless, if it doesn't detect a change but a syntax error, it will just sto
 
 ### Migrations
 
-To make revision which reflects on the database,
+Make revision which reflects on the database,
 
 Like add import to the new model in `alembic/env.py`
 
@@ -155,4 +155,4 @@ alembic revision --autogenerate -m "Add model"
 alembic upgrade head
 ```
 
-To delete revision, remove it from `alembic/versions`
+Delete revision from `alembic/versions`
