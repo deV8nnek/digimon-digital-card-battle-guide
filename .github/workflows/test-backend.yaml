@@ -18,32 +18,38 @@ jobs:
     defaults:
       run:
         working-directory: ./backend
-    # services:
-    #   postgres:
-    #     image: postgres
-    #     env:
-    #       POSTGRES_PASSWORD: postgres
-    #     ports: 
-    #       - "5433:5433"
-    #     # Set health checks to wait until postgres has star ted
-    #     options: >-
-    #       --health-cmd pg_isready
-    #       --health-interval 10s
-    #       --health-timeout 5s
-    #       --health-retries 5
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_DB: digimon-digital-card-battle-guide
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports: ["5433:5432"]
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
     steps:
       - name: Checkout own repo
         uses: actions/checkout@v5
       - name: Install uv
         uses: astral-sh/setup-uv@v6
         with:
-          activate-environment: true
           enable-cache: true
       - name: Install dependencies
         run: uv sync
-      # - name: Initialize database
+      - name: Activate virtual environment
+        run: source .venv/bin/activate
+      - name: Initialize database
+        run: |
+          uv run alembic upgrade head
+          psql -d postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+      # # If we were running the job on in a container this would be postgres
       #   run: |
-      #     alembic upgrade head
-      #     psql -d postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+      #     psql postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "SELECT 1;"
+        # run: |
+        #   psql -h localhost -p 5433 -U postgres -d digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
       # - name: Run test  
-      #   run: pytest
+      #   run: uv run pytest
