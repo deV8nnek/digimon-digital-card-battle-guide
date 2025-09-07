@@ -46,10 +46,5 @@ jobs:
         run: |
           uv run alembic upgrade head
           psql -d postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
-      # # If we were running the job on in a container this would be postgres
-      #   run: |
-      #     psql postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "SELECT 1;"
-        # run: |
-        #   psql -h localhost -p 5433 -U postgres -d digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
-      # - name: Run test  
-      #   run: uv run pytest
+      - name: Run test  
+        run: uv run pytest
