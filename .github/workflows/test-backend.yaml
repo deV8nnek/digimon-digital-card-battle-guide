@@ -8,7 +8,12 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.markdown'
+      - 'README.md'
   workflow_dispatch:
+  
 
 jobs:
   # https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run

@@ -564,8 +564,10 @@ front-end-largest-fusion-115-103-error-hard-obtain-darkness-asc
 
 ## Testing
 
-## Deployment
+![test-backend-workflow-details-2](/img/test-backend-workflow-details-2.png)
+![test-backend-workflow-details-1](/img/test-backend-workflow-details-1.png)
 
+## Deployment
 
 ## Maintenance
 
