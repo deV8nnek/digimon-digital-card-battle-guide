@@ -8,10 +8,7 @@ on:
   push:
     branches:
       - master
-    paths-ignore:
-      - '**/*.md'
-      - '**/*.markdown'
-      - 'README.md'
+    paths: ["**/*.py","!test/**"]
   workflow_dispatch:
   
 

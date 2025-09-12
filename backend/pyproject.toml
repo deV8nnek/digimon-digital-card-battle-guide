@@ -20,6 +20,14 @@ dependencies = [
     "torch",
 ]
 
+[tool.uv.sources]
+torch = { index = "torch-cpu" }
+
+[[tool.uv.index]]
+name = "torch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
@@ -31,6 +39,7 @@ testpaths = ["test"]
 python_files = ["*.py", "main.py"]
 python_functions = ["*"]
 asyncio_mode = "auto"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]
 
 [tool.uv]
 dev-dependencies = [
