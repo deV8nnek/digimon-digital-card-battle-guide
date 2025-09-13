@@ -16,9 +16,9 @@ FROM build AS final
 
 WORKDIR /backend
 
-COPY . /backend
+COPY . .
 
 ENV PATH="/backend/.venv/bin:$PATH"
 ENTRYPOINT []
 
-CMD ["fastapi", "run", "src/main.py", "--port", "80"]
+CMD ["fastapi", "run", "src/main.py", "--port", "3000"]
