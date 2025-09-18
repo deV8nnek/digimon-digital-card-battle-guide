@@ -21,4 +21,4 @@ COPY . .
 ENV PATH="/backend/.venv/bin:$PATH"
 ENTRYPOINT []
 
-CMD ["fastapi", "run", "src/main.py", "--port", "3000"]
+CMD ["fastapi", "run", "src/main.py"]

@@ -569,6 +569,14 @@ front-end-largest-fusion-115-103-error-hard-obtain-darkness-asc
 
 ## Deployment
 
+```
+noting, ports format
+
+pytorch became more apparent for build times since it's big
+even with the cpu version, at least the build does not take that long anymore
+
+```
+
 ## Maintenance
 
 - search

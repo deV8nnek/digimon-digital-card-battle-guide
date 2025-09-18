@@ -1,0 +1,65 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgresql
+  labels:
+    app: digimon-digital-card-battle-guide
+    tier: database
+spec:
+  selector:
+    app: digimon-digital-card-battle-guide
+    tier: database
+  ports:
+    - name: postgresql
+      port: 5433
+      protocol: TCP
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pv-claim-db
+  labels:
+    app: digimon-digital-card-battle-guide
+spec:
+  accessModes: 
+    - ReadOnlyMany
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgresql
+  labels:
+    app: digimon-digital-card-battle-guide
+spec:
+  selector:
+    matchLabels:
+      app: digimon-digital-card-battle-guide
+  template:
+    metadata:
+      name: postgresql
+      labels:
+        app: digimon-digital-card-battle-guide
+        tier: database
+    spec:
+      containers:
+        - name: postgresql
+          image: postgres:latest
+          env:
+            - name: POSTGRES_DB
+              value: digimon-digital-card-battle-guide
+            - name: POSTGRES_USER
+              value: postgres
+            - name: POSTGRES_PASSWORD
+              value: postgres
+          ports:
+            - containerPort: 5433
+          volumeMounts:
+            - name: volume-db
+              mountPath: "/var/lib/postgresql"
+      volumes:
+        - name: volume-db
+          persistentVolumeClaim:
+            claimName: pv-claim-db

@@ -1,10 +1,4 @@
-#! /usr/bin/env sh
+#! /usr/bin/env bash
 
-# Exit in case of error
-set -e
-
-TAG=${TAG?Variable not set} \
-FRONTEND_ENV=${FRONTEND_ENV-production} \
-docker-compose \
--f docker-compose.yml \
-build
+TAG=$(basename "$PWD");
+docker build -t $TAG/backend ./backend;

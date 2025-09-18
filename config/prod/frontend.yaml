@@ -1,0 +1,93 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vehicle-quotes-web
+spec:
+  selector:
+    matchLabels:
+      app: vehicle-quotes-web
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vehicle-quotes-web
+    spec:
+      containers:
+        - name: vehicle-quotes-web
+          image: localhost:32000/vehicle-quotes-dev:registry
+          ports:
+            - containerPort: 5000
+              name: "http"
+            - containerPort: 5001
+              name: "https"
+          volumeMounts:
+            - mountPath: "/app"
+              name: vehicle-quotes-source-code-storage
+          env:
+            - name: POSTGRES_DB
+              value: vehicle_quotes
+            - name: POSTGRES_USER
+              value: vehicle_quotes
+            - name: POSTGRES_PASSWORD
+              value: password
+            - name: CUSTOMCONNSTR_VehicleQuotesContext
+              value: Host=$(VEHICLE_QUOTES_DB_SERVICE_SERVICE_HOST);Database=$(POSTGRES_DB);Username=$(POSTGRES_USER);Password=$(POSTGRES_PASSWORD)
+          resources:
+            limits:
+              memory: 2Gi
+              cpu: "1"
+      volumes:
+        - name: vehicle-quotes-source-code-storage
+          persistentVolumeClaim:
+            claimName: vehicle-quotes-source-code-persisent-volume-claim
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vehicle-quotes-source-code-persisent-volume
+  labels:
+    type: local
+spec:
+  claimRef:
+    namespace: default
+    name: vehicle-quotes-source-code-persisent-volume-claim
+  storageClassName: manual
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/kevin/projects/vehicle-quotes"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: vehicle-quotes-source-code-persisent-volume-claim
+spec:
+  volumeName: vehicle-quotes-source-code-persisent-volume
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vehicle-quotes-web-service
+spec:
+  type: NodePort
+  selector:
+    app: vehicle-quotes-web
+  ports:
+    - name: "http"
+      protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 30000
+    - name: "https"
+      protocol: TCP
+      port: 5001
+      targetPort: 5001
+      nodePort: 30001

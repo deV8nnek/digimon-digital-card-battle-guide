@@ -1,5 +1,18 @@
 # FastAPI Project - Deployment
 
+- [docker](https://www.docker.com/) for containerization
+- **kubernetes** for orchestration # already in docker
+
+# Docker
+
+Build the docker image
+
+```bash
+docker build -t digimon-digital-card-battle-guide/backend ./backend
+# or
+bash scripts/build.sh
+```
+
 You can deploy the project using Docker Compose to a remote server.
 
 This project expects you to have a Traefik proxy handling communication to the outside world and HTTPS certificates.

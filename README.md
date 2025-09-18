@@ -4,10 +4,10 @@ A Game Guide for Digimon Digital Card Battle that shows card collection, card di
 
 ## Technology Stack and Tools
 
-- Back-end: Python | FastAPI, Pytest, Scrapy | PostgreSQL | Pandas, Numpy, Matplotlib, SQLModel/Pydantic/SQLAlchemy/Alembic | uv
-- Front-end: Typescript | Next.js/React, Tailwind CSS, Cypress | Node.js, Shadcn, npm
-- Tools: Docker, Github Actions, Figma, Bash, Git
-- Pending: Docker Compose, Kubernetes, Terraform, AWS
+- Back-end: Python | FastAPI, Pytest, Scrapy | PostgreSQL | Pandas, Numpy, Matplotlib, SQLModel/Pydantic/SQLAlchemy/Alembic
+- Front-end: Typescript | Next.js/React, Tailwind CSS, Cypress | Node.js, Shadcn
+- Tools: Kubernetes, Docker, Github Actions, Figma, Bash, Git
+- Pending: Terraform, AWS
 
 ## Card Info
 
