@@ -9,14 +9,14 @@ class Settings(BaseSettings):
         env_ignore_empty=True,
         extra="ignore",
     )
-    PROJECT_NAME: str
+    PROJECT_NAME: str = "Digimon Digital Card Battle Guide"
     API_VERSION: str = "/api/v1"
 
-    POSTGRES_USER: str
-    POSTGRES_PASSWORD: str = ""
-    POSTGRES_SERVER: str
+    POSTGRES_USER: str = "postgres"
+    POSTGRES_PASSWORD: str = "postgres"
+    POSTGRES_SERVER: str = "localhost"
     POSTGRES_PORT: int = 5432
-    POSTGRES_DB: str = ""
+    POSTGRES_DB: str = "digimon-digital-card-battle-guide"
 
     @computed_field
     @property

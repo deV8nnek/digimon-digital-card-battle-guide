@@ -1,0 +1,20 @@
+kind: Kustomization
+
+resources:
+  - prod/database.yaml
+  - prod/backend.yaml
+#  - prod/frontend.yaml
+
+# configMapGenerator:
+#   - name: postgres-config
+#     literals:
+#       - POSTGRES_DB=digimon-digital-card-battle-guide
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=postgres
+
+secretGenerator:
+  - name: postgres-secret
+    literals:
+      - POSTGRES_DB=digimon-digital-card-battle-guide
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres

@@ -17,8 +17,11 @@ FROM build AS final
 WORKDIR /backend
 
 COPY . .
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --frozen --no-dev
 
 ENV PATH="/backend/.venv/bin:$PATH"
 ENTRYPOINT []
+EXPOSE 8000
 
 CMD ["fastapi", "run", "src/main.py"]

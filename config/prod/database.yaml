@@ -10,14 +10,13 @@ spec:
     app: digimon-digital-card-battle-guide
     tier: database
   ports:
-    - name: postgresql
-      port: 5433
+    - port: 5432
       protocol: TCP
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pv-claim-db
+  name: pvc-db
   labels:
     app: digimon-digital-card-battle-guide
 spec:
@@ -37,9 +36,9 @@ spec:
   selector:
     matchLabels:
       app: digimon-digital-card-battle-guide
+      tier: database
   template:
     metadata:
-      name: postgresql
       labels:
         app: digimon-digital-card-battle-guide
         tier: database
@@ -53,13 +52,15 @@ spec:
             - name: POSTGRES_USER
               value: postgres
             - name: POSTGRES_PASSWORD
-              value: postgres
-          ports:
-            - containerPort: 5433
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+          resources:
           volumeMounts:
             - name: volume-db
-              mountPath: "/var/lib/postgresql"
+              mountPath: "/var/database"
       volumes:
         - name: volume-db
           persistentVolumeClaim:
-            claimName: pv-claim-db
+            claimName: pvc-db

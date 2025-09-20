@@ -10,15 +10,13 @@ spec:
     app: digimon-digital-card-battle-guide
     tier: api
   ports:
-    - name: backend
-      port: 3000
+    - port: 8000
       protocol: TCP
-  type: 
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pv-claim-api
+  name: pvc-api
   labels:
     app: digimon-digital-card-battle-guide
 spec:
@@ -38,22 +36,43 @@ spec:
   selector:
     matchLabels:
       app: digimon-digital-card-battle-guide
+      tier: api
   template:
     metadata:
-      name: backend
       labels:
         app: digimon-digital-card-battle-guide
         tier: api
     spec:
       containers:
         - name: backend
-          image: digimon-digital-card-battle-guide_backend
-          ports:
-            - containerPort: 3000
+          image: digimon-digital-card-battle-guide/backend
+          imagePullPolicy: Never
+          env:
+            - name: POSTGRES_DB
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_DB
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_PORT
+              value: "5432"
+          # ports:
+          #   - containerPort: 8000
+              # targetPort: 8000
+          resources:
           volumeMounts:
             - name: volume-api
-              mountPath: /var/www/html
+              mountPath: "/var/api"
       volumes:
         - name: volume-api
           persistentVolumeClaim:
-            claimName: pv-claim-api
+            claimName: pvc-api
