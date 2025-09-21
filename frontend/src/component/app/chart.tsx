@@ -1,6 +1,7 @@
 import { Card, enumCardType, EnumCardType } from "@/domain/card";
 import { cn } from "@/lib/utils";
 import { Filter } from "./main";
+import { config as URL } from "@/config/env";
 
 interface Props {
   className?: string,
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export function CardChart({ className, card, filters }: Props) {
-  const img = "http://localhost:8000/card/stat-chart/" + card.number + "?" +
+  const img = `${URL}/card/stat-chart/` + card.number + "?" +
     filters.filter(el => el.isOn && el.cardType != enumCardType.option).map((el) => "filter=" + el.cardType.value).join("&");
 
   return (

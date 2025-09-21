@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next telemetry disable && next dev --turbopack",
+    "build": "next telemetry disable && next build",
+    "start": "next telemetry disable && next start",
+    "lint": "next telemetry disable && next lint"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
@@ -32,11 +32,12 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "recharts": "^2.15.4",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "typescript": "^5",
+    "@tailwindcss/postcss": "^4.1.12"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4.1.12",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -44,9 +45,7 @@
     "cypress": "^15.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
-    "postcss": "^8.5.6",
     "tailwindcss": "^4.1.12",
-    "tw-animate-css": "^1.3.6",
-    "typescript": "^5"
+    "tw-animate-css": "^1.3.6"
   }
 }

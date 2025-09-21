@@ -3,6 +3,7 @@
 ## Requirement
 
 - [Node.js](https://nodejs.org/en/download)
+- [pnpm](https://pnpm.io/installation)
 
 ## Directory Layout
 
@@ -22,7 +23,7 @@
 Install dependencies
 
 ```bash
-$ npm install
+pnpm install
 ```
 
 ## Run
@@ -30,7 +31,7 @@ $ npm install
 Run in local environment
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ## Debug

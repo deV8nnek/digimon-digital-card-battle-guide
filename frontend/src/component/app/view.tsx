@@ -3,7 +3,6 @@
 import { use, useState } from "react";
 import { Card as Card, CardHead, CardBody } from "./card";
 import { enumCardType, Card as ICard } from "@/domain/card";
-import { Button } from "../../ui/button";
 import { CardInfo } from "./info";
 import { cn } from "@/lib/utils";
 import * as RadioGroup from "@radix-ui/react-radio-group";
@@ -11,6 +10,7 @@ import { CardChart } from "./chart";
 import { CardFusion } from "./fusion";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/component/ui/dialog";
 import { Filter } from "./main";
+import { Button } from "../ui/button";
 
 export interface Error {
   detail: string

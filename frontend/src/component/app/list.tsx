@@ -3,10 +3,10 @@ import { cn } from "@/lib/utils"
 import { Card, CardHead, CardHeadButton, CardBody } from "./card";
 import { Card as CardItem } from "./list-item";
 import * as RadioGroup from "@radix-ui/react-radio-group";
-import { Toggle } from "../../ui/toggle";
 import { Card as ICard } from "@/domain/card";
 import { Filter } from "./main";
 import { useState } from "react";
+import { Toggle } from "../ui/toggle";
 
 const title = "カード一覧"
 

@@ -12,6 +12,8 @@ spec:
   ports:
     - port: 8000
       protocol: TCP
+      nodePort: 30001
+  type: NodePort
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -64,10 +66,9 @@ spec:
                   name: postgres-secret
                   key: POSTGRES_PASSWORD
             - name: POSTGRES_PORT
-              value: "5432"
-          # ports:
-          #   - containerPort: 8000
-              # targetPort: 8000
+              value: $(DATABASE_SERVICE_PORT)
+            - name: POSTGRES_SERVER
+              value: $(DATABASE_SERVICE_HOST)
           resources:
           volumeMounts:
             - name: volume-api

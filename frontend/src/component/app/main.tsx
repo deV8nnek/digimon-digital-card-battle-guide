@@ -1,10 +1,10 @@
 "use client"
 
 import { CardList } from "./list";
-import { CardView } from "@/component/app/(card)/view";
 import { Card, EnumCardType, enumCardType } from "@/domain/card";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { CardView } from "./view";
 
 
 export interface Filter {
@@ -65,9 +65,3 @@ export function CardMain({ className, cardList }: Props) {
     </main>
   );
 }
-
-
-
-
-
-
