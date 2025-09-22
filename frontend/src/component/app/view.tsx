@@ -11,6 +11,7 @@ import { CardFusion } from "./fusion";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/component/ui/dialog";
 import { Filter } from "./main";
 import { Button } from "../ui/button";
+import { settings } from "@/config/env";
 
 export interface Error {
   detail: string
@@ -25,7 +26,7 @@ function isError(obj: any): obj is Error {
 }
 
 async function getFusion(cards: ICard[]) {
-  const response = await fetch("http://localhost:8000/card/fusion?num1=" + cards[0].number + "&num2=" + cards[1].number,
+  const response = await fetch(`http://${settings.BACKEND_URL}/card/fusion?num1=` + cards[0].number + "&num2=" + cards[1].number,
     { cache: 'force-cache' });
   const result: Promise<ICard | Error> = await response.json();
   return result;
@@ -110,7 +111,7 @@ export function CardView({ className, cardView, index, filters, onClear, onShow 
         <Button className="min-md:hidden
         hover:bg-transparent hover:text-game-darkblue1
         text-white bg-game-darkblue1 border-game-darkblue1 border-1 border-dashed p-0 leading-0 min-w-min min-h-fit w-full pt-2 pb-2 rounded-none [writing-mode:initial]"
-        onClick={showView}>
+          onClick={showView}>
           {index}
         </Button>
         {

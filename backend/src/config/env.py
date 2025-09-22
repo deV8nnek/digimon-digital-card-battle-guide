@@ -4,30 +4,30 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
+    ENVIRONMENT: str = "development"
+
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file="../.env." + ENVIRONMENT,
         env_ignore_empty=True,
         extra="ignore",
     )
-    PROJECT_NAME: str = "Digimon Digital Card Battle Guide"
-    API_VERSION: str = "/api/v1"
 
-    POSTGRES_USER: str = "postgres"
-    POSTGRES_PASSWORD: str = "postgres"
-    POSTGRES_SERVER: str = "localhost"
-    POSTGRES_PORT: int = 5432
-    POSTGRES_DB: str = "digimon-digital-card-battle-guide"
+    PG_USER: str = "postgres"
+    PG_PASSWORD: str = "postgres"
+    PG_HOST: str = "localhost"
+    PG_PORT: int = 5432
+    PG_DATABASE: str = "digimon-digital-card-battle-guide"
 
     @computed_field
     @property
     def SQLALCHEMY_DATABASE_URI(self) -> PostgresDsn:
         return MultiHostUrl.build(
             scheme="postgresql+psycopg",
-            username=self.POSTGRES_USER,
-            password=self.POSTGRES_PASSWORD,
-            host=self.POSTGRES_SERVER,
-            port=self.POSTGRES_PORT,
-            path=self.POSTGRES_DB,
+            username=self.PG_USER,
+            password=self.PG_PASSWORD,
+            host=self.PG_HOST,
+            port=self.PG_PORT,
+            path=self.PG_DATABASE,
         )
 
 

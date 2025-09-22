@@ -12,8 +12,6 @@ spec:
   ports:
     - port: 5432
       protocol: TCP
-      nodePort: 30000
-  type: NodePort
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -49,21 +47,21 @@ spec:
         - name: postgresql
           image: postgres:latest
           env:
-            - name: POSTGRES_DB
-              valueFrom:
-                secretKeyRef:
-                  name: postgres-secret
-                  key: POSTGRES_DB
             - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
-                  key: POSTGRES_USER
+                  name: environment
+                  key: PG_USER
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
-                  key: POSTGRES_PASSWORD
+                  name: environment
+                  key: PG_PASSWORD
+            - name: POSTGRES_DB
+              valueFrom:
+                secretKeyRef:
+                  name: environment
+                  key: PG_DB
           resources:
           volumeMounts:
             - name: volume-db

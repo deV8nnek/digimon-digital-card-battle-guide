@@ -265,7 +265,7 @@ backend
   crud.py //or repository or dao, db folder
   models.py //but more models, by model will be more manageable, by route but not by model? SQLMoedel docs did group to one
   utils.py //ok but prefer having common folder
-|- scripts //OK like to run from backend 
+|- scripts- //OK like to run from backend 
 top level config and others...
 ```
 
@@ -576,6 +576,10 @@ pytorch became more apparent for build times since it's big
 even with the cpu version, at least the build does not take that long anymore
 
 ```
+
+![deploy-docker](/img/deploy-docker.png)
+![deploy-kubernetes](/img/deploy-kubernetes.png)
+![deploy](/img/deploy.png)
 
 ## Maintenance
 

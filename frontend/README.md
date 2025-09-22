@@ -31,12 +31,14 @@ pnpm install
 Run in local environment
 
 ```bash
-pnpm dev
+pnpm run dev
 ```
 
 ## Debug
 
-...
+Edit `vscode/launch.json` as necessary
+
+See VSCode > Run and Debug
 
 ## Test
 
@@ -44,4 +46,14 @@ pnpm dev
 
 ## Deploy
 
-...
+See [deploy.md](../deploy.md)
+
+Manage CD workflows from `.github/workflows`
+
+Run automatically in Github Actions
+
+## Configure
+
+### Environment Variables
+
+Edit `.env.*` and `src/config` as necessary

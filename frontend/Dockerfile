@@ -13,7 +13,7 @@ COPY package.json pnpm-lock.yaml ./
 RUN --mount=type=cache,target={PNPM_HOME}/.cache \
     --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
     --mount=type=bind,source=package.json,target=package.json \
-    pnpm -g install --frozen-lockfile --prod
+    pnpm install --frozen-lockfile --prod
 
 FROM build AS final
 

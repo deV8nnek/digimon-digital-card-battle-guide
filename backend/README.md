@@ -9,7 +9,7 @@
 - `backend` - project root
   - `/asset` - subset of resource but static like media
   - `/resource` - non-code files
-  - `/scripts` - run modules, etc.
+  - `/script` - run modules, etc.
   - `/src` - source folder
     - `/alembic` - migration
     - `/common` - dependency, etc.
@@ -32,7 +32,7 @@ Set python interpreter in VSCode from `backend/.venv`
 Initialize database
 
 ```bash
-uv run alembic upgrade head
+alembic upgrade head
 ```
 
 Import the data from `resource/data/external/card.csv` to the database.
@@ -42,7 +42,7 @@ If using command,
 ```bash
 # Postgresql must be installed and with environment variable
 # Change parameters as needed
-psql -d postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+psql -d postgresql://postgres:postgres@localhost:5432/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
 ```
 
 For further configurations, see **Migrations** section at the bottom.
@@ -78,7 +78,19 @@ Manage CI workflows from `.github/workflows`
 
 Runs automatically in Github Actions
 
+## Deploy
+
+See [deploy.md](../deploy.md)
+
+Manage CD workflows from `.github/workflows`
+
+Run automatically in Github Actions
+
 ## Configure
+
+### Environment Variables
+
+Edit `.env.*` and `src/config` as necessary
 
 ### Migrations
 

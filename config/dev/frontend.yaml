@@ -36,4 +36,9 @@ spec:
         - name: frontend
           image: digimon-digital-card-battle-guide/frontend
           imagePullPolicy: Never
+          env:
+            - name: BACKEND_HOST
+              value: $(BACKEND_SERVICE_HOST)
+            - name: BACKEND_PORT
+              value: $(BACKEND_SERVICE_PORT)
           resources:

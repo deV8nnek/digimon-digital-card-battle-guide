@@ -25,10 +25,10 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          POSTGRES_DB: digimon-digital-card-battle-guide
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-        ports: ["5433:5432"]
+          PG_USER: postgres
+          PG_PASSWORD: postgres
+          PG_DATABASE: digimon-digital-card-battle-guide
+        ports: ["5432:5432"]
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -47,7 +47,7 @@ jobs:
         run: source .venv/bin/activate
       - name: Initialize database
         run: |
-          uv run alembic upgrade head
-          psql -d postgresql://postgres:postgres@localhost:5433/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+          alembic upgrade head
+          psql -U postgres -d digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
       - name: Run test  
         run: uv run pytest

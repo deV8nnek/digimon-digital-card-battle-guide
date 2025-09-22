@@ -1,0 +1,13 @@
+kind: Kustomization
+
+resources:
+  - database.yaml
+  - backend.yaml
+  - frontend.yaml
+
+secretGenerator:
+  - name: environment
+    literals:
+      - PG_USER=postgres
+      - PG_PASSWORD=postgres
+      - PG_DB=digimon-digital-card-battle-guide

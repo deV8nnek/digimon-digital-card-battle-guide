@@ -3,11 +3,11 @@
 Generate stat chart
 
 ```bash
-bash scripts/pandasmon.sh main
+bash script/pandasmon.sh main
 ```
 
 Generate card name reference
 
 ```bash
-bash scripts/pandasmon.sh reference
+bash script/pandasmon.sh reference
 ```
