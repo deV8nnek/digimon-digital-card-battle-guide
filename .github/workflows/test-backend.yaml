@@ -8,9 +8,8 @@ on:
   push:
     branches:
       - master
-    paths: ["**/*.py","!test/**"]
+    paths: ["**/*.py", "!test/**"]
   workflow_dispatch:
-  
 
 jobs:
   # https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run
@@ -18,6 +17,7 @@ jobs:
   # https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/run-jobs-in-a-container
   backend:
     runs-on: ubuntu-latest
+    environment: development
     defaults:
       run:
         working-directory: ./backend
@@ -25,15 +25,11 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          PG_USER: postgres
-          PG_PASSWORD: postgres
-          PG_DATABASE: digimon-digital-card-battle-guide
-        ports: ["5432:5432"]
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+          POSTGRES_USER: ${{ secrets.DB_USER }}
+          POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          POSTGRES_DB: ${{ vars.DB_NAME }}
+        ports: ["5433:5432"] 
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
     steps:
       - name: Checkout own repo
         uses: actions/checkout@v5
@@ -45,9 +41,15 @@ jobs:
         run: uv sync
       - name: Activate virtual environment
         run: source .venv/bin/activate
-      - name: Initialize database
-        run: |
-          alembic upgrade head
-          psql -U postgres -d digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
-      - name: Run test  
+      - name: Initialize database - table
+        run: uv run alembic upgrade head       
+      - name: Initialize database - data
+        env:
+          PGUSER: ${{ secrets.DB_USER }}
+          PGPASSWORD: ${{ secrets.DB_PASSWORD }}
+          PGHOST: ${{ vars.DB_HOST }}
+          PGPORT: 5433
+          PGDATABASE: ${{ vars.DB_NAME }}
+        run: psql -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+      - name: Run test
         run: uv run pytest

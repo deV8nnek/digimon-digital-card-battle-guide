@@ -6,7 +6,7 @@
 
 ## Directory Layout
 
-- `backend` - project root
+- `backend` - project root, working directory
   - `/asset` - subset of resource but static like media
   - `/resource` - non-code files
   - `/script` - run modules, etc.
@@ -21,10 +21,12 @@
 
 ## Setup
 
+Set environment variables like `.env.development` copy from `.env`
+
 Install dependencies
 
 ```bash
-$ uv sync
+uv sync
 ```
 
 Set python interpreter in VSCode from `backend/.venv`
@@ -37,12 +39,10 @@ alembic upgrade head
 
 Import the data from `resource/data/external/card.csv` to the database.
 
-If using command,
-
 ```bash
-# Postgresql must be installed and with environment variable
-# Change parameters as needed
-psql -d postgresql://postgres:postgres@localhost:5432/digimon-digital-card-battle-guide -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+(cd resource/data/external &&
+psql -U changethis -d digimon-digital-card-battle-guide \
+-c "\\copy public.card FROM 'card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');")
 ```
 
 For further configurations, see **Migrations** section at the bottom.
@@ -58,6 +58,8 @@ source .venv/bin/activate
 # Windows
 source .venv/Scripts/activate
 fastapi dev src/main.py
+# or with environment
+ENVIRONMENT=development fastapi dev src/main.py
 ```
 
 ## Debug
@@ -76,7 +78,7 @@ pytest
 
 Manage CI workflows from `.github/workflows`
 
-Runs automatically in Github Actions
+Run automatically in Github Actions
 
 ## Deploy
 
@@ -87,10 +89,6 @@ Manage CD workflows from `.github/workflows`
 Run automatically in Github Actions
 
 ## Configure
-
-### Environment Variables
-
-Edit `.env.*` and `src/config` as necessary
 
 ### Migrations
 

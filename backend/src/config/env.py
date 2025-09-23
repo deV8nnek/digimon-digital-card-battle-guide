@@ -1,33 +1,38 @@
-from pydantic import PostgresDsn, computed_field
+import string
+from pathlib import Path
+
+from pydantic import AnyUrl, PostgresDsn, computed_field
 from pydantic_core import MultiHostUrl
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    ENVIRONMENT: str = "development"
+    ENV_FILE: str = (
+        ".env.development"  # if Path(".env.development").exists() else ".env"
+    )
+    DB_SCHEME: str = "postgresql+psycopg"
 
     model_config = SettingsConfigDict(
-        env_file="../.env." + ENVIRONMENT,
+        env_file=ENV_FILE,
         env_ignore_empty=True,
         extra="ignore",
     )
 
-    PG_USER: str = "postgres"
-    PG_PASSWORD: str = "postgres"
-    PG_HOST: str = "localhost"
-    PG_PORT: int = 5432
-    PG_DATABASE: str = "digimon-digital-card-battle-guide"
+    DB_USER: str
+    DB_PASSWORD: str
+    DB_HOST: str
+    DB_PORT: int
+    DB_NAME: str
 
-    @computed_field
     @property
-    def SQLALCHEMY_DATABASE_URI(self) -> PostgresDsn:
+    def SQLALCHEMY_DATABASE_URI(self):
         return MultiHostUrl.build(
-            scheme="postgresql+psycopg",
-            username=self.PG_USER,
-            password=self.PG_PASSWORD,
-            host=self.PG_HOST,
-            port=self.PG_PORT,
-            path=self.PG_DATABASE,
+            scheme=self.DB_SCHEME,
+            username=self.DB_USER,
+            password=self.DB_PASSWORD,
+            host=self.DB_HOST,
+            port=self.DB_PORT,
+            path=self.DB_NAME,
         )
 
 
