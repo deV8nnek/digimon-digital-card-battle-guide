@@ -1,6 +1,6 @@
 __*
 .*
-.env* # though there is .*, explicitly stating not to expose sensitive info
-!.env # template
+ # though there is .*, explicitly stating not to expose sensitive info
+ # template
 dist
 node_modules

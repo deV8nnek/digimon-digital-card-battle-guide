@@ -7,9 +7,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    ENV_FILE: str = (
-        ".env.development"  # if Path(".env.development").exists() else ".env"
-    )
+    ENV_FILE: str = ".env.development" if Path(".env.development").exists() else ".env"
     DB_SCHEME: str = "postgresql+psycopg"
 
     model_config = SettingsConfigDict(
