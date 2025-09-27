@@ -20,6 +20,8 @@
 
 ## Setup
 
+Set environment variables like `.env.development` copy from `.env`
+
 Install dependencies
 
 ```bash

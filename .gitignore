@@ -1,6 +1,5 @@
+__*
 .*
-.env* # though there is .*, explicitly stating not to expose sensitive info
-!.env # template
 !.vscode/launch.json
 !.github
 log

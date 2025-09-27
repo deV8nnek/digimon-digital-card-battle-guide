@@ -28,11 +28,18 @@ jobs:
           POSTGRES_USER: ${{ secrets.DB_USER }}
           POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}
           POSTGRES_DB: ${{ vars.DB_NAME }}
-        ports: ["5433:5432"] 
+        ports: ["5432:5432"] 
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
     steps:
       - name: Checkout own repo
         uses: actions/checkout@v5
+      - name: Set environment variables
+        run: |
+          echo "DB_USER=${{ secrets.DB_USER }}" > .env
+          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
+          echo "DB_HOST=${{ vars.DB_HOST }}" >> .env
+          echo "DB_PORT=5432" >> .env
+          echo "DB_NAME=${{ vars.DB_NAME }}" >> .env
       - name: Install uv
         uses: astral-sh/setup-uv@v6
         with:
@@ -42,14 +49,15 @@ jobs:
       - name: Activate virtual environment
         run: source .venv/bin/activate
       - name: Initialize database - table
-        run: uv run alembic upgrade head       
+        run: uv run alembic upgrade head
       - name: Initialize database - data
+        working-directory: backend/resource/data/external
         env:
           PGUSER: ${{ secrets.DB_USER }}
           PGPASSWORD: ${{ secrets.DB_PASSWORD }}
           PGHOST: ${{ vars.DB_HOST }}
-          PGPORT: 5433
+          PGPORT: 5432
           PGDATABASE: ${{ vars.DB_NAME }}
-        run: psql -c "\\copy public.card FROM 'resource/data/external/card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
+        run: psql -c "\\copy public.card FROM 'card.csv' WITH(FORMAT csv, DELIMITER ',', HEADER, ENCODING 'UTF8', QUOTE '\"', ESCAPE '\"');"
       - name: Run test
         run: uv run pytest
