@@ -1,10 +1,14 @@
 #! /usr/bin/env bash
 
-env=$1
+echo "deploy.sh $1"
+
+env="default"
 if [[ -n $1 ]]; then
     env=$1
 fi
 
-kubectl delete -k config/$env -n $env;
-sh ./script/deploy.sh
+echo "namespace $env"
+
+kubectl delete -f config/$env -n $env;
+bash script/deploy.sh $env;
 

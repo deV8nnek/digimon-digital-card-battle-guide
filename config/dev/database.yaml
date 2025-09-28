@@ -50,18 +50,18 @@ spec:
             - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
-                  name: environment
-                  key: PG_USER
+                  name: env
+                  key: DB_USER
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: environment
-                  key: PG_PASSWORD
+                  name: env
+                  key: DB_PASSWORD
             - name: POSTGRES_DB
               valueFrom:
                 secretKeyRef:
-                  name: environment
-                  key: PG_DB
+                  name: env
+                  key: DB_NAME
           resources:
           volumeMounts:
             - name: volume-db
