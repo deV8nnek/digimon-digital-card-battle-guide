@@ -1,0 +1,292 @@
+# https://docs.github.com/en/actions/how-tos/write-workflows
+# https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
+name: Deploy with kubernetes
+
+on:
+  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run
+  # https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
+  push:
+    branches:
+      - master
+    paths: ["**/*.py", "**/*.tsx", "!test/**"]
+  workflow_dispatch:
+
+jobs:
+  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run
+  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do
+  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/run-jobs-in-a-container
+  deploy:
+    runs-on: ubuntu-latest
+    environment: development
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - name: Configure for kubernetes
+        run: |
+          sudo modprobe overlay
+          sudo modprobe br_netfilter
+          sudo swapoff -a
+          sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+          cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+          net.bridge.bridge-nf-call-iptables  = 1
+          net.bridge.bridge-nf-call-ip6tables = 1
+          net.ipv4.ip_forward = 1
+          EOF
+          sudo sysctl --system
+          free -m
+          lsmod | grep br_netfilter
+          sudo cat /etc/hosts
+      - name: Configure route
+        run: |
+            echo "ifconfig"
+            ifconfig -a
+            echo "uuid"
+            sudo cat /sys/class/dmi/id/product_uuid
+            echo "ip"
+            ip route show
+            echo "ipv6"
+            ip -6 route show
+            echo "ip addr"
+            ip addr show
+            IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
+            IPV6=$(ip addr show eth0 | grep -oP 'inet6 \K[A-Za-z\d:]+');
+            echo $IP  
+            echo $IPV6
+            NETWORK=$(echo $IP | sed -E 's/[0-9]+$/1/');
+            echo $NETWORK
+            echo "add default via $IP dev eth0"
+            sudo ip route add $NETWORK via default dev eth0
+            echo "add $NETWORK via default dev eth0"
+            sudo ip route add 127.0.0.1 via default dev eth0
+            echo "add 127.0.0.1 via default dev eth0"
+            sudo ip route add $IP via default dev eth0
+            echo "add $IP via default dev eth0"
+#            sudo ip route add $NETWORK via 127.0.0.1 dev eth0
+#            sudo ip route add $NETWORK dev eth0
+#            sudo ip -6 route add $IPV6 dev eth0
+      - name: Install crictl
+        run: |
+          wget https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.34.0/crictl-v1.34.0-linux-amd64.tar.gz
+          sudo tar zxvf crictl-v1.34.0-linux-amd64.tar.gz -C /usr/local/bin
+          rm -f crictl-$VERSION-linux-amd64.tar.gz
+      - name: Install kubectl, kubelet, kubeadm
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y apt-transport-https ca-certificates curl
+          sudo mkdir -p /etc/apt/keyrings
+          curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
+          echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.34/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+          sudo apt-get update
+          sudo apt-get install -y containerd.io kubectl kubelet kubeadm
+          sudo apt-mark hold kubelet kubeadm kubectl
+          kubelet --version
+          kubeadm version
+          kubectl version --client
+      - name: Configure containerd
+        run: |
+          sudo ls -lht /etc/containerd
+          sudo containerd config default | sudo tee /etc/containerd/config.toml
+          sudo sed -i -E 's#(required_plugins = \[\])#\1\nenabled_plugins = ["cri"]#' /etc/containerd/config.toml
+          sudo sed -i -E 's#(\[plugins\.\"io\.containerd\.grpc\.v1\.cri\"\.containerd\])#\1\n  endpoint = "unix:///var/run/containerd/containerd.sock"#' /etc/containerd/config.toml
+          sudo sed -i -E 's/systemd_cgroup = false/systemd_cgroup = true/' /etc/containerd/config.toml
+          sudo sed -i -e 's/\( *SystemdCgroup\) = false/\1 = true/' /etc/containerd/config.toml
+          sudo sed -i -e 's/sandbox_image = \"registry.k8s.io\/pause\:3\.8\"/sandbox_image = \"registry.k8s.io\/pause\:3\.10\.1\"/' /etc/containerd/config.toml
+          sudo grep -i "enabled_plugins" /etc/containerd/config.toml
+          sudo grep -i "endpoint" /etc/containerd/config.toml
+          sudo grep -i "systemd" /etc/containerd/config.toml
+          sudo grep -i "sandbox_image" /etc/containerd/config.toml
+          sudo systemctl daemon-reload
+          sudo systemctl restart containerd
+          sudo systemctl status containerd
+      # - name: Configure containerd
+      #   run: |
+      #     sudo rm /etc/containerd/config.toml
+      #     sudo systemctl daemon-reload
+      #     sudo systemctl restart containerd
+      #     sudo systemctl status containerd
+      #     sudo cat << EOF | sudo tee /etc/crictl.yaml
+      #     runtime-endpoint: unix:///run/containerd/containerd.sock
+      #     EOF
+      # - name: Configure kubelet
+      #   run: |
+      #     echo "Creating kubelet.yaml"
+      #     sudo tee /etc/kubernetes/kubelet.yaml <<EOF
+      #     kind: KubeletConfiguration
+      #     apiVersion: kubelet.config.k8s.io/v1beta1
+      #     authentication:
+      #       webhook:
+      #         enabled: false # Do NOT use in production clusters!
+      #     authorization:
+      #       mode: AlwaysAllow # Do NOT use in production clusters!
+      #     cgroupDriver: systemd
+      #     containerRuntimeEndpoint: unix:///var/run/containerd/containerd.sock
+      #     EOF
+      #     echo "Creating kubelet.service"
+      #     sudo tee /etc/systemd/system/kubelet.service <<EOF
+      #     [Unit]
+      #     Description=Kubelet
+
+      #     [Service]
+      #     ExecStart=/usr/bin/kubelet \
+      #     --config=/etc/kubernetes/kubelet.yaml
+
+      #     [Install]
+      #     WantedBy=multi-user.target
+      #     EOF
+      #     sudo systemctl daemon-reload
+      #     sudo systemctl enable --now kubelet.service
+      #     sudo systemctl status kubelet
+      #     sudo systemctl stop kubelet
+      - name: Enable ufw
+        run: |
+          sudo ufw allow "OpenSSH"
+          sudo ufw enable
+      # Control plane
+      - name: Configure port for API server
+        run: |
+          IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
+          sudo ufw allow 6443/tcp
+          sudo ufw allow from $IP to any port 6443 proto tcp
+          sudo nc -l 6443 &
+          sudo nc -l $IP 6443 &
+      - name: Configure port for etcd server client API
+        run: |
+          sudo ufw allow 2379:2380/tcp
+          sudo ufw allow from 127.0.0.1 to any port 2379 proto tcp
+          sudo ufw allow from 127.0.0.1 to any port 2390 proto tcp
+#          sudo nc -l 2379 &
+#          sudo nc -l 2380 &
+      - name: Configure port for API
+        run: |
+          sudo ufw allow 10250/tcp
+          sudo ufw allow from 127.0.0.1 to any port 10250 proto tcp
+#          sudo nc -l 10250 &
+      - name: Configure port for kube-scheduler
+        run: |
+          sudo ufw allow 10259/tcp
+          sudo ufw allow from 127.0.0.1 to any port 10259 proto tcp
+#          sudo nc -l 10259 &
+      - name: Configure port for kube-controller-manager
+        run: |
+          sudo ufw allow 10257/tcp
+          sudo ufw allow from 127.0.0.1 to any port 10257 proto tcp
+#          sudo nc -l 10257 &
+      # Worker nodes
+      - name: Configure port for API
+        run: |
+          sudo ufw allow 10250/tcp
+#          sudo nc -l 10250 &
+      - name: Configure port for kube-proxy
+        run: |
+          sudo ufw allow 10256/tcp
+#          sudo nc -l 10256 &
+      - name: Configure port for Nodeport Services
+        run: |
+          sudo ufw allow 30000:32767/tcp
+          sudo ufw allow 30000:32767/udp
+#          for i in {1..2767}; do nc -l -p 1234 &
+#          for i in {1..2767}; do nc -ul -p 1234 &
+      - name: Verify port
+        run : |
+          sudo ufw reload
+          sudo ufw status verbose
+          sudo ip route show
+          sudo ss -tuln | grep -E "(6443|2379|2380|10250|10259|10257|10256)"
+          nc 127.0.0.1 6443 -zv -w 2
+          IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
+          nc $IP 6443 -zv -w 2
+      - name: Create kubernetes cluster
+        continue-on-error: true
+        run: |
+          ip route show;
+          ip addr;
+          IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
+          echo $IP;
+          cat << EOF > kubeadm-config.yaml
+          apiVersion: kubeadm.k8s.io/v1beta4
+          kind: InitConfiguration
+          nodeRegistration:
+            criSocket: "unix:///var/run/containerd/containerd.sock"
+          localAPIEndpoint:
+            advertiseAddress: "$IP"
+            bindPort: 6443
+          timeouts:
+            controlPlaneComponentHealthCheck: "60s"
+          ---
+          kind: ClusterConfiguration
+          apiVersion: kubeadm.k8s.io/v1beta4
+          kubernetesVersion: v1.34.1
+          controlPlaneEndpoint: "$IP:6443"
+          ---
+          kind: KubeletConfiguration
+          apiVersion: kubelet.config.k8s.io/v1beta1
+          cgroupDriver: systemd
+          EOF
+          sudo rm -rf /etc/kubernetes/
+          sudo kubeadm reset -f;
+          sudo kubeadm config images pull;
+          sudo kubeadm config validate --config kubeadm-config.yaml;
+          sudo kubeadm init --v=5 --config kubeadm-config.yaml;
+#          
+      # - name: Create kubernetes cluster
+      #   continue-on-error: true
+      #   run: |
+      #     ip route show;
+      #     ip addr;
+      #     IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
+      #     echo $IP;
+      #     cat << EOF > kubeadm-config.yaml
+      #     kind: ClusterConfiguration
+      #     apiVersion: kubeadm.k8s.io/v1beta4
+      #     kubernetesVersion: v1.34.1
+      #     ---
+      #     kind: KubeletConfiguration
+      #     apiVersion: kubelet.config.k8s.io/v1beta1
+      #     cgroupDriver: systemd
+      #     EOF
+      #     sudo rm -rf /etc/kubernetes /var/lib/etcd
+      #     sudo kubeadm reset -f;
+      #     sudo kubeadm init --v=5 --config kubeadm-config.yaml;
+      # - name: Create kubernetes cluster with IP
+      #   continue-on-error: true
+      #   run: |
+      #     ip route show;
+      #     ip addr;
+      #     IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
+      #     echo $IP;
+      #     sudo rm -rf /etc/kubernetes /var/lib/etcd
+      #     sudo kubeadm reset -f;
+      #     sudo kubeadm init --v=5 --pod-network-cidr=192.168.0.0/16;
+      # - name: Create kubernetes cluster no IP
+      #   continue-on-error: true
+      #   run: |
+      #     ip route show;
+      #     ip addr;
+      #     IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
+      #     echo $IP;
+      #     sudo rm -rf /etc/kubernetes /var/lib/etcd
+      #     sudo kubeadm reset -f;
+      #     sudo kubeadm init --v=5 --pod-network-cidr=192.168.0.0/16;
+      - name: Debug Containerd
+        run: | 
+          sudo journalctl -xeu containerd;
+          systemd-cgls;
+      - name: Debug kubelet
+        run: |
+          sudo journalctl -xeu kubelet
+      # - name: Checkout own repo
+      #   uses: actions/checkout@v5
+      # - name: Set environment variables for backend
+      #   working-directory: backend
+      #   run: |
+      #     echo "DB_USER=${{ secrets.DB_USER }}" > .env
+      #     echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
+      #     echo "DB_HOST=${{ vars.DB_HOST }}" >> .env
+      #     echo "DB_PORT=5432" >> .env
+      #     echo "DB_NAME=${{ vars.DB_NAME }}" >> .env
+      # - name: Build docker images
+      #   run: bash script/build.sh github
+      # - name: Deploy to kubernetes cluster
+      #   run: |
+      #     bash script/redeploy.sh dev

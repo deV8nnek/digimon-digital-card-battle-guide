@@ -50,25 +50,25 @@ spec:
           image: digimon-digital-card-battle-guide/backend
           imagePullPolicy: Never
           env:
-            - name: PG_USER
+            - name: DB_USER
               valueFrom:
                 secretKeyRef:
-                  name: environment
-                  key: PG_USER
-            - name: PG_PASSWORD
+                  name: env
+                  key: DB_USER
+            - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: environment
-                  key: PG_PASSWORD
-            - name: PG_HOST
+                  name: env
+                  key: DB_PASSWORD
+            - name: DB_HOST
               value: $(DATABASE_SERVICE_HOST)
-            - name: PG_PORT
+            - name: DB_PORT
               value: $(DATABASE_SERVICE_PORT)
-            - name: PG_DB
+            - name: DB_NAME
               valueFrom:
                 secretKeyRef:
-                  name: environment
-                  key: PG_DB
+                  name: env
+                  key: DB_NAME
           resources:
           volumeMounts:
             - name: volume-api
