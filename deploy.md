@@ -34,7 +34,7 @@ kubectl apply -f config/dev/frontend.yaml -n dev
 # or
 kubectl apply -k config/dev -n dev
 # or
-bash scripts/deploy.sh dev
+bash scripts/deploy.sh dev db
 # or
-bash scripts/redeploy.sh dev
+bash scripts/redeploy.sh dev db
 ```

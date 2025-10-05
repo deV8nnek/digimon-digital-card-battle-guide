@@ -51,14 +51,14 @@ Offtopic reading about the AI will replace us, AI is already better and will get
     - Programming Languages: Python
     - Framework: FastAPI, Next.js/React
     - Infrastructure (Software)
-      - OS: Windows
+      - OS: ~~Windows~~ Linux/Ubuntu
       - DB: PostgreSQL
-      - Web Server: Nginx
+      ~~- Web Server: Nginx~~
       - VCS: Git, GitHub
-      - Containerization: Docker (single), Docker Compose (multiple)
+      - Containerization: Docker (single)~~, Docker Compose (multiple)~~
       - Orchestration: Kubernetes
-      - IaC: Terraform
-      - CI/CD: Jenkins ~~GitHub Actions~~
+      ~~- IaC: Terraform~~
+      - CI/CD: ~~Jenkins~~ GitHub Actions
         ~~- Cloud: NextCloud~~ ~~AWS ~~ //will learn cloud computing using AWS separately or maybe integrate in the future
     - Tools
       - AI Coding Assistant: GitHub Copilot, ChatGPT, Google Gemini
@@ -581,6 +581,8 @@ even with the cpu version, at least the build does not take that long anymore
 ![deploy-kubernetes](/img/deploy-kubernetes.png)
 ![deploy](/img/deploy.png)
 
+![deploy-k8s-workflow-details](/img/deploy-k8s-workflow-details.png)
+
 ## Maintenance
 
 - search
@@ -589,3 +591,7 @@ even with the cpu version, at least the build does not take that long anymore
 - ~~dynamic web scraper~~ refine ~~web scaper~~ scrapymon
 - refine pandasmon
 - refine pytorchmon
+- cypress
+- high availability cluster
+- cloud
+

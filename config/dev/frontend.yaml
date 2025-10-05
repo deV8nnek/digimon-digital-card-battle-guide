@@ -22,6 +22,7 @@ metadata:
   labels:
     app: digimon-digital-card-battle-guide
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: digimon-digital-card-battle-guide
@@ -42,3 +43,9 @@ spec:
             - name: BACKEND_PORT
               value: $(BACKEND_SERVICE_PORT)
           resources:
+            requests:
+              memory: 1G
+              ephemeral-storage: 1G
+            limits:
+              memory: 8G
+              ephemeral-storage: 8G

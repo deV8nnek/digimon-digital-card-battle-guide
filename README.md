@@ -6,8 +6,8 @@ A Game Guide for Digimon Digital Card Battle that shows card collection, card di
 
 - Back-end: Python | FastAPI, Pytest, Scrapy | PostgreSQL | Pandas, Numpy, Matplotlib, SQLModel/Pydantic/SQLAlchemy/Alembic
 - Front-end: Typescript | Next.js/React, Tailwind CSS, Cypress | Node.js, Shadcn
-- Tools: Kubernetes, Docker, Github Actions, Figma, Bash, Git
-- Pending: Terraform, AWS
+- Tools: Kubernetes, Docker, Github Actions, Figma, Bash/Shell, Git
+- OS: Linux/Ubuntu
 
 ## Card Info
 
@@ -21,9 +21,10 @@ A Game Guide for Digimon Digital Card Battle that shows card collection, card di
 
 ![front-end-largest-fusion-101-268-102-text-icon-name-sp-effect-filter-ice-option](/img/front-end-largest-fusion-101-268-102-text-icon-name-sp-effect-filter-ice-option.png)
 
-## Testing
+## CI/CD
 
 ![test-backend-workflow-details-1](/img/test-backend-workflow-details-1.png)
+![deploy-k8s-workflow-details](/img/deploy-k8s-workflow-details.png)
 
 ## Back-end
 

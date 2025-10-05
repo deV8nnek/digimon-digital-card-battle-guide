@@ -22,6 +22,25 @@ jobs:
       run:
         working-directory: ./
     steps:
+      - name: Enable containerd image store on docker engine
+        run: |
+          ls -lht /
+          sudo find /etc -type d -name docker
+          ls -lht /etc/docker
+          cat << EOF | sudo tee /etc/docker/daemon.json
+          {
+            "features": {
+              "containerd-snapshotter": true
+            },
+            "containerd-namespace": "k8s.io"
+          }
+          EOF
+          sudo systemctl restart docker
+      - name: Clean unused docker objects
+        run: |
+          docker system prune -f
+      - name: Check docker info
+        run: docker info
       - name: Check kernel version
         run: |
           uname -r
@@ -31,89 +50,91 @@ jobs:
       - name: Check glibc
         run: |
           ldd --version
-      - name: Check MAC address, product_UUID
+      - name: Check MAC address
         run: |
           ip link show
-          sudo cat /sys/class/dmi/id/product_uuid
-      - name: Configure route
+      - name: Check product_UUID
         run: |
-            echo "ifconfig"
-            ifconfig -a
-            echo "uuid"
-            sudo cat /sys/class/dmi/id/product_uuid
-            echo "ip"
-            ip route show
-            echo "ipv6"
-            ip -6 route show
-            echo "ip addr"
-            ip addr show
-            IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
-            IPV6=$(ip addr show eth0 | grep -oP 'inet6 \K[A-Za-z\d:]+');
-            echo $IP  
-            echo $IPV6
-            NETWORK=$(echo $IP | sed -E 's/[0-9]+$/1/');
-            echo $NETWORK
-            echo "add default via $IP dev eth0"
-            sudo ip route add $NETWORK via default dev eth0
-            echo "add $NETWORK via default dev eth0"
-            sudo ip route add 127.0.0.1 via default dev eth0
-            echo "add 127.0.0.1 via default dev eth0"
-            sudo ip route add $IP via default dev eth0
-            echo "add $IP via default dev eth0"
+          sudo cat /sys/class/dmi/id/product_uuid
+      - name: Check route
+        run: |
+          echo "ifconfig"
+          ifconfig -a
+          echo "ip"
+          ip route show
+          echo "ipv6"
+          ip -6 route show
+          echo "ip addr"
+          ip addr show
+      - name: Add route
+        run: |
+          IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
+          echo $IP  
+          IPV6=$(ip addr show eth0 | grep -oP 'inet6 \K[A-Za-z\d:]+');
+          echo $IPV6
+          NETWORK=$(echo $IP | sed -E 's/[0-9]+$/1/');
+          echo $NETWORK
+          echo "add default via $IP dev eth0"
+          sudo ip route add $NETWORK via default dev eth0
+          echo "add $NETWORK via default dev eth0"
+          sudo ip route add 127.0.0.1 via default dev eth0
+          echo "add 127.0.0.1 via default dev eth0"
+          sudo ip route add $IP via default dev eth0
+          echo "add $IP via default dev eth0"
       - name: Enable ufw
         run: |
           sudo ufw allow "OpenSSH"
           sudo ufw enable
-      - name: Configure port for containerd
-        run: |
-          sudo ufw allow 8080/tcp
-          sudo ufw allow from 127.0.0.1 to any port 8080 proto tcp
-          sudo nc -l 8080 &
       # Control plane
       - name: Configure port for API server
         run: |
           IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
           sudo ufw allow 6443/tcp
           sudo ufw allow from $IP to any port 6443 proto tcp
-          sudo nc -l 6443 &
-          sudo nc -l $IP 6443 &
+          sudo nc -l 6443 & echo "Listening on 6443"
+          sudo nc -l $IP 6443 & echo "Listening on $IP 6443"
       - name: Configure port for etcd server client API
         run: |
           sudo ufw allow 2379:2380/tcp
-          sudo ufw allow from 127.0.0.1 to any port 2379 proto tcp
-          sudo ufw allow from 127.0.0.1 to any port 2390 proto tcp
-#          sudo nc -l 2379 &
-#          sudo nc -l 2380 &
       - name: Configure port for API
         run: |
           sudo ufw allow 10250/tcp
-          sudo ufw allow from 127.0.0.1 to any port 10250 proto tcp
-#          sudo nc -l 10250 &
       - name: Configure port for kube-scheduler
         run: |
           sudo ufw allow 10259/tcp
-          sudo ufw allow from 127.0.0.1 to any port 10259 proto tcp
-#          sudo nc -l 10259 &
       - name: Configure port for kube-controller-manager
         run: |
           sudo ufw allow 10257/tcp
-          sudo ufw allow from 127.0.0.1 to any port 10257 proto tcp
-#          sudo nc -l 10257 &
       # Worker nodes
       - name: Configure port for API
         run: |
           sudo ufw allow 10250/tcp
-#          sudo nc -l 10250 &
       - name: Configure port for kube-proxy
         run: |
           sudo ufw allow 10256/tcp
-#          sudo nc -l 10256 &
       - name: Configure port for Nodeport Services
         run: |
           sudo ufw allow 30000:32767/tcp
           sudo ufw allow 30000:32767/udp
-          for i in {1..2767}; do { sudo nc -l -p $i; } & done
-          for i in {1..2767}; do { sudo nc -ul -p $i; } & done
+#          for i in {30001..32767}; do { sudo nc -l -p $i; } & done
+#          echo "Listening on 30000-32767"
+#          for i in {30001..32767}; do { sudo nc -ul -p $i; } & done
+#          echo "Listening on 30000-32767/udp"
+      # - name: Configure port for Calico BGP
+      #   run: |
+      #     sudo ufw allow 179/tcp
+      # # - name: Configure port for Calico with IP-in-IP
+      # #   run: |
+      # #     sudo ufw allow any port proto ipip
+      # - name: Configure port for Typha enabled
+      #   run: |
+      #     sudo ufw allow 5473/tcp
+      # - name: Configure port for Calico Wireguard
+      #   run: |
+      #     sudo ufw allow 51820:51821/udp
+      # - name: Configure port for VXLAN
+      #   run: |
+      #     sudo ufw allow 4789/udp
       - name: Verify port
         run : |
           sudo ufw reload
@@ -180,6 +201,7 @@ jobs:
           echo "Create kubeadm config"
           curl -sSL "https://raw.githubusercontent.com/kubernetes/release/${VERSION}/cmd/krel/templates/latest/kubeadm/10-kubeadm.conf" | sed "s:/usr/bin:${DOWNLOAD_DIR}:g" | sudo tee /usr/lib/systemd/system/kubelet.service.d/10-kubeadm.conf
           sudo systemctl daemon-reload
+          sudo systemctl enable --now kubelet
       - name: Configure containerd
         run: |
           sudo containerd config default | sudo tee /etc/containerd/config.toml
@@ -187,21 +209,28 @@ jobs:
           sudo sed -i -E 's#(\[plugins\.\"io\.containerd\.grpc\.v1\.cri\"\.containerd\])#\1\n  endpoint = "unix:///var/run/containerd/containerd.sock"#' /etc/containerd/config.toml
           sudo sed -i -e 's/\(SystemdCgroup\) = false/\1 = true/' /etc/containerd/config.toml
           sudo sed -i -e 's/sandbox_image = \"registry.k8s.io\/pause\:3\.8\"/sandbox_image = \"registry.k8s.io\/pause\:3\.10\"/' /etc/containerd/config.toml
+      - name: Check containerd configuration
+        run: |
           sudo grep -i "enabled_plugins" /etc/containerd/config.toml
           sudo grep -i "endpoint" /etc/containerd/config.toml
           sudo grep -i "systemd" /etc/containerd/config.toml
           sudo grep -i "sandbox_image" /etc/containerd/config.toml
-          sudo systemctl daemon-reload
+      - name: Restart containerd
+        run: |
+          sudo systemctl daemon-reload 
           sudo systemctl restart containerd
-      - name: Check kubelet, kubeadm, kubectl, containerd
+      - name: Check kubelet
         run: |
           kubelet --version
+      - name: Check kubeadm
+        run: |
           kubeadm version
+      - name: Check kubectl
+        run: |
           kubectl version --client
       - name: Check containerd
         run: sudo systemctl status containerd
       - name: Create kubernetes cluster
-        continue-on-error: true
         run: |
           IP=$(ip addr show eth0 | grep -oP 'inet \K[\d.]+');
           echo $IP;
@@ -220,16 +249,68 @@ jobs:
           apiVersion: kubeadm.k8s.io/v1beta4
           kubernetesVersion: v1.33.5
           controlPlaneEndpoint: "$IP:6443"
+          networking:
+            podSubnet: 192.168.0.0/16
+            serviceSubnet: 10.96.0.0/12
+            dnsDomain: cluster.local
           ---
           kind: KubeletConfiguration
           apiVersion: kubelet.config.k8s.io/v1beta1
           cgroupDriver: systemd
+          evictionHard:
+            memory.available: 5G
+          enforceNodeAllocatable: ["pods"]
           EOF
           sudo rm -rf /etc/kubernetes/
           sudo rm -rf /var/lib/etcd/
           sudo kubeadm reset -f;
           sudo kubeadm config images pull;
-          sudo kubeadm init --v=5 --config kubeadm-config.yaml;
+          sudo kubeadm init --v=5 --config kubeadm-config.yaml | sudo tee kubeadm.log
+      - name: Configure kubeconfig
+        run: |
+          mkdir -p $HOME/.kube
+          sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+          sudo chown $(id -u):$(id -g) $HOME/.kube/config
+      # - name: Install tigera
+      #   run: |
+      #     kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.30.3/manifests/operator-crds.yaml
+      #     kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.30.3/manifests/tigera-operator.yaml
+      # - name: Install calico
+      #   run: curl https://raw.githubusercontent.com/projectcalico/calico/v3.30.3/manifests/custom-resources.yaml -O
+      # - name: Check default calico config
+      #   run: |
+      #     cat custom-resources.yaml  
+      # - name: Apply custom calico config
+      #   run: |
+      #     sudo sed -i -E "s/(encapsulation).*/\1: None/" custom-resources.yaml
+      #     sudo grep -i "encapsulation" custom-resources.yaml
+      #     kubectl apply -f custom-resources.yaml
+      - name: Allow schedule Pods on the control plane nodes
+        run: |
+          kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+      # - name: Configure for dynamic provisioning
+      #   run: |
+      #     sudo sed -i -E "s/(enable-admission-plugins=.*)/\1,DefaultStorageClass/" /etc/kubernetes/manifests/kube-apiserver.yaml
+      #     sudo grep -i "enable-admission-plugins" /etc/kubernetes/manifests/kube-apiserver.yaml
+      # - name: Waiting for 60s to get ready
+      #   run: sleep 60s
+      # - name: Check calico components
+      #   run: |
+      #     kubectl get tigerastatus
+      # - name: Check calico pods
+      #   run: |
+      #     kubectl get pods -n calico-system
+      - name: View cluster info
+        run: kubectl cluster-info
+      - name: View current context
+        run: kubectl config current-context
+      # - name: Join worker nodes
+      #   run: |
+      #     KUBEADM_JOIN=$(cat kubeadm.log | grep "kubeadm join")
+      #     eval "$KUBEADM_JOIN --v=5"
+      - name: Check nodes
+        run: |
+          kubectl get nodes -o wide --all-namespaces
       - name: Checkout own repo
         uses: actions/checkout@v5
       - name: Set environment variables for backend
@@ -242,6 +323,63 @@ jobs:
           echo "DB_NAME=${{ vars.DB_NAME }}" >> .env
       - name: Build docker images
         run: bash script/build.sh github
-      - name: Deploy to kubernetes cluster
-        run: |
-          bash script/redeploy.sh dev
+      # - name: Save images to tar
+      #   run: |
+      #     docker save -o frontend.tar digimon-digital-card-battle-guide/frontend
+      #     docker save -o backend.tar digimon-digital-card-battle-guide/backend
+      # - name: Import images to containerd
+      #   run: |
+      #     sudo ctr -n k8s.io images import frontend.tar
+      #     sudo ctr -n k8s.io images import backend.tar
+      - name: Check docker images
+        run: docker image ls
+      - name: Check containerd namespaces
+        run: sudo ctr namespaces ls
+      - name: Check containerd images
+        run: sudo ctr images ls
+      - name: Check containerd k8s images
+        run: sudo ctr -n k8s.io images ls
+      - name: Check containerd moby images
+        run: sudo ctr -n moby images ls
+      - name: Check crictl images
+        run: sudo crictl images
+      - name: Deploy to kubernetes cluster 
+        run: bash script/redeploy.sh dev
+      - name: Check all resources
+        run: kubectl get all
+      - name: Check nodes
+        run : kubectl get nodes
+      - name: Check pods
+        run : kubectl get pods -n dev
+      - name: Check pvc
+        run : kubectl get pvc -n dev
+      - name: Check pv
+        run : kubectl get pv -n dev
+      - name: Check storageclass
+        run: kubectl get sc
+      - name: Waiting for 30s to get ready
+        run: sleep 30s
+      - name: Init database
+        continue-on-error: true
+        run: bash script/init-db.sh dev
+      - name: Describe nodes
+        run : kubectl describe nodes
+      - name: Describe pods
+        run : kubectl describe pods -n dev
+      - name: Describe pvc
+        run : kubectl describe pvc -n dev
+      - name: Describe pv
+        run : kubectl describe pv -n dev
+      - name: Check pods
+        run : kubectl get pods -n dev
+      - name: Check disk space
+        run : df -h
+      # - name: Debug containerd
+      #   if: always() 
+      #   run: |
+      #     journalctl -xeu containerd
+      # - name: Debug kubelet
+      #   if: always() 
+      #   run: |
+      #     journalctl -xeu kubelet
+

@@ -14,6 +14,24 @@ spec:
       protocol: TCP
 ---
 apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-db
+  labels:
+    type: local
+spec:
+  claimRef:
+    namespace: dev
+    name: pvc-db
+  capacity:
+    storage: 5G
+  accessModes:
+    - ReadOnlyMany
+  hostPath:
+    path: /mnt/database
+  storageClassName: local-storage
+---
+apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: pvc-db
@@ -24,7 +42,8 @@ spec:
     - ReadOnlyMany
   resources:
     requests:
-      storage: 5Gi
+      storage: 5G
+  storageClassName: local-storage
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -33,6 +52,7 @@ metadata:
   labels:
     app: digimon-digital-card-battle-guide
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: digimon-digital-card-battle-guide
@@ -63,6 +83,12 @@ spec:
                   name: env
                   key: DB_NAME
           resources:
+            requests:
+              memory: 1G
+              ephemeral-storage: 1G
+            limits:
+              memory: 8G
+              ephemeral-storage: 8G
           volumeMounts:
             - name: volume-db
               mountPath: "/var/database"
